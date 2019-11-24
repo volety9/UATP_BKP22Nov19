@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_File_Rate_req_if_Status_is_Completed</fullName>
+    <active>true</active>
+    <description>File Rating is required if the status is Remedial Action Required/Completed</description>
+    <errorConditionFormula>(ISPICKVAL( Checklist_Status__c , &quot;Completed&quot;) || ISPICKVAL( Checklist_Status__c , &quot;Remedial Action Required&quot;)) &amp;&amp; ISBLANK(TEXT(Risk_Rating__c))</errorConditionFormula>
+    <errorDisplayField>Risk_Rating__c</errorDisplayField>
+    <errorMessage>File Rating is required if the status is Remedial Action Required/Completed</errorMessage>
+</ValidationRule>

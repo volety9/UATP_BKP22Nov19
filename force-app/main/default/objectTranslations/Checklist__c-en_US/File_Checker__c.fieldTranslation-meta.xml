@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- File Checker --></label>
+    <name>File_Checker__c</name>
+    <relationshipLabel><!-- Checklists (File Checker) --></relationshipLabel>
+</CustomFieldTranslation>

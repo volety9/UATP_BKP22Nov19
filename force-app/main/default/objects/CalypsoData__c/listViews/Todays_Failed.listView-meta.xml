@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Todays_Failed</fullName>
+    <columns>NAME</columns>
+    <columns>CD_TradeID__c</columns>
+    <columns>CD_UserAction__c</columns>
+    <columns>CD_ConversionStatus__c</columns>
+    <columns>CD_ETRef__c</columns>
+    <columns>CD_ETREUTERSPNL__c</columns>
+    <columns>CD_ErrorMessage__c</columns>
+    <columns>CD_Customer__c</columns>
+    <columns>CD_Banker__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CD_ConversionStatus__c</field>
+        <operation>equals</operation>
+        <value>Failed</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Today&#39;s Failed</label>
+</ListView>

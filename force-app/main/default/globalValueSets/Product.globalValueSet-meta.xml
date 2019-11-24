@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Vanilla Option</fullName>
+        <default>false</default>
+        <label>Vanilla Option</label>
+    </customValue>
+    <customValue>
+        <fullName>Participating Forward</fullName>
+        <default>false</default>
+        <label>Participating Forward</label>
+    </customValue>
+    <customValue>
+        <fullName>Partial Forward</fullName>
+        <default>false</default>
+        <label>Partial Forward</label>
+    </customValue>
+    <customValue>
+        <fullName>Advantage Forward</fullName>
+        <default>false</default>
+        <label>Advantage Forward</label>
+    </customValue>
+    <customValue>
+        <fullName>Dynamic Forward</fullName>
+        <default>false</default>
+        <label>Dynamic Forward</label>
+    </customValue>
+    <customValue>
+        <fullName>Bonus Forward</fullName>
+        <default>false</default>
+        <label>Bonus Forward</label>
+    </customValue>
+    <customValue>
+        <fullName>Leverage Product</fullName>
+        <default>false</default>
+        <label>Leverage Product</label>
+    </customValue>
+    <customValue>
+        <fullName>Knock Out Forward</fullName>
+        <default>false</default>
+        <label>Knock Out Forward</label>
+    </customValue>
+    <customValue>
+        <fullName>Dual Currency Deposit (DCD)</fullName>
+        <default>false</default>
+        <label>Dual Currency Deposit (DCD)</label>
+    </customValue>
+    <customValue>
+        <fullName>Non- Deliverable Forward (NDF)</fullName>
+        <default>false</default>
+        <label>Non- Deliverable Forward (NDF)</label>
+    </customValue>
+    <customValue>
+        <fullName>Commodity Price Cap</fullName>
+        <default>false</default>
+        <label>Commodity Price Cap</label>
+    </customValue>
+    <customValue>
+        <fullName>Commodity Price Swap</fullName>
+        <default>false</default>
+        <label>Commodity Price Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>Interest Rate Cap</fullName>
+        <default>false</default>
+        <label>Interest Rate Cap</label>
+    </customValue>
+    <customValue>
+        <fullName>Interest Rate Collar</fullName>
+        <default>false</default>
+        <label>Interest Rate Collar</label>
+    </customValue>
+    <customValue>
+        <fullName>Interest Rate Swap</fullName>
+        <default>false</default>
+        <label>Interest Rate Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>Floating Rate Loan</fullName>
+        <default>false</default>
+        <label>Floating Rate Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>Fixed Rate Loan</fullName>
+        <default>false</default>
+        <label>Fixed Rate Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>Vanilla Spot</fullName>
+        <default>false</default>
+        <label>Vanilla Spot</label>
+    </customValue>
+    <customValue>
+        <fullName>Vanilla Forward</fullName>
+        <default>false</default>
+        <label>Vanilla Forward</label>
+    </customValue>
+    <customValue>
+        <fullName>Aluminium Swap</fullName>
+        <default>false</default>
+        <label>Aluminium Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>Aluminium Cap</fullName>
+        <default>false</default>
+        <label>Aluminium Cap</label>
+    </customValue>
+    <customValue>
+        <fullName>Copper Swap</fullName>
+        <default>false</default>
+        <label>Copper Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>Copper Cap</fullName>
+        <default>false</default>
+        <label>Copper Cap</label>
+    </customValue>
+    <customValue>
+        <fullName>Nickel Swap</fullName>
+        <default>false</default>
+        <label>Nickel Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>Nickel Cap</fullName>
+        <default>false</default>
+        <label>Nickel Cap</label>
+    </customValue>
+    <customValue>
+        <fullName>Zinc Swap</fullName>
+        <default>false</default>
+        <label>Zinc Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>Zinc Cap</fullName>
+        <default>false</default>
+        <label>Zinc Cap</label>
+    </customValue>
+    <customValue>
+        <fullName>Gas Oil Swap</fullName>
+        <default>false</default>
+        <label>Gas Oil Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>Gas Oil Cap</fullName>
+        <default>false</default>
+        <label>Gas Oil Cap</label>
+    </customValue>
+    <customValue>
+        <fullName>Jet Fuel Swap</fullName>
+        <default>false</default>
+        <label>Jet Fuel Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>Jet Fuel Cap</fullName>
+        <default>false</default>
+        <label>Jet Fuel Cap</label>
+    </customValue>
+    <customValue>
+        <fullName>Diesel Swap</fullName>
+        <default>false</default>
+        <label>Diesel Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>Diesel Cap</fullName>
+        <default>false</default>
+        <label>Diesel Cap</label>
+    </customValue>
+    <customValue>
+        <fullName>Cotton Swap</fullName>
+        <default>false</default>
+        <label>Cotton Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>Cotton Cap</fullName>
+        <default>false</default>
+        <label>Cotton Cap</label>
+    </customValue>
+    <customValue>
+        <fullName>Wheat Swap</fullName>
+        <default>false</default>
+        <label>Wheat Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>Wheat Cap</fullName>
+        <default>false</default>
+        <label>Wheat Cap</label>
+    </customValue>
+    <customValue>
+        <fullName>FX</fullName>
+        <default>false</default>
+        <label>FX</label>
+    </customValue>
+    <customValue>
+        <fullName>FXForward</fullName>
+        <default>false</default>
+        <label>FXForward</label>
+    </customValue>
+    <customValue>
+        <fullName>FXSwap</fullName>
+        <default>false</default>
+        <label>FXSwap</label>
+    </customValue>
+    <customValue>
+        <fullName>FXFlexiForward</fullName>
+        <default>false</default>
+        <label>FXFlexiForward</label>
+    </customValue>
+    <customValue>
+        <fullName>FXOption</fullName>
+        <default>false</default>
+        <label>FXOption</label>
+    </customValue>
+    <customValue>
+        <fullName>FXNDF</fullName>
+        <default>false</default>
+        <label>FXNDF</label>
+    </customValue>
+    <customValue>
+        <fullName>*******B L A N K*******</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>*******B L A N K*******</label>
+    </customValue>
+    <customValue>
+        <fullName>Aluminium Hedge</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Aluminium Hedge</label>
+    </customValue>
+    <customValue>
+        <fullName>Average Rate Forward</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Average Rate Forward</label>
+    </customValue>
+    <customValue>
+        <fullName>Capped Rate</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Capped Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Commodity - Diesel</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Commodity - Diesel</label>
+    </customValue>
+    <customValue>
+        <fullName>Copper Hedge</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Copper Hedge</label>
+    </customValue>
+    <customValue>
+        <fullName>Cotton Hedge</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cotton Hedge</label>
+    </customValue>
+    <customValue>
+        <fullName>Diesel Hedge</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Diesel Hedge</label>
+    </customValue>
+    <customValue>
+        <fullName>Dual Currency Deposit</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Dual Currency Deposit</label>
+    </customValue>
+    <customValue>
+        <fullName>Fixed Rate</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Fixed Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Gas Oil</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gas Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Gasoil</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gasoil</label>
+    </customValue>
+    <customValue>
+        <fullName>Jet Fuel Hedge</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Jet Fuel Hedge</label>
+    </customValue>
+    <customValue>
+        <fullName>Leveraged Product</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Leveraged Product</label>
+    </customValue>
+    <customValue>
+        <fullName>Mod. Participating Fixed Rate</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mod. Participating Fixed Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-Deliverable Forward</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Non-Deliverable Forward</label>
+    </customValue>
+    <customValue>
+        <fullName>Par Forward</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Par Forward</label>
+    </customValue>
+    <customValue>
+        <fullName>Single Ratio Strikes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Single Ratio Strikes</label>
+    </customValue>
+    <customValue>
+        <fullName>Stepped Participating Forward</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Stepped Participating Forward</label>
+    </customValue>
+    <customValue>
+        <fullName>Sugar</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sugar</label>
+    </customValue>
+    <customValue>
+        <fullName>TB Loan - Discounted Fixed Rate Range</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TB Loan - Discounted Fixed Rate Range</label>
+    </customValue>
+    <customValue>
+        <fullName>TB Loan - Fixed Rate</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TB Loan - Fixed Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>TB Loan - Floating Capped Rate</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TB Loan - Floating Capped Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>TB Loan - Floating Rate</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TB Loan - Floating Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>TBC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TBC</label>
+    </customValue>
+    <customValue>
+        <fullName>Vanilla FX</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vanilla FX</label>
+    </customValue>
+    <customValue>
+        <fullName>Vanilla Knock In Options</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vanilla Knock In Options</label>
+    </customValue>
+    <customValue>
+        <fullName>Vanilla Knock Out Options</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vanilla Knock Out Options</label>
+    </customValue>
+    <customValue>
+        <fullName>Vanilla Knock Out Options;Vanilla Options;Leveraged Product</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vanilla Knock Out Options;Vanilla Options;Leveraged Product</label>
+    </customValue>
+    <customValue>
+        <fullName>Vanilla Knock Out Options;Vanilla Options;Variable Forward - Partial</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vanilla Knock Out Options;Vanilla Options;Variable Forward - Partial</label>
+    </customValue>
+    <customValue>
+        <fullName>Vanilla Knock Out Options;Variable Forward - Partial</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vanilla Knock Out Options;Variable Forward - Partial</label>
+    </customValue>
+    <customValue>
+        <fullName>Vanilla Options</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vanilla Options</label>
+    </customValue>
+    <customValue>
+        <fullName>Variable Forward</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Variable Forward</label>
+    </customValue>
+    <customValue>
+        <fullName>Variable Forward - Advantage</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Variable Forward - Advantage</label>
+    </customValue>
+    <customValue>
+        <fullName>Variable Forward - Advantage;Variable Forward - Partial</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Variable Forward - Advantage;Variable Forward - Partial</label>
+    </customValue>
+    <customValue>
+        <fullName>Variable Forward - Partial</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Variable Forward - Partial</label>
+    </customValue>
+    <customValue>
+        <fullName>Variable Forward - Partial;Vanilla FX</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Variable Forward - Partial;Vanilla FX</label>
+    </customValue>
+    <customValue>
+        <fullName>Variable Forward - Participator</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Variable Forward - Participator</label>
+    </customValue>
+    <customValue>
+        <fullName>Variable Forward - Range</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Variable Forward - Range</label>
+    </customValue>
+    <customValue>
+        <fullName>Variable Forward Bonus</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Variable Forward Bonus</label>
+    </customValue>
+    <customValue>
+        <fullName>Variable Forward Bonus;Variable Forward - Partial</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Variable Forward Bonus;Variable Forward - Partial</label>
+    </customValue>
+    <customValue>
+        <fullName>Variable Forward;Vanilla FX</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Variable Forward;Vanilla FX</label>
+    </customValue>
+    <customValue>
+        <fullName>WHLS - Cap</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WHLS - Cap</label>
+    </customValue>
+    <customValue>
+        <fullName>WHLS - Collar</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WHLS - Collar</label>
+    </customValue>
+    <customValue>
+        <fullName>WHLS - Swap</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WHLS - Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>WHLS - Window Swap</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WHLS - Window Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>Wheat Hedge</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Wheat Hedge</label>
+    </customValue>
+    <customValue>
+        <fullName>Zinc Hedge</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Zinc Hedge</label>
+    </customValue>
+    <customValue>
+        <fullName>#N/A</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>#N/A</label>
+    </customValue>
+    <masterLabel>Product</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

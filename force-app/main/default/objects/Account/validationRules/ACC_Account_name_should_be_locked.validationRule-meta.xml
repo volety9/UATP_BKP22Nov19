@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_Account_name_should_be_locked</fullName>
+    <active>false</active>
+    <description>Account Name for Customer Record Type should not be updated.</description>
+    <errorConditionFormula>NOT(ISNEW()) &amp;&amp; ISCHANGED(Name) &amp;&amp;  RecordType.DeveloperName =&quot;Customer&quot; &amp;&amp; NOT( $Permission.UpdateCustomerNameOnCustomer )</errorConditionFormula>
+    <errorMessage>Customer name cannot be changed after it&#39;s created.</errorMessage>
+</ValidationRule>

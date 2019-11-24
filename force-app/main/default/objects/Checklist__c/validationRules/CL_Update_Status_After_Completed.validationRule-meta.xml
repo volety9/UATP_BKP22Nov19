@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_Update_Status_After_Completed</fullName>
+    <active>true</active>
+    <description>Only FCG and Super User can update the Checklist after it is completed</description>
+    <errorConditionFormula>NOT($Permission.UpdateChecklistAfterCompleted) &amp;&amp;   ISPICKVAL( Checklist_Status__c ,&#39;Completed&#39;)</errorConditionFormula>
+    <errorMessage>Only FCG and Super User can update the Checklist after it is Completed.</errorMessage>
+</ValidationRule>

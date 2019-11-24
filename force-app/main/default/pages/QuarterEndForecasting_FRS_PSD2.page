@@ -1,0 +1,41 @@
+<apex:page controller="QuarterEndForecastingController_PSD2">
+    <script>    
+    Visualforce.remoting.Manager.invokeAction(
+        '{!$RemoteAction.QuarterEndForecastingController_PSD2.exec}', 
+        function(result, event){          
+            func(JSON.stringify(result));
+        }, 
+        {escape: true}
+    );   
+    </script>
+    <apex:form id="f">
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="top">            
+                <apex:commandbutton value="Download" action="{!downloadReport_FRS}"/>         
+            </apex:pageBlockButtons>
+            <apex:actionFunction name="func" action="{!deserializeWrapperList}" reRender="f">
+                <apex:param id="wr" name="wrapResult" value="" assignTo="{!jsonresult}"/>
+            </apex:actionFunction>            
+            <apex:pageBlockSection >
+                <apex:pageBlockTable value="{!wrapperResult}" var="wrap">
+                    <apex:column >
+                        <apex:facet name="header">Division</apex:facet>
+                        <apex:outputLabel style="{! IF(wrap.Division == 'Total','color:#1c89db; font-weight:bold','')}">{!wrap.Division}</apex:outputLabel>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Year to Date</apex:facet>
+                        <apex:outputLabel >{!IF(wrap.ytd != null, wrap.ytd, 0.00)}</apex:outputLabel>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Quarter End Forecast</apex:facet>
+                        <apex:outputLabel >{!IF(wrap.quarterEndForecast != null, wrap.quarterEndForecast, 0.00)}</apex:outputLabel>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Plan %</apex:facet>
+                        <apex:outputLabel >{!IF(wrap.planPercent != null, wrap.planPercent, 0)}</apex:outputLabel>
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

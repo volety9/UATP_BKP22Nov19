@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_Update_Internal_Customers</fullName>
+    <active>true</active>
+    <description>Only FCG can create/Update an Internal Customers</description>
+    <errorConditionFormula>NOT($Permission.UpdateInternalCustomers) &amp;&amp;  RecordType.DeveloperName = &quot;Internal&quot;</errorConditionFormula>
+    <errorMessage>Only FCG can create/Update an Internal Customers.</errorMessage>
+</ValidationRule>

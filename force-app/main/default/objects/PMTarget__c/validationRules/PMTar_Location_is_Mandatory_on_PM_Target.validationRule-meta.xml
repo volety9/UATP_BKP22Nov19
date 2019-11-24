@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMTar_Location_is_Mandatory_on_PM_Target</fullName>
+    <active>true</active>
+    <description>Location is mandatory on PM User&#39;s Record</description>
+    <errorConditionFormula>ISBLANK(PMTar_Location__c)</errorConditionFormula>
+    <errorMessage>Location is mandatory on PM User&#39;s Record</errorMessage>
+</ValidationRule>

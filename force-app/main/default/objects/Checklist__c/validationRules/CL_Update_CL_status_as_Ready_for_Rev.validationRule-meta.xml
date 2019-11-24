@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_Update_CL_status_as_Ready_for_Rev</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT($Permission.ChecklistStatusAdmin) &amp;&amp; ( ISPICKVAL( Risk_Rating__c , &quot;Amber&quot;) || ISPICKVAL( Risk_Rating__c , &quot;Red&quot;)) &amp;&amp;  NOT(ISPICKVAL( Checklist_Status__c , &quot;Ready for Review&quot;)|| ISPICKVAL( Checklist_Status__c , &quot;Remedial Action Complete&quot;))</errorConditionFormula>
+    <errorDisplayField>Checklist_Status__c</errorDisplayField>
+    <errorMessage>Update the Checklist status as Ready for Review (for Pre Deal)/Remedial Action Complete(for Post Deal)</errorMessage>
+</ValidationRule>

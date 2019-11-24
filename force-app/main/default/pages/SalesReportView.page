@@ -1,0 +1,12 @@
+<apex:page >
+    <apex:pageBlock title="Sales Report View">
+        <apex:pageBlockSection id="one" >
+            <br/><br/>
+            <apex:outputLink value="https://cybg--uatp.cs100.my.salesforce.com/00O1v000007NmyC" style="color:black; font-size:12px; font-weight:bold">Deal Report Summary For FRSM</apex:outputLink><br/><br/>
+            <apex:outputLink value="https://cybg--uatp.cs100.my.salesforce.com/00O1v000007fsWa" style="color:black; font-size:12px; font-weight:bold">PM Portfolio</apex:outputLink><br/><br/>
+           <apex:outputLink value="https://cybg--uatp.cs100.my.salesforce.com/apex/CommodityYOY" style="color:black; font-size:12px; font-weight:bold">Commodity YOY</apex:outputLink><br/><br/>
+           <apex:outputLink value="https://cybg--uatp.cs100.my.salesforce.com/00O1v000007b4hl" style="color:black; font-size:12px; font-weight:bold">Business Centre YTD Income for FRSM</apex:outputLink><br/><br/>
+            <apex:outputLink value="https://cybg--uatp.cs100.my.salesforce.com/apex/RMPerformanceYTDReport" style="color:black; font-size:12px; font-weight:bold">RM Performance YTD</apex:outputLink><br/><br/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

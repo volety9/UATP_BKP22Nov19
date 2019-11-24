@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CYB Relationship Team --></label>
+    <name>Treasury_Solutions_Relationship_Team__c</name>
+    <picklistValues>
+        <masterLabel>Asset Finance</masterLabel>
+        <translation><!-- Asset Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business on Line</masterLabel>
+        <translation><!-- Business on Line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CYB Domiciled Banking Relationship</masterLabel>
+        <translation><!-- CYB Domiciled Banking Relationship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>International Trade</masterLabel>
+        <translation><!-- International Trade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice Finance</masterLabel>
+        <translation><!-- Invoice Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment (Merchant) Services</masterLabel>
+        <translation><!-- Payment (Merchant) Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standalone Banking Relationship</masterLabel>
+        <translation><!-- Standalone Banking Relationship --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_Us_Person_cannot_be_updated_as_No</fullName>
+    <active>true</active>
+    <description>To restrict the user to update the Us Person field as &quot;No&quot; if the user is not in File Checking Group.</description>
+    <errorConditionFormula>NOT($Permission.UpdateUsPersonOnCustomerAsNo)  &amp;&amp;    ISCHANGED(US_Persons__c)  &amp;&amp;  ISPICKVAL(US_Persons__c, &quot;No&quot;)</errorConditionFormula>
+    <errorDisplayField>US_Persons__c</errorDisplayField>
+    <errorMessage>Only File Check Group can update Us Person field as &quot;No&quot;</errorMessage>
+</ValidationRule>

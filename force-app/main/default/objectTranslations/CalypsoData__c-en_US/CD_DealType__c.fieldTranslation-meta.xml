@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Deal Type --></label>
+    <name>CD_DealType__c</name>
+    <picklistValues>
+        <masterLabel>FX</masterLabel>
+        <translation><!-- FX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FXFlexiForward</masterLabel>
+        <translation><!-- FXFlexiForward --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FXForward</masterLabel>
+        <translation><!-- FXForward --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FXNDF</masterLabel>
+        <translation><!-- FXNDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FXOption</masterLabel>
+        <translation><!-- FXOption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FXSwap</masterLabel>
+        <translation><!-- FXSwap --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Prospect Source --></label>
+    <name>Prospect_Source__c</name>
+    <picklistValues>
+        <masterLabel>RM Identified</masterLabel>
+        <translation><!-- RM Identified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral – Customer</masterLabel>
+        <translation><!-- Referral – Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral – External</masterLabel>
+        <translation><!-- Referral – External --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral – Internal CYB</masterLabel>
+        <translation><!-- Referral – Internal CYB --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

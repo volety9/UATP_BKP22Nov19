@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMTar_End_Date_Should_be_in_Current_FY</fullName>
+    <active>true</active>
+    <errorConditionFormula>PMTar_EndDate__c &lt; PMTar_FYStartDate__c || PMTar_EndDate__c &gt; PMTar_FYEndDate__c</errorConditionFormula>
+    <errorDisplayField>PMTar_EndDate__c</errorDisplayField>
+    <errorMessage>End Date is not in the current FY.</errorMessage>
+</ValidationRule>

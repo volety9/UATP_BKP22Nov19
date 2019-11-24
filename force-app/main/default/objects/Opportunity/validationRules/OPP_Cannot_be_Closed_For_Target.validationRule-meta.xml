@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_Cannot_be_Closed_For_Target</fullName>
+    <active>true</active>
+    <description>Opportunity cannot be closed if the Customer Record Type is not Customer.</description>
+    <errorConditionFormula>ISCHANGED(StageName) &amp;&amp; ISPICKVAL(StageName,&quot;Closed Won&quot;) &amp;&amp;  (Account.RecordType.DeveloperName  &lt;&gt;  &quot;Customer&quot;)</errorConditionFormula>
+    <errorMessage>Opportunity cannot be closed if the Customer Record Type is not Customer.</errorMessage>
+</ValidationRule>

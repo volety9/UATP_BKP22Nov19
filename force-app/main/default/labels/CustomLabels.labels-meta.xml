@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Active</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Active</shortDescription>
+        <value>Active</value>
+    </labels>
+    <labels>
+        <fullName>CBCardedRateSheet</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CBCardedRateSheet</shortDescription>
+        <value>CB Carded Ratesheet</value>
+    </labels>
+    <labels>
+        <fullName>CBDirectDealingClient</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CBDirectDealingClient</shortDescription>
+        <value>CB Direct Dealing Client</value>
+    </labels>
+    <labels>
+        <fullName>CBGeneric</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CBGeneric</shortDescription>
+        <value>CB Generic</value>
+    </labels>
+    <labels>
+        <fullName>CBIndirect</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CBIndirect</shortDescription>
+        <value>CB Indirect</value>
+    </labels>
+    <labels>
+        <fullName>CBSortingCode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CBSortingCode</shortDescription>
+        <value>CB Sorting Code</value>
+    </labels>
+    <labels>
+        <fullName>CB_Contra_Entry_CC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CB Contra Entry CC</shortDescription>
+        <value>250600</value>
+    </labels>
+    <labels>
+        <fullName>CB_Corp_Code</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CB Corp Code</shortDescription>
+        <value>CB</value>
+    </labels>
+    <labels>
+        <fullName>CYBGCRMIntegration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CYBGCRMIntegration</shortDescription>
+        <value>cybg.crm.integration</value>
+    </labels>
+    <labels>
+        <fullName>CYBG_FY_End_Month</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CYBG FY End Month</shortDescription>
+        <value>9</value>
+    </labels>
+    <labels>
+        <fullName>Cancelled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancelled</shortDescription>
+        <value>Calypso Record status Cancelled</value>
+    </labels>
+    <labels>
+        <fullName>ChecklistFileOwnerFieldId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ChecklistFileOwnerFieldId</shortDescription>
+        <value>&amp;CF00N0Y00000OQfPk=</value>
+    </labels>
+    <labels>
+        <fullName>ClientTier</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Client Tier</shortDescription>
+        <value>TBC</value>
+    </labels>
+    <labels>
+        <fullName>Closed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Closed</shortDescription>
+        <value>Closed</value>
+    </labels>
+    <labels>
+        <fullName>ClosedLost</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Closed Lost</shortDescription>
+        <value>Closed Lost</value>
+    </labels>
+    <labels>
+        <fullName>ClosedWon</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Closed Won</shortDescription>
+        <value>Closed Won</value>
+    </labels>
+    <labels>
+        <fullName>Comment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Comment</shortDescription>
+        <value>Comment</value>
+    </labels>
+    <labels>
+        <fullName>CommodityProfessionalOptOutPreDealChecklist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CommodityProfessionalOptOutPreDealChecklist</shortDescription>
+        <value>Professional (OptOut) PDC</value>
+    </labels>
+    <labels>
+        <fullName>CommodityProfessionalOutOutPreDealChecklistLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CommodityProfessionalOutOutPreDealChecklistLink</shortDescription>
+        <value>a00/e?RecordType=0120Y000000Wa8U&amp;00N0Y00000OQfMe=commodity&amp;CF00N0Y00000OQfMH=</value>
+    </labels>
+    <labels>
+        <fullName>CommodityProfessionalPreDealChecklist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CommodityProfessionalPreDealChecklist</shortDescription>
+        <value>Professional PDC</value>
+    </labels>
+    <labels>
+        <fullName>CommodityProfessionalPreDealChecklistLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CommodityProfessionalPreDealChecklistLink</shortDescription>
+        <value>a00/e?RecordType=0120Y000000Wa8V&amp;00N0Y00000OQfMe=commodity&amp;CF00N0Y00000OQfMH=</value>
+    </labels>
+    <labels>
+        <fullName>CommodityRetailPreDealChecklist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CommodityRetailPreDealChecklist</shortDescription>
+        <value>Retail PDC</value>
+    </labels>
+    <labels>
+        <fullName>CommodityRetailPreDealChecklistLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CommodityRetailPreDealChecklistLink</shortDescription>
+        <value>a00/e?RecordType=0120Y000000Wa8W&amp;00N0Y00000OQfMe=commodity&amp;CF00N0Y00000OQfMH=</value>
+    </labels>
+    <labels>
+        <fullName>Common_GL_Account</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Common GL Account</shortDescription>
+        <value>47865291000008</value>
+    </labels>
+    <labels>
+        <fullName>ComplianceReason</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ComplianceReason</shortDescription>
+        <value>Compliance Reason</value>
+    </labels>
+    <labels>
+        <fullName>Converted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Converted</shortDescription>
+        <value>Converted</value>
+    </labels>
+    <labels>
+        <fullName>CorrectTradeKeywordError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CorrectTradeKeywordError</shortDescription>
+        <value>Provide the correct Branch Code</value>
+    </labels>
+    <labels>
+        <fullName>CorrectTradeStatusError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CorrectTradeStatusError</shortDescription>
+        <value>Provide the correct Trade Status</value>
+    </labels>
+    <labels>
+        <fullName>CustomerDoesNotExist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Does Not Exist</shortDescription>
+        <value>Customer Does Not Exist</value>
+    </labels>
+    <labels>
+        <fullName>CustomerExistsButHasNoQ6</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Exists But Has No Q6</shortDescription>
+        <value>Customer Exists But Has No Q6</value>
+    </labels>
+    <labels>
+        <fullName>CustomerOwnerError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CustomerOwnerError</shortDescription>
+        <value>Customer Owner is cybg.crm.integration</value>
+    </labels>
+    <labels>
+        <fullName>DateProvided</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DateProvided</shortDescription>
+        <value>Date Provided</value>
+    </labels>
+    <labels>
+        <fullName>Discard</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Discard</shortDescription>
+        <value>Discard</value>
+    </labels>
+    <labels>
+        <fullName>Discarded</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Discarded</shortDescription>
+        <value>Discarded</value>
+    </labels>
+    <labels>
+        <fullName>EOM_CB_Corp_Code</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EOM CB Corp Code</shortDescription>
+        <value>00101</value>
+    </labels>
+    <labels>
+        <fullName>EOM_YB_Corp_Code</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EOM YB Corp Code</shortDescription>
+        <value>00601</value>
+    </labels>
+    <labels>
+        <fullName>Ended</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ended`</shortDescription>
+        <value>Ended</value>
+    </labels>
+    <labels>
+        <fullName>England</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>England</shortDescription>
+        <value>England</value>
+    </labels>
+    <labels>
+        <fullName>EnglandBusinessHours</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>England Business Hours</shortDescription>
+        <value>England Business Hours</value>
+    </labels>
+    <labels>
+        <fullName>FXCashOppRecordTypeDevName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FX Cash Opp Record Type Dev Name</shortDescription>
+        <value>FX_Cash</value>
+    </labels>
+    <labels>
+        <fullName>FXProfessionalOptOutPreDealChecklist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FXProfessionalOptOutPreDealChecklist</shortDescription>
+        <value>Professional (OptOut) PDC</value>
+    </labels>
+    <labels>
+        <fullName>FXProfessionalOutOutPreDealChecklistLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FXProfessionalOutOutPreDealChecklistLink</shortDescription>
+        <value>a00/e?RecordType=0120Y000000Wa8U&amp;00N0Y00000OQfMe=fx&amp;CF00N0Y00000OQfMH=</value>
+    </labels>
+    <labels>
+        <fullName>FXProfessionalPreDealChecklist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FXProfessionalPreDealChecklist</shortDescription>
+        <value>Professional PDC</value>
+    </labels>
+    <labels>
+        <fullName>FXProfessionalPreDealChecklistLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FXProfessionalPreDealChecklistLink</shortDescription>
+        <value>a00/e?RecordType=0120Y000000Wa8V&amp;00N0Y00000OQfMe=fx&amp;CF00N0Y00000OQfMH=</value>
+    </labels>
+    <labels>
+        <fullName>FXRetailPreDealChecklist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FXRetailPreDealChecklist</shortDescription>
+        <value>Retail PDC</value>
+    </labels>
+    <labels>
+        <fullName>FXRetailPreDealChecklistLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FXRetailPreDealChecklistLink</shortDescription>
+        <value>a00/e?RecordType=0120Y000000Wa8W&amp;00N0Y00000OQfMe=fx&amp;CF00N0Y00000OQfMH=</value>
+    </labels>
+    <labels>
+        <fullName>FX_GL_Account</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FX GL Account</shortDescription>
+        <value>47861101000001</value>
+    </labels>
+    <labels>
+        <fullName>Failed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Failed</shortDescription>
+        <value>Failed</value>
+    </labels>
+    <labels>
+        <fullName>FailedETRefMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FailedETRefMsg</shortDescription>
+        <value>There is failed records in error log for this trade.</value>
+    </labels>
+    <labels>
+        <fullName>Fiscal_Year</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fiscal Year Text</shortDescription>
+        <value>FY</value>
+    </labels>
+    <labels>
+        <fullName>HowProvided</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HowProvided</shortDescription>
+        <value>How Provided</value>
+    </labels>
+    <labels>
+        <fullName>IRRMProfessionalOptOutPreDealChecklist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IRRMProfessionalOptOutPreDealChecklist</shortDescription>
+        <value>Professional (OptOut) PDC</value>
+    </labels>
+    <labels>
+        <fullName>IRRMProfessionalOutOutPreDealChecklistLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IRRMProfessionalOutOutPreDealChecklistLink</shortDescription>
+        <value>a00/e?RecordType=0120Y000000Wa8U&amp;00N0Y00000OQfMe=irrm&amp;CF00N0Y00000OQfMH=</value>
+    </labels>
+    <labels>
+        <fullName>IRRMProfessionalPreDealChecklist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IRRMProfessionalPreDealChecklist</shortDescription>
+        <value>Professional PDC</value>
+    </labels>
+    <labels>
+        <fullName>IRRMProfessionalPreDealChecklistLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IRRMProfessionalPreDealChecklistLink</shortDescription>
+        <value>a00/e?RecordType=0120Y000000Wa8V&amp;00N0Y00000OQfMe=irrm&amp;CF00N0Y00000OQfMH=</value>
+    </labels>
+    <labels>
+        <fullName>IRRMRetailPreDealChecklist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IRRMRetailPreDealChecklist</shortDescription>
+        <value>Retail PDC</value>
+    </labels>
+    <labels>
+        <fullName>IRRMRetailPreDealChecklistLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IRRMRetailPreDealChecklistLink</shortDescription>
+        <value>a00/e?RecordType=0120Y000000Wa8W&amp;00N0Y00000OQfMe=irrm&amp;CF00N0Y00000OQfMH=</value>
+    </labels>
+    <labels>
+        <fullName>Inactive</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Inactive</shortDescription>
+        <value>Inactive</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_WID_and_CIF</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid WID and CIF</shortDescription>
+        <value>Customer WID/CIF is not valid.</value>
+    </labels>
+    <labels>
+        <fullName>MasterRecord</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MasterRecord</shortDescription>
+        <value>Master Record</value>
+    </labels>
+    <labels>
+        <fullName>MergeAllButton</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MergeAllButton</shortDescription>
+        <value>Merge All with Matching Names</value>
+    </labels>
+    <labels>
+        <fullName>MergeCompMasterSelectErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MergeCompMasterSelectErrorMsg</shortDescription>
+        <value>Please Select one Master Record</value>
+    </labels>
+    <labels>
+        <fullName>MergeCompSelectError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MergeCompSelectError</shortDescription>
+        <value>Please Select 2 records</value>
+    </labels>
+    <labels>
+        <fullName>MergeFieldValues</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MergeFieldValues</shortDescription>
+        <value>Select the values for merge</value>
+    </labels>
+    <labels>
+        <fullName>MigrationAdministrator</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MigrationAdministrator</shortDescription>
+        <value>Migration Administrator</value>
+    </labels>
+    <labels>
+        <fullName>NewVanillaFXOpp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NewVanillaFXOpp</shortDescription>
+        <value>New Vanilla FX Opp</value>
+    </labels>
+    <labels>
+        <fullName>NewVanillaFXOppLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NewVanillaFXOppLink</shortDescription>
+        <value>006/e?RecordType=0120Y000000Wa8f&amp;opp4=</value>
+    </labels>
+    <labels>
+        <fullName>Opp_Stage_Closed_Won</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opp Stage Closed Won</shortDescription>
+        <value>Closed Won</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity</shortDescription>
+        <value>Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityErrorOnJournalCreation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Error On Journal Creation</shortDescription>
+        <value>Check the Opportunity amount,You are trying to reverse more than expected amount. Maximum</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityErrorOnJournalCreationMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity error on journal creation Message</shortDescription>
+        <value>can be reversed in this opportunity</value>
+    </labels>
+    <labels>
+        <fullName>PMTargetDuplicateError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PM Target Duplicate Error</shortDescription>
+        <value>Product Manager is already having the Target for the current fiscal year</value>
+    </labels>
+    <labels>
+        <fullName>PostDealChecklist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PostDealChecklist</shortDescription>
+        <value>Post Deal Checklist</value>
+    </labels>
+    <labels>
+        <fullName>PostDealChecklistLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PostDealChecklistLink</shortDescription>
+        <value>a00/e?RecordType=0120Y000000Wa8T&amp;00N0Y00000OQfMe=</value>
+    </labels>
+    <labels>
+        <fullName>PostDealChecklistOppFieldId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PostDealChecklistOppFieldId</shortDescription>
+        <value>&amp;CF00N0Y00000OQfMb=</value>
+    </labels>
+    <labels>
+        <fullName>PostDealChecklistRecordTypeDName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PostDealChecklistRecordTypeDName</shortDescription>
+        <value>Post_Deal_Checklist</value>
+    </labels>
+    <labels>
+        <fullName>Prevent_Deletion_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Prevent Deletion Error Message</shortDescription>
+        <value>You can not delete a File once uploaded</value>
+    </labels>
+    <labels>
+        <fullName>RecordTypeCRM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record Type CRM</shortDescription>
+        <value>CRM</value>
+    </labels>
+    <labels>
+        <fullName>RecordTypeCRMBusinessLoan</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record Type Business Loan</shortDescription>
+        <value>Business Loan</value>
+    </labels>
+    <labels>
+        <fullName>RecordTypeCommodity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record Type Commodity</shortDescription>
+        <value>Commodity</value>
+    </labels>
+    <labels>
+        <fullName>RecordTypeCustomer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RecordTypeCustomer</shortDescription>
+        <value>Customer</value>
+    </labels>
+    <labels>
+        <fullName>RecordTypeFXCash</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record Type FX Cash</shortDescription>
+        <value>FX Cash</value>
+    </labels>
+    <labels>
+        <fullName>RecordTypeIRRM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record Type IRRM</shortDescription>
+        <value>IRRM</value>
+    </labels>
+    <labels>
+        <fullName>RecordTypeVanilaFX</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record Type Vanila FX</shortDescription>
+        <value>Vanilla FX</value>
+    </labels>
+    <labels>
+        <fullName>Retail_Bank</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Retail Bank</shortDescription>
+        <value>CYBG</value>
+    </labels>
+    <labels>
+        <fullName>Retail_Division</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CB Retail Division</shortDescription>
+        <value>CB_Retail</value>
+    </labels>
+    <labels>
+        <fullName>Retail_FRSM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Retail FRSM</shortDescription>
+        <value>Retail FRSM</value>
+    </labels>
+    <labels>
+        <fullName>Retail_Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CB Retail Group</shortDescription>
+        <value>Clydesdale</value>
+    </labels>
+    <labels>
+        <fullName>Retail_Region</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CB Retail Region</shortDescription>
+        <value>CB_Retail</value>
+    </labels>
+    <labels>
+        <fullName>Retail_Team</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CB Retail Team</shortDescription>
+        <value>CB_Retail</value>
+    </labels>
+    <labels>
+        <fullName>ReversalReasonThroughTDM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reversal Reason through TDM</shortDescription>
+        <value>Banker changed through TDM</value>
+    </labels>
+    <labels>
+        <fullName>ReversalReasonTreasuryUser</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reversal Reason</shortDescription>
+        <value>Trade Updated by Treasury User</value>
+    </labels>
+    <labels>
+        <fullName>ReversalReasonUpdatedByCalypso</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reversal Reason Updated by Calypso</shortDescription>
+        <value>Trade Updated by Calypso</value>
+    </labels>
+    <labels>
+        <fullName>Save</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Scotland</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Scotland</shortDescription>
+        <value>Scotland</value>
+    </labels>
+    <labels>
+        <fullName>ScotlandBusinessHours</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Scotland Business Hours</shortDescription>
+        <value>Scotland Business Hours</value>
+    </labels>
+    <labels>
+        <fullName>SelectCompRecord</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SelectCompRecord</shortDescription>
+        <value>Select the record for merge</value>
+    </labels>
+    <labels>
+        <fullName>StatusCancelled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StatusCancelled</shortDescription>
+        <value>CANCELLED</value>
+    </labels>
+    <labels>
+        <fullName>StatusVerified</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StatusVerified</shortDescription>
+        <value>VERIFIED</value>
+    </labels>
+    <labels>
+        <fullName>TSMTargetDuplicateError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FRSM Target Duplicate Error</shortDescription>
+        <value>FRSM is already having the Target with Same Business center ,Target plan is</value>
+    </labels>
+    <labels>
+        <fullName>Terminated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Terminated</shortDescription>
+        <value>Terminated</value>
+    </labels>
+    <labels>
+        <fullName>TradeDetailsNotPresent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TradeDetailsNotPresent</shortDescription>
+        <value>Mandatory trade details are not present</value>
+    </labels>
+    <labels>
+        <fullName>Transaction_Type_Credit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Transaction Type Credit</shortDescription>
+        <value>Credit</value>
+    </labels>
+    <labels>
+        <fullName>Transaction_Type_Debit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Transaction Type Debit</shortDescription>
+        <value>Debit</value>
+    </labels>
+    <labels>
+        <fullName>Verified</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Verified</shortDescription>
+        <value>Calypso Record Status Verified</value>
+    </labels>
+    <labels>
+        <fullName>YBCardedRateSheet</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YBCardedRateSheet</shortDescription>
+        <value>YB Carded Ratesheet</value>
+    </labels>
+    <labels>
+        <fullName>YBDirectDealingClient</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YBDirectDealingClient</shortDescription>
+        <value>YBDirectDealingClient Group</value>
+    </labels>
+    <labels>
+        <fullName>YBGeneric</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YBGeneric</shortDescription>
+        <value>YB Generic</value>
+    </labels>
+    <labels>
+        <fullName>YBIndirect</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YBIndirect</shortDescription>
+        <value>YB Indirect</value>
+    </labels>
+    <labels>
+        <fullName>YBSortingCode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YBSortingCode</shortDescription>
+        <value>YB Sorting Code</value>
+    </labels>
+    <labels>
+        <fullName>YB_Contra_Entry_CC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YB  Contra Entry CC</shortDescription>
+        <value>902175</value>
+    </labels>
+    <labels>
+        <fullName>YB_Corp_Code</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YB Corp Code</shortDescription>
+        <value>YB</value>
+    </labels>
+    <labels>
+        <fullName>YB_Retail_Division</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YB Retail Division</shortDescription>
+        <value>YB_Retail</value>
+    </labels>
+    <labels>
+        <fullName>YB_Retail_Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YB Retail Group</shortDescription>
+        <value>Yorkshire</value>
+    </labels>
+    <labels>
+        <fullName>YB_Retail_Region</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YB Retail Region</shortDescription>
+        <value>YB_Retail</value>
+    </labels>
+    <labels>
+        <fullName>YB_Retail_Team</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YB Retail Team</shortDescription>
+        <value>YB_Retail</value>
+    </labels>
+</CustomLabels>

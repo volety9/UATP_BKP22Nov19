@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quality Control</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quality Control</value>
+    </caseValues>
+    <layouts>
+        <layout>Quality Control Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only File Check Group can use status as  File Re-Rating Agreed/File Re-Rating not Agreed --></errorMessage>
+        <name>QC_Status_for_FCG_User</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Quality Control Users can use status as File Rating Agreed/File Re-Rating Suggested --></errorMessage>
+        <name>QC_Status_for_QC_User</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_QC_PostDC --></label>
+        <name>New_QC_PostDC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_QC_PreDC --></label>
+        <name>New_QC_PreDC</name>
+    </webLinks>
+</CustomObjectTranslation>

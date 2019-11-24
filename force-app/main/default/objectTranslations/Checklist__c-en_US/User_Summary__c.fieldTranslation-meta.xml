@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Summarise here why the Customer feels that this product makes sense for them and why they say it is more suitable than others? --></help>
+    <label><!-- User Summary --></label>
+    <name>User_Summary__c</name>
+</CustomFieldTranslation>

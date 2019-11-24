@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Centre_FXRetail__c</fullName>
+    <externalId>false</externalId>
+    <label>FX Retail Target</label>
+    <summarizedField>Team__c.Team_FXRetail__c</summarizedField>
+    <summaryFilterItems>
+        <field>Team__c.Team_Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Team__c.Team_Centre__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

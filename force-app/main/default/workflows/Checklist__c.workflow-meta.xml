@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Checklist_Notify_FCG_if_checklist_status_is_Remedial_Action_Complete</fullName>
+        <ccEmails>treasury.solutions@cybg.co.uk</ccEmails>
+        <description>Checklist - Notify FCG if checklist status is Remedial Action Complete</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Checklist_Notify_FCG_if_checklist_status_is_Remedial_Action_Complete</template>
+    </alerts>
+    <alerts>
+        <fullName>Checklist_Notify_FCG_when_the_Checklist_Status_is_Ready_for_Review</fullName>
+        <ccEmails>treasury.solutions@cybg.co.uk</ccEmails>
+        <description>Checklist - Notify FCG when the Checklist Status is Ready for Review</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Checklist_Notify_FCG_when_the_Checklist_Status_is_Ready_for_Review</template>
+    </alerts>
+    <alerts>
+        <fullName>Checklist_Notify_TSM_if_the_post_Deal_status_is_Completed</fullName>
+        <description>Checklist - Notify TSM if the post Deal status is Completed</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Treasury_Solution_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Checklist_Notify_TSM_if_the_Post_Deal_status_is_Completed</template>
+    </alerts>
+    <alerts>
+        <fullName>Checklist_Notify_TSM_if_the_status_is_remedial_action_required</fullName>
+        <description>Checklist - Notify TSM if the status is remedial action required</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Treasury_Solution_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Checklist_Notify_TSM_if_the_status_is_remedial_action_required</template>
+    </alerts>
+    <alerts>
+        <fullName>Checklist_Notify_TSM_when_File_Rating_is_Amber</fullName>
+        <description>Checklist - Notify TSM when File Rating is Amber</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Treasury_Solution_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Checklist_Notify_TSM_when_File_Rating_is_Amber</template>
+    </alerts>
+    <alerts>
+        <fullName>Checklist_Notify_TSM_when_Risk_Rating_is_Green</fullName>
+        <description>Checklist - Notify TSM when Risk Rating is Green</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Treasury_Solution_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Checklist_Notify_TSM_when_Risk_Rating_is_Green</template>
+    </alerts>
+    <rules>
+        <fullName>Checklist - Email Alert When The Checklist Status is Ready For Review</fullName>
+        <actions>
+            <name>Checklist_Notify_FCG_when_the_Checklist_Status_is_Ready_for_Review</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Checklist__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Retail Pre-Deal Checklist,Professional Pre-Deal Checklist,Professional (Optout) Pre-Deal Checklist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Checklist__c.Checklist_Status__c</field>
+            <operation>equals</operation>
+            <value>Ready for Review</value>
+        </criteriaItems>
+        <description>Email Alert To FileCheck Group When The Pre Deal Checklist Status is Ready For Review</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Checklist - Email Alert when Pre Deal Checklist File rating is Amber</fullName>
+        <actions>
+            <name>Checklist_Notify_TSM_when_File_Rating_is_Amber</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Checklist__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Retail Pre-Deal Checklist,Professional Pre-Deal Checklist,Professional (Optout) Pre-Deal Checklist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Checklist__c.Risk_Rating__c</field>
+            <operation>equals</operation>
+            <value>Amber</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Checklist__c.Checklist_Status__c</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </criteriaItems>
+        <description>Email Alert to TSM when Pre Deal Checklist File rating is Amber</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Checklist - Email Alert when Pre Deal Checklist File rating is Green</fullName>
+        <actions>
+            <name>Checklist_Notify_TSM_when_Risk_Rating_is_Green</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Checklist__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Retail Pre-Deal Checklist,Professional Pre-Deal Checklist,Professional (Optout) Pre-Deal Checklist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Checklist__c.Risk_Rating__c</field>
+            <operation>equals</operation>
+            <value>Green</value>
+        </criteriaItems>
+        <description>Email Alert to TSM when Pre Deal Checklist File rating is Green</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Checklist - Email Alert when the Post Deal Status is Completed</fullName>
+        <actions>
+            <name>Checklist_Notify_TSM_if_the_post_Deal_status_is_Completed</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Checklist__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Post Deal Checklist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Checklist__c.Checklist_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <description>Email Alert to TSM when the Post Deal Status is Completed</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Checklist - Email Alert when the Status is Remedial Action Complete</fullName>
+        <actions>
+            <name>Checklist_Notify_FCG_if_checklist_status_is_Remedial_Action_Complete</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Checklist__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Post Deal Checklist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Checklist__c.Checklist_Status__c</field>
+            <operation>equals</operation>
+            <value>Remedial Action Complete</value>
+        </criteriaItems>
+        <description>Email Alert to FCG when the Post Deal Checklist status is Remedial Action Complete</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Checklist - Email Alert when the Status is Remedial Action required</fullName>
+        <actions>
+            <name>Checklist_Notify_TSM_if_the_status_is_remedial_action_required</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Checklist__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Post Deal Checklist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Checklist__c.Checklist_Status__c</field>
+            <operation>equals</operation>
+            <value>Remedial Action Required</value>
+        </criteriaItems>
+        <description>Email Alert to TSM when the Post Deal Checklist status is Remedial Action Required</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

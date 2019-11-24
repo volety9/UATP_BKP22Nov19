@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Client Intent --></label>
+    <name>ClientIntent__c</name>
+    <picklistValues>
+        <masterLabel>Bank Buys Base Ccy</masterLabel>
+        <translation><!-- Bank Buys Base Ccy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank Sells Base Ccy</masterLabel>
+        <translation><!-- Bank Sells Base Ccy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Borrow</masterLabel>
+        <translation><!-- Borrow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Buy</masterLabel>
+        <translation><!-- Buy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Debt Hedge</masterLabel>
+        <translation><!-- Debt Hedge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sell</masterLabel>
+        <translation><!-- Sell --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,47 @@
+<apex:page controller="LostAccountReportController" contentType="application/vnd.ms-excel#ForecastReportLostAccounts{!TODAY()}.xls">
+    <!--<apex:form contentType="application/vnd.ms-excel#ForecastReport{!TODAY()}.xls">-->
+    <apex:pageBlock >
+        <apex:pageblocktable value="{!wrappedDataList}" var="wrap">
+            <apex:column >
+                <apex:facet name="header">Customer Name </apex:facet>
+                {!wrap.customerName}
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Current FY VA</apex:facet>
+                {!wrap.currentFYVA}
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Current FY T/O</apex:facet>
+                {!wrap.currentFYBaseequivalent}
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Current FY Deals</apex:facet>
+                {!wrap.currentFYDeals}
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Current MGN %</apex:facet>
+                {!wrap.currentFYpercentage}
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Last FY VA</apex:facet>
+                {!wrap.LastFYVA}
+            </apex:column>
+            
+            <apex:column >
+                <apex:facet name="header">Last FY T/O</apex:facet>
+                {!wrap.LastFYBaseequivalent}
+            </apex:column>
+            
+            <apex:column >
+                <apex:facet name="header">Last FY Deals</apex:facet>
+                {!wrap.lastFYDeals}
+            </apex:column>
+            
+            <apex:column >
+                <apex:facet name="header">Current MGN %</apex:facet>
+                {!wrap.lastFYpercentage}
+            </apex:column>
+        </apex:pageblocktable>
+    </apex:pageBlock>
+    <!--</apex:form> -->
+</apex:page>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMTar_Cannot_select_status_as_inactive</fullName>
+    <active>true</active>
+    <description>User should not able to select status as Inactive</description>
+    <errorConditionFormula>NOT($Permission.UpdateTargetsWithClosedInactiveStatus ) &amp;&amp; (ISPICKVAL( PMTar_Status__c , &#39;Inactive&#39;) || ISPICKVAL( PMTar_Status__c , &#39;Ended&#39;)) &amp;&amp; (ISCHANGED(PMTar_Status__c) ||  ISNEW() )</errorConditionFormula>
+    <errorDisplayField>PMTar_Status__c</errorDisplayField>
+    <errorMessage>Please select the Status as Active/Terminated. Plan will be deactivated at the end of current FY.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_IRRM_Checklist_is_already_selected</fullName>
+    <active>true</active>
+    <description>To check if the selected IRRM checklist is already selected for another account</description>
+    <errorConditionFormula>IF( NOT (ISBLANK(IRRM_Pre_Deal_Checklist__c))  &amp;&amp;  (NOT(ISBLANK( IRRM_Pre_Deal_Checklist__r.Customer_Name__c ))) &amp;&amp;   (IRRM_Pre_Deal_Checklist__r.Customer_Name__c &lt;&gt;  Id  ), 
+TRUE, 
+FALSE)</errorConditionFormula>
+    <errorDisplayField>IRRM_Pre_Deal_Checklist__c</errorDisplayField>
+    <errorMessage>Selected IRRM checklist is already selected for another account</errorMessage>
+</ValidationRule>

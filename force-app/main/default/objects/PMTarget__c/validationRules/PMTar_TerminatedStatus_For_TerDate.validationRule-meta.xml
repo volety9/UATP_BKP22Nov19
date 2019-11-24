@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMTar_TerminatedStatus_For_TerDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(PMTar_TerminationDate__c)  &amp;&amp; (!ISBLANK(PMTar_TerminationDate__c) &amp;&amp; 
+!ISPICKVAL(PMTar_Status__c, &#39;Terminated&#39;))</errorConditionFormula>
+    <errorDisplayField>PMTar_Status__c</errorDisplayField>
+    <errorMessage>Please Select the Status as Terminated for Termination Date is provided</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSMTar_Manager_is_Mandatory_on_TSM</fullName>
+    <active>true</active>
+    <description>Manager is mandatory on FRSM User&#39;s Record</description>
+    <errorConditionFormula>ISBLANK( TSMTar_TSMManager__c  )</errorConditionFormula>
+    <errorMessage>Manager is mandatory on FRSM User&#39;s Record</errorMessage>
+</ValidationRule>

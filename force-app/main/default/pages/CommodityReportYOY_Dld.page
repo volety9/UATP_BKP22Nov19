@@ -1,0 +1,101 @@
+<apex:page controller="CommodityReportYOY" contentType="application/vnd.ms-excel#Commodity_Report_YOY_{!TODAY()}.xls" >
+    <apex:pageBlock >
+        
+        <apex:pageBlockSection >
+            <apex:pageBlockTable title="Commodity YOY" value="{!Wrapper}" var="wrap">
+                
+                <apex:column >
+                    <apex:facet name="header">Customer Name</apex:facet>
+                    <apex:outputLabel >{!wrap.CustomerName}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">FRSM</apex:facet>
+                    <apex:outputLabel >{!wrap.frsm}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">VA Last Year</apex:facet>
+                    <apex:outputLabel >{!wrap.vaLastYear}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">VA This Year</apex:facet>
+                    <apex:outputLabel >{!wrap.vaThisYear}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">VA YOY</apex:facet>
+                    <apex:outputLabel >{!wrap.vaYOY}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">TO Last Year</apex:facet>
+                    <apex:outputLabel >{!wrap.toLastYear}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">TO This Year</apex:facet>
+                    <apex:outputLabel >{!wrap.toThisYear}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">TO YOY</apex:facet>
+                    <apex:outputLabel >{!wrap.toYOY}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Deals Last Year</apex:facet>
+                    <apex:outputLabel >{!wrap.dealsLastYear}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Deals This Year</apex:facet>
+                    <apex:outputLabel >{!wrap.dealsThisYear}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Deals YOY</apex:facet>
+                    <apex:outputLabel >{!wrap.dealsYOY}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header"> Margin Last Year </apex:facet>
+                    <apex:outputLabel >{!wrap.marginLastYear}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Margin This Year</apex:facet>
+                    <apex:outputLabel >{!wrap.marginThisYear}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Mar YOY</apex:facet>
+                    <apex:outputLabel >{!wrap.marginYOY}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Date Last Dealt</apex:facet>
+                    <apex:outputLabel >{!wrap.dateLastDealt}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Relationship Manager</apex:facet>
+                    <apex:outputLabel >{!wrap.relationshipManager}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Centre</apex:facet>
+                    <apex:outputLabel >{!wrap.centre}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">WID</apex:facet>
+                    <apex:outputLabel >{!wrap.wid}</apex:outputLabel>
+                </apex:column>
+                
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+</apex:page>

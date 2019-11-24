@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FX</fullName>
+                <default>false</default>
+                <label>FX</label>
+            </value>
+            <value>
+                <fullName>Commodity</fullName>
+                <default>false</default>
+                <label>Commodity</label>
+            </value>
+            <value>
+                <fullName>IRRM</fullName>
+                <default>false</default>
+                <label>IRRM</label>
+            </value>
+            <value>
+                <fullName>Business Loan</fullName>
+                <default>false</default>
+                <label>Business Loan</label>
+            </value>
+            <value>
+                <fullName>CRM</fullName>
+                <default>false</default>
+                <label>CRM</label>
+            </value>
+            <value>
+                <fullName>Vanilla FX</fullName>
+                <default>false</default>
+                <label>Vanilla FX</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

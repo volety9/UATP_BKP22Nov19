@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_Details_for_Commodities_Deal</fullName>
+    <active>true</active>
+    <description>Opportunity Details field should be locked down after is closed won for all users apart from Super User</description>
+    <errorConditionFormula>AND( NOT( ISCHANGED(StageName)), ISPICKVAL( StageName,&quot;Closed Won&quot;), NOT( $Permission.UpdateOpportunityDetails),
+ RecordType.DeveloperName =&#39;Commodities_Deal_UK_Treasury_Solutions&#39;,OR(ISCHANGED(Name), ISCHANGED( AccountId),ISCHANGED(Product__c), 
+ ISCHANGED(Deal_Executed_By__c), ISCHANGED(Opp_TradeID__c), ISCHANGED( Maturity_Date__c), ISCHANGED( OwnerId),ISCHANGED(Pre_Deal_Checklist__c),
+ ISCHANGED( RecordTypeId),ISCHANGED( NextStep),ISCHANGED(CloseDate), ISCHANGED( Probability), ISCHANGED( Opportunity_Unit__c),ISCHANGED(Face_Value_Amount__c), 
+ ISCHANGED(Amount), ISCHANGED( Lost_Reason__c ), ISCHANGED( Banker__c ), ISCHANGED( Opp_CorpCode__c ),
+ISCHANGED( Division__c ), ISCHANGED( Opp_GLAccountNumber__c ), ISCHANGED( Appropriateness_Assessment_Undertaken__c ),
+ISCHANGED( Reason_For_Final_Product_Selected__c ), ISCHANGED( TRID_Reference__c ), ISCHANGED( Deal_Executed_Tel_Number__c ),
+ISCHANGED( Post_Deal_Checklist__c ), ISCHANGED( Deal_Review_Status__c ), ISCHANGED( Date_Readied__c ), ISCHANGED( Readiness_Due__c ),
+ISCHANGED( Date_Reviewed__c ), ISCHANGED( Review_Due__c ), ISCHANGED( Risk_Review_Date__c ), ISCHANGED( Risk_Review_Comments__c )))</errorConditionFormula>
+    <errorMessage>Only Super User Can update the opportunity details after it is closed won</errorMessage>
+</ValidationRule>

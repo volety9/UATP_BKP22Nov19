@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CON_Inactive_Reason_Required</fullName>
+    <active>true</active>
+    <description>Inactive reason is required when the status is Inactive.</description>
+    <errorConditionFormula>ISPICKVAL( Contact_Status__c , &quot;Inactive&quot;) &amp;&amp;  NOT(ISNEW()) &amp;&amp;  ISBLANK( Inactive_Reason__c )</errorConditionFormula>
+    <errorDisplayField>Inactive_Reason__c</errorDisplayField>
+    <errorMessage>Please provide the inactive reason</errorMessage>
+</ValidationRule>

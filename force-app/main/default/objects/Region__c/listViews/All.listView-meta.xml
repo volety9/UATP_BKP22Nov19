@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Region_Status__c</columns>
+    <columns>Region_FXDirectTarget__c</columns>
+    <columns>Region_FXDirectActual__c</columns>
+    <columns>Region_FXIndirectTarget__c</columns>
+    <columns>Region_FXIndirectActual__c</columns>
+    <columns>Region_CRMTarget__c</columns>
+    <columns>Region_CRMActual__c</columns>
+    <columns>Region_CommTarget__c</columns>
+    <columns>Region_CommActual__c</columns>
+    <columns>Region_IRRMTarget__c</columns>
+    <columns>Region_IRRMActual__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

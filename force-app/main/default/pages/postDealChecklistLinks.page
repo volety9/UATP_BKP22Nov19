@@ -1,0 +1,14 @@
+<!--
+  @Author        : Sushant
+  @Name          : postDealChecklistLinks
+  @Created Date  : 23 June 2017
+  @Description   :Customlinks for PostDeal Checklists 
+  @version       : 1.0
+-->
+<apex:page id="postlinkpage" standardController="Opportunity">
+<apex:form id="postlinkform">
+  <apex:commandButton id="postdealchecklist" title="{!$Label.PostDealChecklist}" value="{!$Label.PostDealChecklist}" 
+                      onclick="window.open('/{!$Label.PostDealChecklistLink}{!Opportunity.RecordType.Name}{!$Label.PostDealChecklistOppFieldId}{!URLENCODE(Opportunity.Name)}{!$Label.ChecklistFileOwnerFieldId}{!Opportunity.Owner.Name}');"/>
+    
+</apex:form>
+</apex:page>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission to allow the users to update the TSM Target and PM Target when the status is closed or inactive</description>
+    <label>UpdateTargetsWithClosedInactiveStatus</label>
+</CustomPermission>

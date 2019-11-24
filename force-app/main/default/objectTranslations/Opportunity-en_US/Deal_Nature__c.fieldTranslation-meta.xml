@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Deal Nature --></label>
+    <name>Deal_Nature__c</name>
+    <picklistValues>
+        <masterLabel>Amendment – Floating Component</masterLabel>
+        <translation><!-- Amendment – Floating Component --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amendment – Structured Component</masterLabel>
+        <translation><!-- Amendment – Structured Component --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation</masterLabel>
+        <translation><!-- Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Floating to Structured Component</masterLabel>
+        <translation><!-- Floating to Structured Component --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Component – Floating</masterLabel>
+        <translation><!-- New Component – Floating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Loan – Structured Component</masterLabel>
+        <translation><!-- New Loan – Structured Component --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Wholesale Product</masterLabel>
+        <translation><!-- New Wholesale Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Bank Deal</masterLabel>
+        <translation><!-- Other Bank Deal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restructure</masterLabel>
+        <translation><!-- Restructure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restructure Wholesale Product</masterLabel>
+        <translation><!-- Restructure Wholesale Product --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

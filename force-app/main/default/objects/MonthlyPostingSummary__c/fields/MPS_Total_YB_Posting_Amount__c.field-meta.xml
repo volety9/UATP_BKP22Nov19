@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPS_Total_YB_Posting_Amount__c</fullName>
+    <externalId>false</externalId>
+    <label>Total YB Posting Amount</label>
+    <summarizedField>PostingLineItem__c.PLI_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>PostingLineItem__c.PLI_Cost_Centre__c</field>
+        <operation>notEqual</operation>
+        <value>250600</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>PostingLineItem__c.PLI_Cost_Centre__c</field>
+        <operation>notEqual</operation>
+        <value>902175</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>PostingLineItem__c.PLI_Corporate_Code__c</field>
+        <operation>equals</operation>
+        <value>00601</value>
+    </summaryFilterItems>
+    <summaryForeignKey>PostingLineItem__c.MonthlyPostingSummary__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

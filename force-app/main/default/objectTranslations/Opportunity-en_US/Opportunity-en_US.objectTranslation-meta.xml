@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Business Loan</layout>
+        <sections>
+            <label><!-- Deal Information --></label>
+            <section>Deal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Review --></label>
+            <section>Deal Review</section>
+        </sections>
+        <sections>
+            <label><!-- Risk Review --></label>
+            <section>Risk Review</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Commodities Deal</layout>
+        <sections>
+            <label><!-- Deal Information --></label>
+            <section>Deal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Review --></label>
+            <section>Deal Review</section>
+        </sections>
+        <sections>
+            <label><!-- Risk Review --></label>
+            <section>Risk Review</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FX Cash</layout>
+        <sections>
+            <label><!-- Trade Details --></label>
+            <section>Trade Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FX Deal</layout>
+        <sections>
+            <label><!-- Deal Information --></label>
+            <section>Deal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Review --></label>
+            <section>Deal Review</section>
+        </sections>
+        <sections>
+            <label><!-- Risk Review --></label>
+            <section>Risk Review</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IRRM Deal</layout>
+        <sections>
+            <label><!-- Deal Information --></label>
+            <section>Deal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Review --></label>
+            <section>Deal Review</section>
+        </sections>
+        <sections>
+            <label><!-- Risk Review --></label>
+            <section>Risk Review</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Business Loan --></label>
+        <name>Business_Loan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Commodity --></label>
+        <name>Commodities_Deal_UK_Treasury_Solutions</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record type to store the FX Cash Opp (Trades coming from Calypso) --></description>
+        <label><!-- FX Cash --></label>
+        <name>FX_Cash</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CRM --></label>
+        <name>FX_Deal_UK_Treasury_Solutions</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IRRM --></label>
+        <name>IRRM_Deal_UK_Treasury_Solutions</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vanilla FX --></label>
+        <name>Vanilla_FX_Deal_UK_Treasury_Solutions</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Appropriateness Assessment Undertaken is mandatory when Stage is Closed Won --></errorMessage>
+        <name>OPP_Appropriateness_Asses_For_Closed_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity cannot be closed if the Customer Record Type is not Customer. --></errorMessage>
+        <name>OPP_Cannot_be_Closed_For_Target</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity cannot be closed as the Related Customer&apos;s Us Person is set as &quot;Yes&quot; --></errorMessage>
+        <name>OPP_Cannot_be_closed_if_Us_Person_is_Yes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed Date Cannot be Changed for Closed Won Opportunities . --></errorMessage>
+        <name>OPP_Close_Date_Cannot_be_Changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either ISDA date of agreement or FCTMA date of agreement and LEI obtained are required For CRM Opportunity --></errorMessage>
+        <name>OPP_Date_of_Agreement_for_CRM_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ISDA Date of Agreement and LEI Obtained are required for Commodity Opportunity --></errorMessage>
+        <name>OPP_Date_of_Agreement_for_Commodity_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ISDA Date of Agreement or LEI Obtained are required for IRRM Opportunity --></errorMessage>
+        <name>OPP_Date_of_Agreement_for_IRRM_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either ISDA date of agreement or FCTMA date of agreement and LEI obtained are required For Vanilla FX - Forward Opportunity --></errorMessage>
+        <name>OPP_Date_of_Agreement_for_Vanilla_FX_fwd</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either ISDA date of agreement or FCTMA date of agreement are required For Vanilla FX - Spot Opportunity --></errorMessage>
+        <name>OPP_Date_of_Agrement_for_Vanilla_FX_Spot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Deal Executed By is mandatory when stage is Closed Won --></errorMessage>
+        <name>OPP_Deal_Executed_By_Req_For_Closed_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Deal Executed Tel Number &amp; Time is mandatory when Stage is Closed Won --></errorMessage>
+        <name>OPP_Deal_Executed_Tel_For_Closed_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a Deal Reference for all Closed Won deals --></errorMessage>
+        <name>OPP_Deal_Reference_for_Closed_Won_Deals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Super User Can update the opportunity details after it is closed won --></errorMessage>
+        <name>OPP_Details_for_Business_Loan</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Super User Can update the opportunity details after it is closed won --></errorMessage>
+        <name>OPP_Details_for_Business_Loan_Trade</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Super User Can update the opportunity details after it is closed won --></errorMessage>
+        <name>OPP_Details_for_Commodities_Deal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Super User Can update the opportunity details after it is closed won --></errorMessage>
+        <name>OPP_Details_for_FX_Cash_Deal_PSD2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Super User Can update the opportunity details after it is closed won --></errorMessage>
+        <name>OPP_Details_for_FX_Deal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Super User Can update the opportunity details after it is closed won --></errorMessage>
+        <name>OPP_Details_for_IRRM_Deal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Super User Can update the opportunity details after it is closed won --></errorMessage>
+        <name>OPP_Details_for_Vanilla_FX_Deal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Face Value Amount cannot be Null for Closed Won Deals --></errorMessage>
+        <name>OPP_Face_Value_Amount_req_for_Closed_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a reason for all lost deals --></errorMessage>
+        <name>OPP_Lost_Reason_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Maturity Date cannot be set to Weekend. --></errorMessage>
+        <name>OPP_Maturity_Date_As_Non_Weekends</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Maturity Date is mandatory when Stage is Closed Won --></errorMessage>
+        <name>OPP_Maturity_Date_Req_For_Closed_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a Next Step for all deals that are Work In Progress --></errorMessage>
+        <name>OPP_Next_Step_for_Work_in_progress_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Super user can edit this field. --></errorMessage>
+        <name>OPP_Only_SU_Can_Edit_Opportunity_Detail</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Post Deal Checklist cannot be blank if the deal review status is Post Deal Check Complete --></errorMessage>
+        <name>OPP_Post_Deal_Checklist_Cannot_be_Null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The selected Post Deal Checklist is already selected for another Opportunity --></errorMessage>
+        <name>OPP_Post_Deal_Checklist_is_Selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All fields (TRID or Deal Executed Tel Number) on Deal Information section are mandatory if status is Ready for Post Deal Check --></errorMessage>
+        <name>OPP_Ready_for_Post_Deal_Check_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Reason For Final Product Selected is mandatory when Stage is Closed Won --></errorMessage>
+        <name>OPP_Reason_For_Final_Product_Closed_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There are related Customer fields that require completing before this record can be saved. Please revert to the Customer, press Edit and then Save. This will display the mandatory fields that require completing. Then come back to this record to Save --></errorMessage>
+        <name>OPP_Related_Account_Fields_Missing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Sales Process on Related Account is not Green --></errorMessage>
+        <name>OPP_Related_Sales_Process_is_Not_Green</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Super User can update the stage after it is closed Won --></errorMessage>
+        <name>OPP_Stage_change_after_closed_won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- TRID Reference &amp; Time is mandatory when Stage is Closed Won --></errorMessage>
+        <name>OPP_TRID_Reference_Time_Closed_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a Trade ID for all Closed Won deals --></errorMessage>
+        <name>OPP_TradeID_for_Closed_WonDeals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Amount cannot be Null --></errorMessage>
+        <name>Opp_Amount_Cannot_Be_Null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity cannot be closed as the Related Customer&apos;s RM Name is not linked to a Business Centre. --></errorMessage>
+        <name>Opp_Banker_Team_on_Customer_is_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity cannot be closed as the Related Customer&apos;s RM Name is not populated. --></errorMessage>
+        <name>Opp_Banker_is_Mandatory_on_Customer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity cannot be closed as the Related Customer&apos;s Commodity Manager is not populated. --></errorMessage>
+        <name>Opp_Com_Manager_is_Mandatory_on_Customer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- FX Cash opportunities cannot be created. Do not have permission. --></errorMessage>
+        <name>Opp_Creation_Restriction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity cannot be closed as the Related Customer&apos;s FX Manager is not populated. --></errorMessage>
+        <name>Opp_FX_Manager_is_Mandatory_on_Customer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity cannot be closed as the Related Customer&apos;s IRRM Manager is not populated. --></errorMessage>
+        <name>Opp_IRRM_Mgr_is_Mandatory_on_Customer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If opportunity is &quot; Closed Won &quot; user cannot amend the opportunity stage. --></errorMessage>
+        <name>Opp_Stage_Amendment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- VA cannot be less than 0. --></errorMessage>
+        <name>Opp_VA_cannot_be_less_than_0</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Interest_Rate_Script --></label>
+        <name>Interest_Rate_Script</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_Related_Opp_Mandatory_Fields_Missing</fullName>
+    <active>false</active>
+    <description>To check if all the fields on Opportunity is completed</description>
+    <errorConditionFormula>RecordType.DeveloperName  = &quot;Post_Deal_Checklist&quot; &amp;&amp;
+(ISBLANK( Opportunity__r.Deal_Executed_By__c ) ||
+ ISBLANK( Opportunity__r.Face_Value_Amount__c ) ||
+ ISBLANK( Opportunity__r.Maturity_Date__c ) ||
+ ISBLANK( Opportunity__r.Reason_For_Final_Product_Selected__c ) ||
+ NOT(Opportunity__r.Appropriateness_Assessment_Undertaken__c)  ||
+ (ISBLANK( Opportunity__r.TRID_Reference__c ) &amp;&amp;
+ ISBLANK( Opportunity__r.Deal_Executed_Tel_Number__c ) ))</errorConditionFormula>
+    <errorMessage>There are related Opportunity fields that require completing before this record can be saved. Please revert to the Opportunity, press Edit and then Save.This will display the mandatory fields that require completing.Then come back to this record to Save</errorMessage>
+</ValidationRule>

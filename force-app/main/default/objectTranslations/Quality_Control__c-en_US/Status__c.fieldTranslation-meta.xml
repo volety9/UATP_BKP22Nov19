@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>File Rating Agreed</masterLabel>
+        <translation><!-- File Rating Agreed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>File Re-Rating Agreed</masterLabel>
+        <translation><!-- File Re-Rating Agreed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>File Re-Rating Suggested</masterLabel>
+        <translation><!-- File Re-Rating Suggested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>File Re-Rating not Agreed</masterLabel>
+        <translation><!-- File Re-Rating not Agreed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IRRM_3_Month_Expired_Status__c</fullName>
+    <description>Used in Report</description>
+    <externalId>false</externalId>
+    <formula>IF((( IRRM_3_Month_Review_Date__c  - TODAY()) &lt; 7 &amp;&amp; (IRRM_3_Month_Review_Date__c - TODAY()) &gt; 0),&quot;Will Expire in a Week&quot;,
+IF(((IRRM_3_Month_Review_Date__c - TODAY()) &lt; 0),
+&quot;Expired&quot;,
+&quot;Green&quot;)
+)</formula>
+    <label>IRRM 3 Month Expired Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

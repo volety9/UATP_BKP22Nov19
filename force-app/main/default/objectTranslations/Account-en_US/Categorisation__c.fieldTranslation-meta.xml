@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Categorisation --></label>
+    <name>Categorisation__c</name>
+    <picklistValues>
+        <masterLabel>Professional</masterLabel>
+        <translation><!-- Professional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Opt Up</masterLabel>
+        <translation><!-- Professional Opt Up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail and sophisticated</masterLabel>
+        <translation><!-- Retail and sophisticated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail and unsophisticated</masterLabel>
+        <translation><!-- Retail and unsophisticated --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

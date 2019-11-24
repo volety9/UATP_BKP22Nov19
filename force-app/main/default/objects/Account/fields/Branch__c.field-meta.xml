@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch__c</fullName>
+    <externalId>false</externalId>
+    <label>Branch</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yorkshire Bank</fullName>
+                <default>false</default>
+                <label>Yorkshire Bank</label>
+            </value>
+            <value>
+                <fullName>Clydesdale Bank</fullName>
+                <default>false</default>
+                <label>Clydesdale Bank</label>
+            </value>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>ACT Dinner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ACT Dinner</label>
+            </value>
+            <value>
+                <fullName>Advanced Manufacturing Forum</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Advanced Manufacturing Forum</label>
+            </value>
+            <value>
+                <fullName>Aleris Recycling (Swansea) Limited</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aleris Recycling (Swansea) Limited</label>
+            </value>
+            <value>
+                <fullName>Andrew Price</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Andrew Price</label>
+            </value>
+            <value>
+                <fullName>Australia Bank Misc Contact</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Australia Bank Misc Contact</label>
+            </value>
+            <value>
+                <fullName>Australia Bank Misc Contacts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Australia Bank Misc Contacts</label>
+            </value>
+            <value>
+                <fullName>Clyde Bergemann Materials Handling Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Clyde Bergemann Materials Handling Ltd</label>
+            </value>
+            <value>
+                <fullName>Clydesdale Bank Plc, Falkirk, Camelon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Clydesdale Bank Plc, Falkirk, Camelon</label>
+            </value>
+            <value>
+                <fullName>EARTHMACH PTY LTD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EARTHMACH PTY LTD</label>
+            </value>
+            <value>
+                <fullName>Edinburgh Chamber of Commerce - Networking</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Edinburgh Chamber of Commerce - Networking</label>
+            </value>
+            <value>
+                <fullName>KPMG - Edinburgh</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KPMG - Edinburgh</label>
+            </value>
+            <value>
+                <fullName>LAM 20101 Sydney CBD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 20101 Sydney CBD</label>
+            </value>
+            <value>
+                <fullName>LAM 20102 North Shore</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 20102 North Shore</label>
+            </value>
+            <value>
+                <fullName>LAM 20104 Hills</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 20104 Hills</label>
+            </value>
+            <value>
+                <fullName>LAM 20806 Greater Southern</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 20806 Greater Southern</label>
+            </value>
+            <value>
+                <fullName>LAM 20808 ACT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 20808 ACT</label>
+            </value>
+            <value>
+                <fullName>LAM 30107 Eastern Suburbs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 30107 Eastern Suburbs</label>
+            </value>
+            <value>
+                <fullName>LAM 30110 Bayside</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 30110 Bayside</label>
+            </value>
+            <value>
+                <fullName>LAM 30116 MELBOURNE CBD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 30116 MELBOURNE CBD</label>
+            </value>
+            <value>
+                <fullName>LAM 30122 NORTHERN SUBURBS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 30122 NORTHERN SUBURBS</label>
+            </value>
+            <value>
+                <fullName>LAM 30211 Melb Outer North</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 30211 Melb Outer North</label>
+            </value>
+            <value>
+                <fullName>LAM 30214 PENINSULA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 30214 PENINSULA</label>
+            </value>
+            <value>
+                <fullName>LAM 40106 Gold Coast</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 40106 Gold Coast</label>
+            </value>
+            <value>
+                <fullName>LAM 40112 Far North Qld</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 40112 Far North Qld</label>
+            </value>
+            <value>
+                <fullName>LAM 50103 Southern SA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 50103 Southern SA</label>
+            </value>
+            <value>
+                <fullName>LAM 60101 Perth Central</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 60101 Perth Central</label>
+            </value>
+            <value>
+                <fullName>LAM 60102 Perth North</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 60102 Perth North</label>
+            </value>
+            <value>
+                <fullName>LAM 60103 Perth South</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAM 60103 Perth South</label>
+            </value>
+            <value>
+                <fullName>Maitland Mutual Building Society Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Maitland Mutual Building Society Ltd</label>
+            </value>
+            <value>
+                <fullName>Melbourne Office 30801</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Melbourne Office 30801</label>
+            </value>
+            <value>
+                <fullName>Migration-Unassigned</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Migration-Unassigned</label>
+            </value>
+            <value>
+                <fullName>NAB Private Direct</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NAB Private Direct</label>
+            </value>
+            <value>
+                <fullName>Paul King</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Paul King</label>
+            </value>
+            <value>
+                <fullName>Personal (Metro) WA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Personal (Metro) WA</label>
+            </value>
+            <value>
+                <fullName>Private NSW Practice 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private NSW Practice 1</label>
+            </value>
+            <value>
+                <fullName>Private NSW Practice 5</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private NSW Practice 5</label>
+            </value>
+            <value>
+                <fullName>Private NSW Practice 8</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private NSW Practice 8</label>
+            </value>
+            <value>
+                <fullName>Private VIC Practice 5</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private VIC Practice 5</label>
+            </value>
+            <value>
+                <fullName>Private VIC Practice 9</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private VIC Practice 9</label>
+            </value>
+            <value>
+                <fullName>Property Finance VIC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Property Finance VIC</label>
+            </value>
+            <value>
+                <fullName>RAM Riverina</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RAM Riverina</label>
+            </value>
+            <value>
+                <fullName>Research and Development Pty Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Research and Development Pty Ltd</label>
+            </value>
+            <value>
+                <fullName>Sydney CBD 20304</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sydney CBD 20304</label>
+            </value>
+            <value>
+                <fullName>The Purely Group Pty Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>The Purely Group Pty Ltd</label>
+            </value>
+            <value>
+                <fullName>Unassigned</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unassigned</label>
+            </value>
+            <value>
+                <fullName>Yorshire Bank</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Yorshire Bank</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

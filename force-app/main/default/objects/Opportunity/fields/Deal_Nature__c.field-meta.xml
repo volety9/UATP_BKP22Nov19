@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Nature__c</fullName>
+    <externalId>false</externalId>
+    <label>Deal Nature</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Loan – Structured Component</fullName>
+                <default>false</default>
+                <label>New Loan – Structured Component</label>
+            </value>
+            <value>
+                <fullName>New Wholesale Product</fullName>
+                <default>false</default>
+                <label>New Wholesale Product</label>
+            </value>
+            <value>
+                <fullName>Restructure Wholesale Product</fullName>
+                <default>false</default>
+                <label>Restructure Wholesale Product</label>
+            </value>
+            <value>
+                <fullName>Amendment – Floating Component</fullName>
+                <default>false</default>
+                <label>Amendment – Floating Component</label>
+            </value>
+            <value>
+                <fullName>Amendment – Structured Component</fullName>
+                <default>false</default>
+                <label>Amendment – Structured Component</label>
+            </value>
+            <value>
+                <fullName>Restructure</fullName>
+                <default>false</default>
+                <label>Restructure</label>
+            </value>
+            <value>
+                <fullName>New Component – Floating</fullName>
+                <default>false</default>
+                <label>New Component – Floating</label>
+            </value>
+            <value>
+                <fullName>Floating to Structured Component</fullName>
+                <default>false</default>
+                <label>Floating to Structured Component</label>
+            </value>
+            <value>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+                <label>Cancellation</label>
+            </value>
+            <value>
+                <fullName>Other Bank Deal</fullName>
+                <default>false</default>
+                <label>Other Bank Deal</label>
+            </value>
+            <value>
+                <fullName>Amendment � Floating Component</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Amendment � Floating Component</label>
+            </value>
+            <value>
+                <fullName>Amendment � Structured Component</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Amendment � Structured Component</label>
+            </value>
+            <value>
+                <fullName>New Component � Floating</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>New Component � Floating</label>
+            </value>
+            <value>
+                <fullName>New Loan � Structured Component</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>New Loan � Structured Component</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Posting_Summary_for_current_fiscal_year</fullName>
+    <columns>NAME</columns>
+    <columns>MPS_Status__c</columns>
+    <columns>MPS_Publish_Date__c</columns>
+    <columns>MPS_Total_CB_Posting_Amount__c</columns>
+    <columns>MPS_Total_YB_Posting_Amount__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_FISCAL_YEAR</value>
+    </filters>
+    <label>Posting Summary for current fiscal year</label>
+</ListView>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customers</value>
+    </caseValues>
+    <layouts>
+        <layout>Customer Page Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Banker Information --></label>
+            <section>Banker Information</section>
+        </sections>
+        <sections>
+            <label><!-- Business Customer Detail --></label>
+            <section>Business Customer Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Commodity Sales Process Status --></label>
+            <section>Commodity Sales Process Status</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Description --></label>
+            <section>Customer Description</section>
+        </sections>
+        <sections>
+            <label><!-- Document Governance --></label>
+            <section>Document Governance</section>
+        </sections>
+        <sections>
+            <label><!-- FX Sales Process Status --></label>
+            <section>FX Sales Process Status</section>
+        </sections>
+        <sections>
+            <label><!-- IRRM Sales Process Status --></label>
+            <section>IRRM Sales Process Status</section>
+        </sections>
+        <sections>
+            <label><!-- Margin --></label>
+            <section>Margin</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Treasury Solutions Relationship Team --></label>
+            <section>Treasury Solutions Relationship Team</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Internal Page Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Business Customer Detail --></label>
+            <section>Business Customer Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Description --></label>
+            <section>Customer Description</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Referral Page Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Business Customer Detail --></label>
+            <section>Business Customer Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Description --></label>
+            <section>Customer Description</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Target Page Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Banker Information --></label>
+            <section>Banker Information</section>
+        </sections>
+        <sections>
+            <label><!-- Business Customer Detail --></label>
+            <section>Business Customer Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Categorisation --></label>
+            <section>Categorisation</section>
+        </sections>
+        <sections>
+            <label><!-- Commodity Sales Process Status --></label>
+            <section>Commodity Sales Process Status</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Description --></label>
+            <section>Customer Description</section>
+        </sections>
+        <sections>
+            <label><!-- Document Governance --></label>
+            <section>Document Governance</section>
+        </sections>
+        <sections>
+            <label><!-- FX Sales Process Status --></label>
+            <section>FX Sales Process Status</section>
+        </sections>
+        <sections>
+            <label><!-- IRRM Sales Process Status --></label>
+            <section>IRRM Sales Process Status</section>
+        </sections>
+        <sections>
+            <label><!-- Margin --></label>
+            <section>Margin</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Customer --></label>
+        <name>Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Internal --></label>
+        <name>Internal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Referral --></label>
+        <name>Referral</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Target --></label>
+        <name>Target</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Static Data Team can convert the Target Records only, Super User can convert all records. --></errorMessage>
+        <name>ACC_Account_Record_Type_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not Permitted to create Customer --></errorMessage>
+        <name>ACC_Account_creation_restriction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer name cannot be changed after it&apos;s created. --></errorMessage>
+        <name>ACC_Account_name_should_be_locked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only File Check Group Can update the Categorisation Status as Categorised. --></errorMessage>
+        <name>ACC_Categorisation_Status_as_Categorised</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to undertake Categorisation - please amend the categorisation status to &quot;none&quot; in order to proceed. --></errorMessage>
+        <name>ACC_Category_must_be_selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Categorised Status cannot be changed to any other status. --></errorMessage>
+        <name>ACC_Change_Categ_status_once_categorised</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Selected Commodity checklist is already selected for another account --></errorMessage>
+        <name>ACC_Com_Checklist_is_already_selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Static Data Team Can create Customer Account. --></errorMessage>
+        <name>ACC_Create_Customer_Account_Restriction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Selected FX checklist is already selected for another account --></errorMessage>
+        <name>ACC_FX_Checklist_is_already_selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the Lost Reason --></errorMessage>
+        <name>ACC_FX_Customer_Status_Lost_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Selected IRRM checklist is already selected for another account --></errorMessage>
+        <name>ACC_IRRM_Checklist_is_already_selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Lost/Dormant reason already updated --></errorMessage>
+        <name>ACC_Lost_Reason_already_having_the_val</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please complete the address. --></errorMessage>
+        <name>ACC_Mandatory_Address_on_Customer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- RM Name cannot be Blank --></errorMessage>
+        <name>ACC_Prevent_RMName_UpdateToNull</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only CYB, FCG or Static Data Team can update the RM Name --></errorMessage>
+        <name>ACC_RM_name_should_be_locked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Target should not be converted to Customer if the US Person is selected as Yes. --></errorMessage>
+        <name>ACC_Target_to_Customer_Conversion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only File Check Group can update the Account Owner. --></errorMessage>
+        <name>ACC_Update_Account_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot update the checklist before annual review date --></errorMessage>
+        <name>ACC_Update_Com_PDC_before_annual_review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Date customer notified of categorisation cannot be updated before categorisation has been completed --></errorMessage>
+        <name>ACC_Update_Date_Customer_Notified</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot update the checklist before annual review date --></errorMessage>
+        <name>ACC_Update_FX_PDC_before_annual_review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot update the checklist before annual review date --></errorMessage>
+        <name>ACC_Update_IRRM_PDC_before_annual_review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only FCG can create/Update an Internal Customers. --></errorMessage>
+        <name>ACC_Update_Internal_Customers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only File Check Group can update Us Person field as &quot;No&quot; --></errorMessage>
+        <name>ACC_Us_Person_cannot_be_updated_as_No</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer status to Dormant or Prospect can only changed by FRSM/TDM . --></errorMessage>
+        <name>Acc_status_changes_for_TSM_user</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Banker Change Failed: The banker is not present in the hierarchy. Please contact the Financial Risk Solutions Team to add the Banker to the hierarchy and then proceed with the change --></errorMessage>
+        <name>Account_Banker_should_be_in_Hierarchy</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Process_Target --></label>
+        <name>Process_Target</name>
+    </webLinks>
+</CustomObjectTranslation>

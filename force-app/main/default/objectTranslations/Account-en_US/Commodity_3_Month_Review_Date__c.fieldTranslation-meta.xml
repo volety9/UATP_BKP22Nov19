@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Commodity 3 Month Review Date --></label>
+    <name>Commodity_3_Month_Review_Date__c</name>
+</CustomFieldTranslation>

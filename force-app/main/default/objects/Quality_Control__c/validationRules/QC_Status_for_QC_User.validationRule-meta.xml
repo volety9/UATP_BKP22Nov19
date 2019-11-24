@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QC_Status_for_QC_User</fullName>
+    <active>true</active>
+    <description>User can select Status as File Rating Agreed/File Re-Rating Suggested</description>
+    <errorConditionFormula>NOT( $Permission.QCStatusForQCUser ) &amp;&amp;  (ISCHANGED(Status__c) ||  ISNEW() )  &amp;&amp;  (ISPICKVAL( Status__c , &quot;File Rating Agreed&quot;) || ISPICKVAL( Status__c , &quot;File Re-Rating Suggested&quot;))</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Only Quality Control Users can use status as File Rating Agreed/File Re-Rating Suggested</errorMessage>
+</ValidationRule>

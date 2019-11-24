@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- FX Far Date --></label>
+    <name>CD_FXFarDate__c</name>
+</CustomFieldTranslation>

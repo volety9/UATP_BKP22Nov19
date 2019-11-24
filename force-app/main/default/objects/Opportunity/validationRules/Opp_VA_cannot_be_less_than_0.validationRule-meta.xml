@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_VA_cannot_be_less_than_0</fullName>
+    <active>false</active>
+    <description>VA cannot be less than 0.</description>
+    <errorConditionFormula>Amount  &lt; 0</errorConditionFormula>
+    <errorDisplayField>Amount</errorDisplayField>
+    <errorMessage>VA cannot be less than 0.</errorMessage>
+</ValidationRule>

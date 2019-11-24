@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_Mandatory_Address_on_Customer</fullName>
+    <active>true</active>
+    <description>Mandatory Address fields on customer page layout for customer record type</description>
+    <errorConditionFormula>(RecordType.DeveloperName = &quot;Customer&quot; &amp;&amp; ( ISBLANK( BillingCity )  || ISBLANK( BillingStreet) || ISBLANK( BillingPostalCode)))</errorConditionFormula>
+    <errorMessage>Please complete the address.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,200 @@
+<apex:page controller="ytdPerformanceControllerBank">
+    <!--<apex:form contentType="application/vnd.ms-excel#ForecastReport{!TODAY()}.xls">-->
+    <apex:pageBlock >
+        <apex:pageBlockButtons location="Top" rendered="{!batchRunning}">
+            
+          <!--  <input type="buttton" value="Download" action="/apex/DirectFXYOYPerformance?isExcel=true"/>
+<a href="/apex/DirectFXYOYPerformance?isExcel=true">Click</a> -->
+            <apex:form >
+                <apex:commandbutton value="Download" action="{!downloadReport}" />
+                <apex:commandButton value="Business Centre" action="{!submitBusCen}" oncomplete="submitBusCen();"/>
+                <apex:commandButton value="Regions" action="{!submitRegions}" oncomplete="submitRegions();"/>
+                <apex:commandButton value="Division" action="{!submitDivisions}" oncomplete="submitDivisions();"/>
+                <apex:commandButton value="Group" action="{!submitGroups}" oncomplete="submitGroups();"/>
+                <apex:commandButton value="Bank" action="{!submitBanks}" oncomplete="submitBanks();"/>
+            </apex:form>
+        </apex:pageBlockButtons>
+        
+        <apex:pageBlockSection rendered="{!!batchRunning}">
+            <center><apex:outputLabel style="color:red; weight:bold; margin:-70px">A Batch is in Process. Please try refreshing the page after some time.</apex:outputLabel></center>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection >
+            <apex:pageblocktable value="{!wrappedDataList}" var="wrap" rendered="{!batchRunning}">
+                
+                <apex:column style="background-color:#d7d7d7">
+                    <apex:facet name="header">Bank</apex:facet>
+                    <apex:outputLabel >{!wrap.bc}</apex:outputLabel>
+                </apex:column>
+                <apex:column style="background-color:#d7d7d7">
+                    <apex:facet name="header">Group</apex:facet>
+                    <apex:outputLabel >{!wrap.frsm}</apex:outputLabel>
+                </apex:column>
+                <apex:column style="background-color:#d7d7d7;">
+                    <apex:facet name="header">Summary Fields&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:facet>
+                    <apex:outputLabel >{!wrap.descriptionList[0]}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.descriptionList[1]}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.descriptionList[2]}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.descriptionList[3]}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.descriptionList[4]}</apex:outputLabel><br/>
+                    <apex:outputLabel >Total</apex:outputLabel><br/>
+                    
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Oct</apex:facet>
+                    <apex:outputText >{!IF(wrap.FXDirectActual[10] == null,'0.00',wrap.FXDirectActual[10])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.FXInDirectActual[10] == null,'0.00',wrap.FXInDirectActual[10])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.commActual[10] == null,'0.00',wrap.commActual[10])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.irrmActual[10] == null,'0.00',wrap.irrmActual[10])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.retailActual[10] == null,'0.00',wrap.retailActual[10])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.actTot[10] == null,'0.00',wrap.actTot[10])}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Nov</apex:facet>
+                    <apex:outputText >{!IF(wrap.FXDirectActual[11] == null,'0.00',wrap.FXDirectActual[11])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.FXInDirectActual[11] == null,'0.00',wrap.FXInDirectActual[11])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.commActual[11] == null,'0.00',wrap.commActual[11])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.irrmActual[11] == null,'0.00',wrap.irrmActual[11])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.retailActual[11] == null,'0.00',wrap.retailActual[11])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.actTot[11] == null,'0.00',wrap.actTot[11])}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Dec</apex:facet>
+                    <apex:outputText >{!IF(wrap.FXDirectActual[12] == null,'0.00',wrap.FXDirectActual[12])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.FXInDirectActual[12] == null,'0.00',wrap.FXInDirectActual[12])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.commActual[12] == null,'0.00',wrap.commActual[12])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.irrmActual[12] == null,'0.00',wrap.irrmActual[12])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.retailActual[12] == null,'0.00',wrap.retailActual[12])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.actTot[12] == null,'0.00',wrap.actTot[12])}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Jan</apex:facet>
+                    <apex:outputText >{!IF(wrap.FXDirectActual[1] == null,'0.00',wrap.FXDirectActual[1])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.FXInDirectActual[1] == null,'0.00',wrap.FXInDirectActual[1])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.commActual[1] == null,'0.00',wrap.commActual[1])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.irrmActual[1] == null,'0.00',wrap.irrmActual[1])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.retailActual[1] == null,'0.00',wrap.retailActual[1])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.actTot[1] == null,'0.00',wrap.actTot[1])}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Feb</apex:facet>
+                    <apex:outputText >{!IF(wrap.FXDirectActual[2] == null,'0.00',wrap.FXDirectActual[2])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.FXInDirectActual[2] == null,'0.00',wrap.FXInDirectActual[2])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.commActual[2] == null,'0.00',wrap.commActual[2])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.irrmActual[2] == null,'0.00',wrap.irrmActual[2])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.retailActual[2] == null,'0.00',wrap.retailActual[2])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.actTot[2] == null,'0.00',wrap.actTot[2])}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Mar</apex:facet>
+                    <apex:outputText >{!IF(wrap.FXDirectActual[3] == null,'0.00',wrap.FXDirectActual[3])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.FXInDirectActual[3] == null,'0.00',wrap.FXInDirectActual[3])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.commActual[3] == null,'0.00',wrap.commActual[3])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.irrmActual[3] == null,'0.00',wrap.irrmActual[3])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.retailActual[3] == null,'0.00',wrap.retailActual[3])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.actTot[3] == null,'0.00',wrap.actTot[3])}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Apr</apex:facet>
+                    <apex:outputText >{!IF(wrap.FXDirectActual[4] == null,'0.00',wrap.FXDirectActual[4])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.FXInDirectActual[4] == null,'0.00',wrap.FXInDirectActual[4])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.commActual[4] == null,'0.00',wrap.commActual[4])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.irrmActual[4] == null,'0.00',wrap.irrmActual[4])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.retailActual[4] == null,'0.00',wrap.retailActual[4])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.actTot[4] == null,'0.00',wrap.actTot[4])}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">May</apex:facet>
+                    <apex:outputText >{!IF(wrap.FXDirectActual[5] == null,'0.00',wrap.FXDirectActual[5])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.FXInDirectActual[5] == null,'0.00',wrap.FXInDirectActual[5])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.commActual[5] == null,'0.00',wrap.commActual[5])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.irrmActual[5] == null,'0.00',wrap.irrmActual[5])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.retailActual[5] == null,'0.00',wrap.retailActual[5])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.actTot[5] == null,'0.00',wrap.actTot[5])}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Jun</apex:facet>
+                    <apex:outputText >{!IF(wrap.FXDirectActual[6] == null,'0.00',wrap.FXDirectActual[6])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.FXInDirectActual[6] == null,'0.00',wrap.FXInDirectActual[6])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.commActual[6] == null,'0.00',wrap.commActual[6])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.irrmActual[6] == null,'0.00',wrap.irrmActual[6])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.retailActual[6] == null,'0.00',wrap.retailActual[6])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.actTot[6] == null,'0.00',wrap.actTot[6])}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Jul</apex:facet>
+                    <apex:outputText >{!IF(wrap.FXDirectActual[7] == null,'0.00',wrap.FXDirectActual[7])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.FXInDirectActual[7] == null,'0.00',wrap.FXInDirectActual[7])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.commActual[7] == null,'0.00',wrap.commActual[7])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.irrmActual[7] == null,'0.00',wrap.irrmActual[7])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.retailActual[7] == null,'0.00',wrap.retailActual[7])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.actTot[7] == null,'0.00',wrap.actTot[7])}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Aug</apex:facet>
+                    <apex:outputText >{!IF(wrap.FXDirectActual[8] == null,'0.00',wrap.FXDirectActual[8])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.FXInDirectActual[8] == null,'0.00',wrap.FXInDirectActual[8])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.commActual[8] == null,'0.00',wrap.commActual[8])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.irrmActual[8] == null,'0.00',wrap.irrmActual[8])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.retailActual[8] == null,'0.00',wrap.retailActual[8])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.actTot[8] == null,'0.00',wrap.actTot[8])}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Sep</apex:facet>
+                    <apex:outputText >{!IF(wrap.FXDirectActual[9] == null,'0.00',wrap.FXDirectActual[9])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.FXInDirectActual[9] == null,'0.00',wrap.FXInDirectActual[9])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.commActual[9] == null,'0.00',wrap.commActual[9])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.irrmActual[9] == null,'0.00',wrap.irrmActual[9])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.retailActual[9] == null,'0.00',wrap.retailActual[9])}</apex:outputText><br/>
+                    <apex:outputText >{!IF(wrap.actTot[9] == null,'0.00',wrap.actTot[9])}</apex:outputText><br/>
+                </apex:column>
+                
+                <apex:column style="background-color:#d7d7d7">
+                    <apex:facet name="header">YTD</apex:facet>
+                    <apex:outputLabel >{!IF(wrap.fxDirectActualsTillDate == null,'0.00',wrap.fxDirectActualsTillDate)}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!IF(wrap.fxIndirectActualsTillDate == null,'0.00',wrap.fxIndirectActualsTillDate)}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!IF(wrap.commActualsTillDate == null,'0.00',wrap.commActualsTillDate)}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!IF(wrap.irrmActualsTillDate == null,'0.00',wrap.irrmActualsTillDate)}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!IF(wrap.retailActualsTillDate == null,'0.00',wrap.retailActualsTillDate)}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!IF(wrap.actYtdTot == null,'0.00',wrap.actYtdTot)}</apex:outputLabel><br/>
+                </apex:column>
+                
+                <apex:column style="background-color:#d7d7d7">
+                    <apex:facet name="header">YTD Plan</apex:facet>
+                    <apex:outputLabel >{!IF(wrap.targetsTillDate[0] == null,'0.00',wrap.targetsTillDate[0])}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!IF(wrap.targetsTillDate[1] == null,'0.00',wrap.targetsTillDate[1])}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!IF(wrap.targetsTillDate[2] == null,'0.00',wrap.targetsTillDate[2])}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!IF(wrap.targetsTillDate[3] == null,'0.00',wrap.targetsTillDate[3])}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!IF(wrap.targetsTillDate[4] == null,'0.00',wrap.targetsTillDate[4])}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!IF(wrap.ytdTarTot == null,'0.00',wrap.ytdTarTot)}</apex:outputLabel><br/>
+                </apex:column>
+                <apex:column style="background-color:#d7d7d7">
+                    <apex:facet name="header">Variance</apex:facet>
+                    <apex:outputLabel >{!wrap.fxvariance}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.infxvariance}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.commvariance}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.irrmVariance}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.retailVariance}</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.var}</apex:outputLabel><br/>
+                </apex:column>
+                
+                <apex:column style="background-color:#d7d7d7">
+                    <apex:facet name="header">Plan %</apex:facet>
+                    <apex:outputLabel >{!wrap.fxvariancePercent}%</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.infxvariancePercent}%</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.commVariancePercent}%</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.irrmVariancePercent}%</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.retailVariancePercent}%</apex:outputLabel><br/>
+                    <apex:outputLabel >{!wrap.varPer}%</apex:outputLabel><br/>
+                </apex:column>
+                <apex:column style="background-color:#d7d7d7">
+                    <apex:facet name="header">PipeLine</apex:facet>
+                    <apex:outputLabel >{!IF(wrap.ytdPipeLine == null,'0.00',wrap.ytdPipeLine)}</apex:outputLabel>
+                    
+                </apex:column>
+             
+            </apex:pageblocktable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    <!--</apex:form> -->
+</apex:page>

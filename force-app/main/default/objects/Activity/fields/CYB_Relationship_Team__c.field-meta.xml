@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CYB_Relationship_Team__c</fullName>
+    <externalId>false</externalId>
+    <label>CYB Relationship Team</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Invoice Finance</fullName>
+                <default>false</default>
+                <label>Invoice Finance</label>
+            </value>
+            <value>
+                <fullName>Asset Finance</fullName>
+                <default>false</default>
+                <label>Asset Finance</label>
+            </value>
+            <value>
+                <fullName>Payment (Merchant) Services</fullName>
+                <default>false</default>
+                <label>Payment (Merchant) Services</label>
+            </value>
+            <value>
+                <fullName>International Trade</fullName>
+                <default>false</default>
+                <label>International Trade</label>
+            </value>
+            <value>
+                <fullName>CYB Domiciled Banking Relationship</fullName>
+                <default>false</default>
+                <label>CYB Domiciled Banking Relationship</label>
+            </value>
+            <value>
+                <fullName>Business on Line</fullName>
+                <default>false</default>
+                <label>Business on Line</label>
+            </value>
+            <value>
+                <fullName>Standalone Banking Relationship</fullName>
+                <default>false</default>
+                <label>Standalone Banking Relationship</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <valueName>Invoice Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <valueName>Asset Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <valueName>Payment (Merchant) Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <valueName>International Trade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <valueName>CYB Domiciled Banking Relationship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <valueName>Business on Line</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <valueName>Standalone Banking Relationship</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

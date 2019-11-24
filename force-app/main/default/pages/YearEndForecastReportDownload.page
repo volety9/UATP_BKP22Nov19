@@ -1,0 +1,44 @@
+<apex:page controller="YearEndForecastReportController" contentType="application/vnd.ms-excel#YearEndForecastReport{!TODAY()}.xls">
+    <!--<apex:form contentType="application/vnd.ms-excel#ForecastReport{!TODAY()}.xls">-->
+    <apex:pageBlock >
+        <apex:pageblocktable value="{!wrappedDataList}" var="wrap">
+            <apex:column >
+                <apex:facet name="header">Division Name </apex:facet>
+                {!wrap.divisionName}
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Dealt</apex:facet>
+                {!wrap.closedWonOpportunityAmount}
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Pipeline</apex:facet>
+                {!wrap.openOpportunityAmount}
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Forecast FX Income</apex:facet>
+                {!wrap.fxTargetAmount}
+            </apex:column>
+            
+            <apex:column >
+                <apex:facet name="header">Revenue Forecast</apex:facet>
+                {!wrap.revenueForcast}
+            </apex:column>
+            
+            <apex:column >
+                <apex:facet name="header">Plan</apex:facet>
+                {!wrap.plan}
+            </apex:column>
+            
+            <apex:column >
+                <apex:facet name="header">%</apex:facet>
+                {!wrap.percentage}
+            </apex:column>
+            
+            <apex:column >
+                <apex:facet name="header">LY End Income </apex:facet>
+                {!wrap.lastYearIncome}
+            </apex:column>
+        </apex:pageblocktable>
+    </apex:pageBlock>
+    <!--</apex:form> -->
+</apex:page>

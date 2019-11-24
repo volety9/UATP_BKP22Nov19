@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Banking_Centre__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Banking Centre</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aberdeen</fullName>
+                <default>false</default>
+                <label>Aberdeen</label>
+            </value>
+            <value>
+                <fullName>Birmingham</fullName>
+                <default>false</default>
+                <label>Birmingham</label>
+            </value>
+            <value>
+                <fullName>Business Direct</fullName>
+                <default>false</default>
+                <label>Business Direct</label>
+            </value>
+            <value>
+                <fullName>Carlisle</fullName>
+                <default>false</default>
+                <label>Carlisle</label>
+            </value>
+            <value>
+                <fullName>Closed Codes</fullName>
+                <default>false</default>
+                <label>Closed Codes</label>
+            </value>
+            <value>
+                <fullName>CRE - North</fullName>
+                <default>false</default>
+                <label>CRE - North</label>
+            </value>
+            <value>
+                <fullName>Dundee</fullName>
+                <default>false</default>
+                <label>Dundee</label>
+            </value>
+            <value>
+                <fullName>East Midlands</fullName>
+                <default>false</default>
+                <label>East Midlands</label>
+            </value>
+            <value>
+                <fullName>Edinburgh</fullName>
+                <default>false</default>
+                <label>Edinburgh</label>
+            </value>
+            <value>
+                <fullName>Gatwick</fullName>
+                <default>false</default>
+                <label>Gatwick</label>
+            </value>
+            <value>
+                <fullName>Glasgow</fullName>
+                <default>false</default>
+                <label>Glasgow</label>
+            </value>
+            <value>
+                <fullName>Gloucester</fullName>
+                <default>false</default>
+                <label>Gloucester</label>
+            </value>
+            <value>
+                <fullName>Growth Finance</fullName>
+                <default>false</default>
+                <label>Growth Finance</label>
+            </value>
+            <value>
+                <fullName>Hull &amp; Humber</fullName>
+                <default>false</default>
+                <label>Hull &amp; Humber</label>
+            </value>
+            <value>
+                <fullName>Inverness</fullName>
+                <default>false</default>
+                <label>Inverness</label>
+            </value>
+            <value>
+                <fullName>Lanarkshire</fullName>
+                <default>false</default>
+                <label>Lanarkshire</label>
+            </value>
+            <value>
+                <fullName>Leeds</fullName>
+                <default>false</default>
+                <label>Leeds</label>
+            </value>
+            <value>
+                <fullName>Lincoln</fullName>
+                <default>false</default>
+                <label>Lincoln</label>
+            </value>
+            <value>
+                <fullName>London West End</fullName>
+                <default>false</default>
+                <label>London West End</label>
+            </value>
+            <value>
+                <fullName>Manchester</fullName>
+                <default>false</default>
+                <label>Manchester</label>
+            </value>
+            <value>
+                <fullName>Merseyside</fullName>
+                <default>false</default>
+                <label>Merseyside</label>
+            </value>
+            <value>
+                <fullName>North East</fullName>
+                <default>false</default>
+                <label>North East</label>
+            </value>
+            <value>
+                <fullName>North Yorkshire</fullName>
+                <default>false</default>
+                <label>North Yorkshire</label>
+            </value>
+            <value>
+                <fullName>Northampton &amp; Peterborough</fullName>
+                <default>false</default>
+                <label>Northampton &amp; Peterborough</label>
+            </value>
+            <value>
+                <fullName>Preston</fullName>
+                <default>false</default>
+                <label>Preston</label>
+            </value>
+            <value>
+                <fullName>Reading &amp; Oxford</fullName>
+                <default>false</default>
+                <label>Reading &amp; Oxford</label>
+            </value>
+            <value>
+                <fullName>SAF - Aberdeen Office</fullName>
+                <default>false</default>
+                <label>SAF - Aberdeen Office</label>
+            </value>
+            <value>
+                <fullName>SAF - Birmingham Office</fullName>
+                <default>false</default>
+                <label>SAF - Birmingham Office</label>
+            </value>
+            <value>
+                <fullName>SAF - Central Scotland Office</fullName>
+                <default>false</default>
+                <label>SAF - Central Scotland Office</label>
+            </value>
+            <value>
+                <fullName>SAF - Leeds Office</fullName>
+                <default>false</default>
+                <label>SAF - Leeds Office</label>
+            </value>
+            <value>
+                <fullName>SAF - London Office</fullName>
+                <default>false</default>
+                <label>SAF - London Office</label>
+            </value>
+            <value>
+                <fullName>SAF - Manchester Office</fullName>
+                <default>false</default>
+                <label>SAF - Manchester Office</label>
+            </value>
+            <value>
+                <fullName>South Yorkshire</fullName>
+                <default>false</default>
+                <label>South Yorkshire</label>
+            </value>
+            <value>
+                <fullName>St Albans</fullName>
+                <default>false</default>
+                <label>St Albans</label>
+            </value>
+            <value>
+                <fullName>Stirling</fullName>
+                <default>false</default>
+                <label>Stirling</label>
+            </value>
+            <value>
+                <fullName>Thainstone</fullName>
+                <default>false</default>
+                <label>Thainstone</label>
+            </value>
+            <value>
+                <fullName>West Yorkshire</fullName>
+                <default>false</default>
+                <label>West Yorkshire</label>
+            </value>
+            <value>
+                <fullName>Ayr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ayr</label>
+            </value>
+            <value>
+                <fullName>Bury St Edmunds</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bury St Edmunds</label>
+            </value>
+            <value>
+                <fullName>CRE - South</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CRE - South</label>
+            </value>
+            <value>
+                <fullName>ETU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ETU</label>
+            </value>
+            <value>
+                <fullName>SAF - Edinburgh</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SAF - Edinburgh</label>
+            </value>
+            <value>
+                <fullName>SAF - Manchester</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SAF - Manchester</label>
+            </value>
+            <value>
+                <fullName>SAF -Edinburgh</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SAF -Edinburgh</label>
+            </value>
+            <value>
+                <fullName>Stafford</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stafford</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

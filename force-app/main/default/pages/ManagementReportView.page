@@ -1,0 +1,13 @@
+<apex:page >
+    <apex:pageBlock title="Management Report View">
+        <apex:pageBlockSection id="one" >
+            <br/><br/>
+            <apex:outputLink value="https://cybg--uatp.cs100.my.salesforce.com/apex/ytdPerformance" style="color:black; font-size:12px; font-weight:bold">Year To Date Performance</apex:outputLink><br/><br/>
+            <apex:outputLink value="https://cybg--uatp.cs100.my.salesforce.com/apex/QuarterEndForecasting_VFP" style="color:black; font-size:12px; font-weight:bold">Quarter End Forecasting</apex:outputLink><br/><br/>
+            <apex:outputLink value="https://cybg--uatp.cs100.my.salesforce.com/apex/PerformanceTrackerForFRSM" style="color:black; font-size:12px; font-weight:bold">Performance Tracker for FRSM</apex:outputLink><br/><br/>
+            <apex:outputLink value="https://cybg--uatp.cs100.my.salesforce.com/apex/PerformanceTrackerForProductManager" style="color:black; font-size:12px; font-weight:bold">Performance Tracker for PM</apex:outputLink><br/><br/>
+            <apex:outputLink value="https://cybg--uatp.cs100.my.salesforce.com/apex/FRSDealStatistics_VFP" style="color:black; font-size:12px; font-weight:bold">FRS Deal Statistics</apex:outputLink><br/><br/>
+            <apex:outputLink value="https://cybg--uatp.cs100.my.salesforce.com/00O0Y000007SQP6" style="color:black; font-size:12px; font-weight:bold">Deals with VA -£1K </apex:outputLink><br/><br/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

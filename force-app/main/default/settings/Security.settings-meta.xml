@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SecuritySettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <networkAccess>
+        <ipRanges>
+            <end>213.120.244.39</end>
+            <start>213.120.244.38</start>
+        </ipRanges>
+        <ipRanges>
+            <description>NCC IP Range</description>
+            <end>195.95.131.66</end>
+            <start>195.95.131.66</start>
+        </ipRanges>
+        <ipRanges>
+            <description>NCC IP Range</description>
+            <end>195.95.131.0</end>
+            <start>195.95.131.0</start>
+        </ipRanges>
+        <ipRanges>
+            <description>NCC IP Range</description>
+            <end>193.164.115.0</end>
+            <start>193.164.115.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>62.172.139.39</end>
+            <start>62.172.139.38</start>
+        </ipRanges>
+        <ipRanges>
+            <description>NCC IP Range</description>
+            <end>31.221.110.80</end>
+            <start>31.221.110.80</start>
+        </ipRanges>
+        <ipRanges>
+            <description>NCC IP Range</description>
+            <end>5.148.69.20</end>
+            <start>5.148.69.20</start>
+        </ipRanges>
+        <ipRanges>
+            <description>NCC IP Range</description>
+            <end>5.148.32.192</end>
+            <start>5.148.32.192</start>
+        </ipRanges>
+    </networkAccess>
+    <passwordPolicies>
+        <complexity>SpecialCharacters</complexity>
+        <expiration>NinetyDays</expiration>
+        <historyRestriction>3</historyRestriction>
+        <lockoutInterval>ThirtyMinutes</lockoutInterval>
+        <maxLoginAttempts>ThreeAttempts</maxLoginAttempts>
+        <minimumPasswordLength>8</minimumPasswordLength>
+        <minimumPasswordLifetime>true</minimumPasswordLifetime>
+        <obscureSecretAnswer>true</obscureSecretAnswer>
+        <questionRestriction>DoesNotContainPassword</questionRestriction>
+    </passwordPolicies>
+    <sessionSettings>
+        <disableTimeoutWarning>false</disableTimeoutWarning>
+        <enableCSPOnEmail>true</enableCSPOnEmail>
+        <enableCSRFOnGet>true</enableCSRFOnGet>
+        <enableCSRFOnPost>true</enableCSRFOnPost>
+        <enableCacheAndAutocomplete>true</enableCacheAndAutocomplete>
+        <enableClickjackNonsetupSFDC>true</enableClickjackNonsetupSFDC>
+        <enableClickjackNonsetupUser>false</enableClickjackNonsetupUser>
+        <enableClickjackNonsetupUserHeaderless>true</enableClickjackNonsetupUserHeaderless>
+        <enableClickjackSetup>true</enableClickjackSetup>
+        <enableContentSniffingProtection>true</enableContentSniffingProtection>
+        <enablePostForSessions>false</enablePostForSessions>
+        <enableSMSIdentity>true</enableSMSIdentity>
+        <enableUpgradeInsecureRequests>false</enableUpgradeInsecureRequests>
+        <enableXssProtection>true</enableXssProtection>
+        <enforceIpRangesEveryRequest>true</enforceIpRangesEveryRequest>
+        <forceLogoutOnSessionTimeout>true</forceLogoutOnSessionTimeout>
+        <forceRelogin>true</forceRelogin>
+        <hstsOnForcecomSites>false</hstsOnForcecomSites>
+        <identityConfirmationOnEmailChange>false</identityConfirmationOnEmailChange>
+        <identityConfirmationOnTwoFactorRegistrationEnabled>true</identityConfirmationOnTwoFactorRegistrationEnabled>
+        <lockSessionsToDomain>true</lockSessionsToDomain>
+        <lockSessionsToIp>false</lockSessionsToIp>
+        <lockerServiceCSP>true</lockerServiceCSP>
+        <lockerServiceFrozenRealm>false</lockerServiceFrozenRealm>
+        <redirectionWarning>false</redirectionWarning>
+        <referrerPolicy>true</referrerPolicy>
+        <requireHttpOnly>true</requireHttpOnly>
+        <requireHttps>true</requireHttps>
+        <securityCentralKillSession>true</securityCentralKillSession>
+        <sessionTimeout>EightHours</sessionTimeout>
+    </sessionSettings>
+</SecuritySettings>

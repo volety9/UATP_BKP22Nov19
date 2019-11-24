@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Categorisation Status --></label>
+    <name>Categorisation_Status__c</name>
+    <picklistValues>
+        <masterLabel>Categorisation Expired</masterLabel>
+        <translation><!-- Categorisation Expired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Categorised</masterLabel>
+        <translation><!-- Categorised --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request for Categorisation</masterLabel>
+        <translation><!-- Request for Categorisation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request for Re-categorisation</masterLabel>
+        <translation><!-- Request for Re-categorisation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

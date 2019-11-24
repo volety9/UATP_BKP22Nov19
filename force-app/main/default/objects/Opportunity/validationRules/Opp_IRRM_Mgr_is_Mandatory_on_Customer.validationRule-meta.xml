@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_IRRM_Mgr_is_Mandatory_on_Customer</fullName>
+    <active>true</active>
+    <description>IRRM Manager on Customer is mandatory before closing a IRRM opp.</description>
+    <errorConditionFormula>(ISNEW()  ||  ISCHANGED( StageName ) )  &amp;&amp;  ISPICKVAL(StageName, &quot;Closed Won&quot;) &amp;&amp;  (RecordType.DeveloperName = &quot;IRRM_Deal_UK_Treasury_Solutions&quot;) &amp;&amp; ISBLANK( Account.IRRM_Manager__c )</errorConditionFormula>
+    <errorMessage>Opportunity cannot be closed as the Related Customer&#39;s IRRM Manager is not populated.</errorMessage>
+</ValidationRule>

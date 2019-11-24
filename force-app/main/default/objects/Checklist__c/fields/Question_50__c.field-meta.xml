@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Question_50__c</fullName>
+    <defaultValue>&quot;When and how have you evidenced that the Customer has confirmed that they understand the sale is unadvised?&quot;</defaultValue>
+    <description>When and how have you evidenced that the Customer has confirmed that they understand the sale is unadvised?</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Question</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

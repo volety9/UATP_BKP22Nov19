@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CON_Banker_Contact_Update_Access</fullName>
+    <active>true</active>
+    <description>Only FCG can update a banker contact</description>
+    <errorConditionFormula>NOT($Permission.UpdateBankerContact) &amp;&amp;  RecordType.DeveloperName = &quot;Banker&quot;</errorConditionFormula>
+    <errorMessage>Only FCG can update a banker contact.</errorMessage>
+</ValidationRule>

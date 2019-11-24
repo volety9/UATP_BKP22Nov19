@@ -1,0 +1,92 @@
+<apex:page controller="DirectFXYOYPerformanceController" contentType="application/vnd.ms-excel#Direct_FX_YOY_Performance_{!TODAY()}.xls">
+    <!--  
+contentType="if($CurrentPage.parameters.isExcel != null, null ,'application/vnd.ms-excel#fileName.xls')"
+-->
+    <!--<apex:form contentType="application/vnd.ms-excel#ForecastReport{!TODAY()}.xls">-->
+    
+    <apex:pageBlock >
+        
+        
+        <apex:pageBlockSection >
+            <table>
+                <th colspan="2" style="background-color:#d7d7d7;">
+                    Customer / FRSM
+                </th>
+                <th colspan="4" style="background-color:#eaeaea;">
+                    Current Year
+                </th>
+                <th colspan="4">
+                    Last Year
+                </th>
+                <th colspan="4" style="background-color:#eaeaea;">
+                    Year on Year
+                </th>
+            </table>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection >
+            <apex:pageblocktable value="{!wrappedDataList}" var="wrap">
+                <apex:column style="background-color:#d7d7d7">
+                    <apex:facet name="header">Customer Name </apex:facet>
+                    {!wrap.customerName}
+                </apex:column>
+                <apex:column style="background-color:#d7d7d7;">
+                    <apex:facet name="header">FRSM</apex:facet>
+                    {!wrap.TSM}
+                </apex:column>
+                
+                <apex:column style="background-color:#eaeaea">
+                    <apex:facet name="header">VA</apex:facet>
+                    {!wrap.currYearVA}
+                </apex:column>
+                <apex:column style="background-color:#eaeaea">
+                    <apex:facet name="header">TO</apex:facet>
+                    {!wrap.currYearTO}
+                </apex:column>
+                
+                <apex:column style="background-color:#eaeaea">
+                    <apex:facet name="header">Margin Percent</apex:facet>
+                    {!wrap.currYearMarginPercent}
+                </apex:column>
+                <apex:column style="background-color:#eaeaea;">
+                    <apex:facet name="header">Deals</apex:facet>
+                    {!wrap.currYearDeals}
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">VA</apex:facet>
+                    {!wrap.lastYearVA}
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">TO</apex:facet>
+                    {!wrap.lastYearTO}
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Margin Percent</apex:facet>
+                    {!wrap.lastYearMarginPercent}
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Deals</apex:facet>
+                    {!wrap.lastYearDeals}
+                </apex:column>
+                <apex:column style="background-color:#eaeaea">
+                    <apex:facet name="header">VA</apex:facet>
+                    {!wrap.diffYearVA}
+                </apex:column>
+                <apex:column style="background-color:#eaeaea">
+                    <apex:facet name="header">TO</apex:facet>
+                    {!wrap.diffYearTO}
+                </apex:column>
+                
+                <apex:column style="background-color:#eaeaea">
+                    <apex:facet name="header">Margin Percent</apex:facet>
+                    {!wrap.diffYearMarginPercent}
+                </apex:column>
+                <apex:column style="background-color:#eaeaea;">
+                    <apex:facet name="header">Deals</apex:facet>
+                    {!wrap.diffYearDeals}
+                </apex:column>
+            </apex:pageblocktable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+</apex:page>

@@ -1,0 +1,32 @@
+<apex:page controller="ytdPerformanceControllerGroup_FRS">
+    <apex:pageBlock >
+        <apex:pageBlockButtons location="Top">
+            <apex:form >
+                <apex:commandbutton value="Download" action="{!downloadReport_FRS}" />
+            </apex:form>
+        </apex:pageBlockButtons>
+        
+        
+        <apex:pageBlockSection >
+            <apex:pageblocktable value="{!wrappedDataList}" var="wrap">
+                
+                <apex:column >
+                    <apex:facet name="header">Division</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.frsm}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">YTD</apex:facet>
+                    <apex:outputLabel >{!IF(wrap.actYtdTot == null,'0.00',wrap.actYtdTot)}</apex:outputLabel><br/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Plan %</apex:facet>
+                    <apex:outputLabel >{!wrap.varPer}%</apex:outputLabel><br/>
+                </apex:column>
+               
+            </apex:pageblocktable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    <!--</apex:form> -->
+</apex:page>

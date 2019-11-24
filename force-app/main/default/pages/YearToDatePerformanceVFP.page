@@ -1,0 +1,237 @@
+<apex:page controller="YearToDatePerformanceController">
+    <!--<apex:form contentType="application/vnd.ms-excel#ForecastReport{!TODAY()}.xls">-->
+    <apex:pageBlock >
+        <apex:pageBlockButtons location="Top">
+            
+            <!--<input type="buttton" value="Download" action="/apex/DirectFXYOYPerformance?isExcel=true"/>
+<a href="/apex/DirectFXYOYPerformance?isExcel=true">Click</a>-->
+            <apex:form >
+                <apex:commandbutton value="Download" action="{!downloadReport}" />
+                <apex:commandButton value="Business Centre" action="{!submitBusCen}" oncomplete="submitBusCen();"/>
+                <apex:commandButton value="Regions" action="{!submitRegions}" oncomplete="submitRegions();"/>
+                <apex:commandButton value="Division" action="{!submitDivisions}" oncomplete="submitDivisions();"/>
+                <apex:commandButton value="Group" action="{!submitGroups}" oncomplete="submitGroups();"/>
+                <apex:commandButton value="Bank" action="{!submitBanks}" oncomplete="submitBanks();"/>
+            </apex:form>
+        </apex:pageBlockButtons>
+        
+        
+        <apex:pageBlockSection >
+            <apex:pageblocktable value="{!wrappedDataList}" var="wrap">
+                
+                <apex:column style="background-color:#d7d7d7" headervalue="FXDirectTarget">
+                    <apex:facet name="header">Business Centre</apex:facet>
+                    <apex:outputLabel style="{!IF(wrap.groupIt == true,'color:#1c89db; font-weight:bold','')}">{!wrap.BusinessCentre}</apex:outputLabel>
+                </apex:column>
+                <apex:column style="background-color:#d7d7d7;">
+                    <apex:facet name="header">Financial Risk Solutions Manager</apex:facet>
+                    <apex:outputLabel style="{!IF(wrap.groupIt == true,'color:#1c89db; font-weight:bold','')}">{!wrap.TSM}</apex:outputLabel>
+                </apex:column>
+                <apex:column style="background-color:#d7d7d7;">
+                    <apex:facet name="header">Summary Fields&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:facet>
+                    <apex:outputLabel style="{!IF(wrap.groupIt == true,'color:#1c89db; font-weight:bold','')}">{!wrap.descriptionList[0]}<br/></apex:outputLabel>
+                    <apex:outputLabel style="{!IF(wrap.groupIt == true,'color:#1c89db; font-weight:bold','')}">{!wrap.descriptionList[1]}<br/></apex:outputLabel>
+                    <apex:outputLabel style="{!IF(wrap.groupIt == true,'color:#1c89db; font-weight:bold','')}">{!wrap.descriptionList[2]}<br/></apex:outputLabel>
+                    <apex:outputLabel style="{!IF(wrap.groupIt == true,'color:#1c89db; font-weight:bold','')}">{!wrap.descriptionList[3]}<br/></apex:outputLabel>
+                    
+                    <apex:outputLabel style="{!IF(wrap.groupIt == true,'color:#1c89db; font-weight:bold','')}">{!wrap.descriptionList[4]}<br/></apex:outputLabel>
+                    <apex:outputLabel style="{!IF(wrap.groupIt == true,'color:#1c89db; font-weight:bold','')}">{!wrap.descriptionList[5]}<br/></apex:outputLabel>
+                    <apex:outputLabel style="{!IF(wrap.groupIt == true,'color:#1c89db; font-weight:bold','')}">{!wrap.descriptionList[6]}<br/></apex:outputLabel>
+                    <apex:outputLabel style="{!IF(wrap.groupIt == true,'color:#1c89db; font-weight:bold','')}">{!wrap.descriptionList[7]}<br/></apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Oct</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXDirectActual[10]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectActual[10]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commActual[10]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmActual[10]}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Nov</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXDirectActual[11]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectActual[11]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commActual[11]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmActual[11]}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Dec</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXDirectActual[12]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectActual[12]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commActual[12]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmActual[12]}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Jan</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXDirectActual[1]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectActual[1]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commActual[1]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmActual[1]}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Feb</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXDirectActual[2]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectActual[2]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commActual[2]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmActual[2]}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Mar</apex:facet>
+                   <apex:outputText >{!wrap.FXDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXDirectActual[3]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectActual[3]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commActual[3]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmActual[3]}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Apr</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXDirectActual[4]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectActual[4]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commActual[4]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmActual[4]}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">May</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXDirectActual[5]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectActual[5]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commActual[5]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmActual[5]}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Jun</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXDirectActual[6]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectActual[6]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commActual[6]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmActual[6]}</apex:outputText><br/>
+                </apex:column>
+               <apex:column >
+                    <apex:facet name="header">Jul</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXDirectActual[7]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectActual[7]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commActual[7]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmActual[7]}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Aug</apex:facet>
+                   <apex:outputText >{!wrap.FXDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXDirectActual[8]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectActual[8]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commActual[8]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmActual[8]}</apex:outputText><br/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Sep</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXDirectActual[9]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.FXInDirectActual[9]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.commActual[9]}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmTarget}</apex:outputText><br/>
+                    <apex:outputText >{!wrap.irrmActual[9]}</apex:outputText><br/>
+                </apex:column>                
+               
+                <apex:column style="background-color:#eaeaea;">
+                    <apex:facet name="header">YTD Actuals</apex:facet>
+                    <br/><br/>
+                    <apex:outputText >{!wrap.FXDirectActualTillDate}</apex:outputText><br/><br/>
+                    <apex:outputText >{!wrap.FXInDirectActualTillDate}</apex:outputText><br/><br/>
+
+                    <apex:outputText >{!wrap.commActualTillDate}</apex:outputText><br/><br/>
+                    <apex:outputText >{!wrap.irrmActualTillDate}</apex:outputText><br/><br/>
+                </apex:column>
+                
+                <apex:column style="background-color:#eaeaea;">
+                    <apex:facet name="header">YTD Plan</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectTargetTillDate}</apex:outputText><br/><br/>
+                    <apex:outputText >{!wrap.FXInDirectTargetTillDate}</apex:outputText><br/><br/>
+
+                    <apex:outputText >{!wrap.commTargetTillDate}</apex:outputText><br/><br/>
+                    <apex:outputText >{!wrap.irrmTargetTillDate}</apex:outputText><br/><br/>
+                </apex:column>
+                 
+                <apex:column style="background-color:#eaeaea;">
+                    <apex:facet name="header">Variance</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectVariance}</apex:outputText><br/><br/>
+                    <apex:outputText >{!wrap.fxInDirectVariance}</apex:outputText><br/><br/>
+
+                    <apex:outputText >{!wrap.commVariance}</apex:outputText><br/><br/>
+                    <apex:outputText >{!wrap.irrmVariance}</apex:outputText><br/><br/>
+                    
+                </apex:column>
+                <apex:column style="background-color:#eaeaea;">
+                    <apex:facet name="header">Variance %</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectVariancePercent}%</apex:outputText><br/><br/>
+                    <apex:outputText >{!wrap.fxInDirectVariancePercent}%</apex:outputText><br/><br/>
+
+                    <apex:outputText >{!wrap.commVariancePercent}%</apex:outputText><br/><br/>
+                    <apex:outputText >{!wrap.irrmVariancePercent}%</apex:outputText><br/><br/>
+                    
+                </apex:column>
+               <apex:column style="background-color:#eaeaea;">
+                    <apex:facet name="header">Pipeline</apex:facet>
+                    <apex:outputText >{!wrap.ytdPipeLine}</apex:outputText><br/><br/>
+                    
+                    
+                </apex:column>
+                <apex:column style="background-color:#eaeaea;">
+                    <apex:facet name="header">Full Year Plan</apex:facet>
+                    <apex:outputText >{!wrap.FXDirectTarget}</apex:outputText><br/><br/>
+
+                    <apex:outputText >{!wrap.FXInDirectTarget}</apex:outputText><br/><br/>
+
+
+
+                    <apex:outputText >{!wrap.commTarget}</apex:outputText><br/><br/>
+
+                    <apex:outputText >{!wrap.irrmTarget}</apex:outputText><br/><br/>
+
+                </apex:column>
+
+            </apex:pageblocktable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    <!--</apex:form> -->
+</apex:page>

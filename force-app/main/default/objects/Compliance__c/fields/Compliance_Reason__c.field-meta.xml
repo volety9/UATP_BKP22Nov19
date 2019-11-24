@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compliance_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Compliance Reason</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Compliance - FX</fullName>
+                <default>false</default>
+                <label>Compliance - FX</label>
+            </value>
+            <value>
+                <fullName>Compliance - IRRM</fullName>
+                <default>false</default>
+                <label>Compliance - IRRM</label>
+            </value>
+            <value>
+                <fullName>Compliance - Comm</fullName>
+                <default>false</default>
+                <label>Compliance - Comm</label>
+            </value>
+            <value>
+                <fullName>General Comment</fullName>
+                <default>false</default>
+                <label>General Comment</label>
+            </value>
+            <value>
+                <fullName>Retail or Wholesale</fullName>
+                <default>false</default>
+                <label>Retail or Wholesale</label>
+            </value>
+            <value>
+                <fullName>BTLP</fullName>
+                <default>false</default>
+                <label>BTLP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

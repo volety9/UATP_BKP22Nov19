@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_Remedial_Action_Required</fullName>
+    <active>true</active>
+    <description>validation rule that the Remedial Action Required field should be completed when the risk rating field is not blank.</description>
+    <errorConditionFormula>(RecordType.DeveloperName = &quot;Professional_Optout_Pre_Deal_Checklist&quot; || RecordType.DeveloperName = &quot;Professional_Pre_Deal_Checklist&quot; || RecordType.DeveloperName = &quot;Retail_Pre_Deal_Checklist&quot;) &amp;&amp;  (ISPICKVAL( Risk_Rating__c , &quot;Red&quot;) || ISPICKVAL( Risk_Rating__c , &quot;Amber&quot;) )&amp;&amp;  ISBLANK(TEXT( Remedial_Action_Required__c ))</errorConditionFormula>
+    <errorDisplayField>Remedial_Action_Required__c</errorDisplayField>
+    <errorMessage>Remedial Action Required must be selected when the file rating is Amber/Red</errorMessage>
+</ValidationRule>

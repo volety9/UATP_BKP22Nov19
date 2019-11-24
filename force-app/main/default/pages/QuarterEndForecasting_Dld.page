@@ -1,0 +1,50 @@
+<apex:page controller="QuarterEndForecasting" contentType="application/vnd.ms-excel#QuarterEndForecasting_{!TODAY()}.xls">
+    <apex:pageBlock >
+        
+        <apex:pageBlockSection >
+            <apex:pageBlockTable value="{!wrapper}" var="wrap">
+                <apex:column >
+                    <apex:facet name="header">Division</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Division == 'Total','color:#1c89db; font-weight:bold','')}">{!wrap.Division}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Year to Date</apex:facet>
+                    <apex:outputLabel >{!IF(wrap.ytd != null, wrap.ytd, 0.00)}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">IRRM Pipeline</apex:facet>
+                    <apex:outputLabel >{!IF(wrap.irrmPipeline != null, wrap.irrmPipeline, 0.00)}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Commodity Pipeline</apex:facet>
+                    <apex:outputLabel >{!IF(wrap.commPipeline != null, wrap.commPipeline, 0.00)}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">New FX Forecast</apex:facet>
+                    <apex:outputLabel >{!IF(wrap.fxPipeline != null, wrap.fxPipeline, 0.00)}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Rolling FX</apex:facet>
+                    <apex:outputLabel >{!IF(wrap.rollingFX != null, wrap.rollingFX, 0.00)}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Revenue Forecast</apex:facet>
+                    <apex:outputLabel >{!IF(wrap.revenue != null, wrap.revenue, 0.00)}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Quarter End Forecast</apex:facet>
+                    <apex:outputLabel >{!IF(wrap.quarterEndForecast != null, wrap.quarterEndForecast, 0.00)}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Plan</apex:facet>
+                    <apex:outputLabel >{!IF(wrap.plan != null, wrap.plan, 0.00)}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Plan %</apex:facet>
+                    <apex:outputLabel >{!IF(wrap.planPercent != null, wrap.planPercent, 0)}</apex:outputLabel>
+                </apex:column>
+                
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

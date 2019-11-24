@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Repository_Info</fullName>
+    <columns>NAME</columns>
+    <columns>Rep_BusinessCentre__c</columns>
+    <columns>Rep_CustomerName__c</columns>
+    <columns>Opportunity_RecordType__c</columns>
+    <columns>Rep_TSMName__c</columns>
+    <columns>Rep_PMName__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Rep_BankName__c</columns>
+    <columns>Rep_CombineId__c</columns>
+    <columns>Rep_DivisionName__c</columns>
+    <columns>Rep_GroupName__c</columns>
+    <columns>Rep_RegionName__c</columns>
+    <columns>Rep_RMName__c</columns>
+    <columns>Rep_WID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Repository__c.CustomerAndPM</value>
+    </filters>
+    <label>Repository CustomerAndPM</label>
+</ListView>

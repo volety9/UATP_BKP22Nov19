@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Repository</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Repositories</value>
+    </caseValues>
+    <layouts>
+        <layout>Repository Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- BankAndGroup --></label>
+        <name>BankAndGroup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BusinessAndCustomer --></label>
+        <name>BusinessAndCustomer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BusinessAndRM --></label>
+        <name>BusinessAndRM</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BusinessAndTSM --></label>
+        <name>BusinessAndTSM</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomerAndPM --></label>
+        <name>CustomerAndPM</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Customer And Product --></label>
+        <name>CustomerAndProduct</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomerAndTSM --></label>
+        <name>CustomerAndTSM</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomerAndTSMFXD --></label>
+        <name>CustomerAndTSMFXD</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DivisionAndRegion --></label>
+        <name>DivisionAndRegion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Event and Task --></label>
+        <name>EventAndTask</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GroupAndDivision --></label>
+        <name>GroupAndDivision</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RegionAndBusiness --></label>
+        <name>RegionAndBusiness</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

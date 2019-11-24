@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_Stage_change_after_closed_won</fullName>
+    <active>true</active>
+    <description>Only super user can change the Stage after closed won</description>
+    <errorConditionFormula>ISCHANGED( StageName ) &amp;&amp; NOT( $Permission.UpdateOpportunityDetails) &amp;&amp;   ISPICKVAL( PRIORVALUE( StageName ) , &quot;Closed Won&quot;)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Only Super User can update the stage after it is closed Won</errorMessage>
+</ValidationRule>

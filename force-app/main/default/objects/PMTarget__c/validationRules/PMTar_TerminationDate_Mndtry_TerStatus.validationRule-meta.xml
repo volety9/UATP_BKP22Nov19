@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMTar_TerminationDate_Mndtry_TerStatus</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(PMTar_Status__c)  &amp;&amp; ISPICKVAL(PMTar_Status__c, &#39;Terminated&#39;) &amp;&amp; ISBLANK(PMTar_TerminationDate__c)</errorConditionFormula>
+    <errorDisplayField>PMTar_TerminationDate__c</errorDisplayField>
+    <errorMessage>Please provide the Termination Date</errorMessage>
+</ValidationRule>

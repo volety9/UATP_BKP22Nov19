@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Journal_ReversalReason__c</fullName>
+    <externalId>false</externalId>
+    <label>Reversal Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Trade Updated by Treasury User</fullName>
+                <default>false</default>
+                <label>Trade Updated by Treasury User</label>
+            </value>
+            <value>
+                <fullName>Trade Updated by Calypso</fullName>
+                <default>false</default>
+                <label>Trade Updated by Calypso</label>
+            </value>
+            <value>
+                <fullName>Banker changed through TDM</fullName>
+                <default>false</default>
+                <label>Banker changed through TDM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

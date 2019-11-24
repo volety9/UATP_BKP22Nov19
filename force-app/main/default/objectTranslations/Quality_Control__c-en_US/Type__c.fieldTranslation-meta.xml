@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Business Loan</masterLabel>
+        <translation><!-- Business Loan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRM</masterLabel>
+        <translation><!-- CRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commodities</masterLabel>
+        <translation><!-- Commodities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commodity Sales Process</masterLabel>
+        <translation><!-- Commodity Sales Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fx Sales Process</masterLabel>
+        <translation><!-- Fx Sales Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IRRM</masterLabel>
+        <translation><!-- IRRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IRRM Sales Process</masterLabel>
+        <translation><!-- IRRM Sales Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vanilla FX</masterLabel>
+        <translation><!-- Vanilla FX --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

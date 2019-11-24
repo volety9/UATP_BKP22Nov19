@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_Update_Account_Owner</fullName>
+    <active>true</active>
+    <description>to restrict the users to update the Account Owner</description>
+    <errorConditionFormula>NOT($Permission.Update_Owner )  &amp;&amp; ISCHANGED( OwnerId )</errorConditionFormula>
+    <errorMessage>Only File Check Group can update the Account Owner.</errorMessage>
+</ValidationRule>

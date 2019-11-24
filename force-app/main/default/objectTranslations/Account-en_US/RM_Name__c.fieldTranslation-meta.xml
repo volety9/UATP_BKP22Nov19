@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- RM Name --></label>
+    <lookupFilter>
+        <errorMessage><!-- Please select an active Banker of a respective branch. --></errorMessage>
+    </lookupFilter>
+    <name>RM_Name__c</name>
+    <relationshipLabel><!-- Accounts (Banker) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Opp_Notify_FCG_for_Opp_Post_Deal_review</fullName>
+        <ccEmails>treasury.solutions@cybg.co.uk</ccEmails>
+        <description>Opp - Notify FCG for Opp Post Deal review</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Opp_Notify_FCG_for_Opp_Post_Deal_review</template>
+    </alerts>
+    <alerts>
+        <fullName>Opp_Notify_FCG_for_Opp_Post_Deal_review_reminder_before_2_days</fullName>
+        <ccEmails>treasury.solutions@cybg.co.uk</ccEmails>
+        <description>Opp - Notify FCG for Opp Post Deal review reminder before 2 days</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Opp_Notify_FCG_for_Opp_Post_Deal_review_reminder_before_2_days</template>
+    </alerts>
+    <alerts>
+        <fullName>Opp_Notify_Opp_owner_2_days_before_Readiness_due_date</fullName>
+        <description>Opp - Notify Opp owner 2 days before Readiness due date</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Opp_Notify_Opp_owner_2_days_before_Readiness_due_date</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_Deal_Review_Status_as_Pending</fullName>
+        <field>Deal_Review_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Update Deal Review Status as Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Last_opp_Closed_date_on_Related_A</fullName>
+        <field>Last_Opportunity_Closed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Last opp Closed date on Related A</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>AccountId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Readied_Date_With_Today_s_Date</fullName>
+        <description>Update Readied Date With Today&#39;s Date when the  Deal Review Status = Ready for Review</description>
+        <field>Date_Readied__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Readied Date With Today&#39;s Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Readiness_Due_Date_as_todayplus7</fullName>
+        <description>Update Readiness Due Date with 7 days after the closed won date</description>
+        <field>Readiness_Due__c</field>
+        <formula>TODAY() + 7</formula>
+        <name>Update Readiness Due Date as Today + 7</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Review_Due</fullName>
+        <description>Update Review Due with 7 days after the date readied</description>
+        <field>Review_Due__c</field>
+        <formula>Date_Readied__c + 7</formula>
+        <name>Update Review Due</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_VA_to_Zero</fullName>
+        <field>Amount</field>
+        <formula>0</formula>
+        <name>Update VA to Zero</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_the_Last_Comm_Closed_Date_on_Acc</fullName>
+        <field>Last_Commodity_Opportunity_Closed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update the Last Comm Closed Date on Acc</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>AccountId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_the_Last_FX_Closed_Date_on_Accoun</fullName>
+        <field>Last_FX_Opportunity_Closed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update the Last FX Closed Date on Accoun</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>AccountId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_the_Last_IRRM_Opportunity_Closed</fullName>
+        <field>Last_IRRM_Opportunity_Closed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update the Last IRRM Opportunity Closed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>AccountId</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>OPP - Email Alert for Date Readied</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Date_Readied__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Readiness_Due__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Notify Opp owner 2 days before Readiness due date if it is not readied</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opp_Notify_Opp_owner_2_days_before_Readiness_due_date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Readiness_Due__c</offsetFromField>
+            <timeLength>-2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>OPP - Email Alert when the Deal Review Status is Ready For Post Deal Check and Date Reviewed is Null</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Deal_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Ready For Post Deal Check</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Date_Reviewed__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Email Alert to FCG when the Deal Review Status is Ready For Post Deal Check and Date Reviewed is Null</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opp_Notify_FCG_for_Opp_Post_Deal_review_reminder_before_2_days</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Review_Due__c</offsetFromField>
+            <timeLength>-2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>OPP - Field Update When the CRM Opportunity is Closed Won</fullName>
+        <actions>
+            <name>Update_the_Last_FX_Closed_Date_on_Accoun</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CRM</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP - Field Update When the Commodity Opportunity is Closed Won</fullName>
+        <actions>
+            <name>Update_the_Last_Comm_Closed_Date_on_Acc</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Commodity</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP - Field Update When the IRRM Opportunity is Closed Won</fullName>
+        <actions>
+            <name>Update_the_Last_IRRM_Opportunity_Closed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>IRRM</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP - Field Update When the Opp Stage is Closed Won</fullName>
+        <actions>
+            <name>Update_Last_opp_Closed_date_on_Related_A</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>FX Cash</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP - Field Update when the stage is changed to Closed Won</fullName>
+        <actions>
+            <name>Update_Deal_Review_Status_as_Pending</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Readiness_Due_Date_as_todayplus7</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Vanilla FX,FX Cash</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Deal_Review_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Ready For Post Deal Check,Post Deal Check Complete</value>
+        </criteriaItems>
+        <description>Update Readiness due date to Today+7 and Deal Review Status to Pending</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP_Field update%2FEmail Alert when the Deal Review Status is Ready For Post Deal Check</fullName>
+        <actions>
+            <name>Opp_Notify_FCG_for_Opp_Post_Deal_review</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Update_Readied_Date_With_Today_s_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Review_Due</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Deal_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Ready For Post Deal Check</value>
+        </criteriaItems>
+        <description>Update Date Readied As Today and Review Due as Today+7 when the  Deal Review Status is &quot;Ready For Post Deal Check&quot;, Email Alert to File Check group</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp - Update VA to Zero When Stage is Closed Won For Vanilla FX</fullName>
+        <actions>
+            <name>Update_VA_to_Zero</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Vanilla FX</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <description>Update Va as 0 if Vanilla FX Opp is Closed Won</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp - Update VA to Zero When Stage is Closed Won For Vanilla FX%2C CRM</fullName>
+        <actions>
+            <name>Update_VA_to_Zero</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Vanilla FX</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CRM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <description>Update Va as 0 if Vanilla FX Opp  OR CRM Opp  is Closed Won</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

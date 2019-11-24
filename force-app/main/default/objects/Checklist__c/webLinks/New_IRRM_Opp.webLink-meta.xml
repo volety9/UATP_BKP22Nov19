@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_IRRM_Opp</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>New IRRM Opp</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>window.open(&quot;/006/e?RecordType=0120Y000000Wa8e&amp;opp4={!Checklist__c.Customer_Name__c}&amp;CF00N0Y00000OQfQl={!Checklist__c.Name}&quot;);</url>
+</WebLink>

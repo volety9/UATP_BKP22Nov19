@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alan_FX_AND_ISDA_populated</fullName>
+    <booleanFilter>1 AND 3 AND 4 AND 5 AND 6 AND (2 OR 7 OR 8) AND 9</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Branch__c</columns>
+    <columns>RM_Name__c</columns>
+    <columns>FX_Pre_Deal_Checklist__c</columns>
+    <columns>ISDA__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Customer</value>
+    </filters>
+    <filters>
+        <field>FX_Pre_Deal_Checklist__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ISDA__c</field>
+        <operation>notEqual</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Migration_Load_ID__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_CITY</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STREET</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Commodity_Pre_Deal_Checklist__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>IRRM_Pre_Deal_Checklist__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>User 17</value>
+    </filters>
+    <label>Alan FX/COMM/IR AND ISDA populated</label>
+</ListView>

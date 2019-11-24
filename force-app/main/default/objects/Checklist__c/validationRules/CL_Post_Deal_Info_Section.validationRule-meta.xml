@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_Post_Deal_Info_Section</fullName>
+    <active>true</active>
+    <description>Senior Manager is authorised to Create or update the post deal info.</description>
+    <errorConditionFormula>NOT($Permission.UpdatePostDealInfo)  &amp;&amp;  RecordType.DeveloperName = &quot;Post_Deal_Checklist&quot; &amp;&amp; ((   ISCHANGED( Treasury_Solution_Manager__c ) ||  ISCHANGED( Opportunity__c ) ||  ISCHANGED( Product__c )) ||  ISNEW() )</errorConditionFormula>
+    <errorMessage>Only File Check Group are authorised to create the checklist or update the Information section.</errorMessage>
+</ValidationRule>

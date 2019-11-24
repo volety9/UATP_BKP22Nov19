@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Group_Status__c</columns>
+    <columns>Group_FXDirectTarget__c</columns>
+    <columns>Group_FXDirectActual__c</columns>
+    <columns>Group_FXIndirectTarget__c</columns>
+    <columns>Group_FXIndirectActual__c</columns>
+    <columns>Group_CRMTarget__c</columns>
+    <columns>Group_CRMActual__c</columns>
+    <columns>Group_CommTarget__c</columns>
+    <columns>Group_CommActual__c</columns>
+    <columns>Group_IRRMTarget__c</columns>
+    <columns>Group_IRRMActual__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

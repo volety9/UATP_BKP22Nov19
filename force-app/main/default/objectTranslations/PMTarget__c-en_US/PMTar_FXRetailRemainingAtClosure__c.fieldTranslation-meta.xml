@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- FX Retail Target Remaining At Closure --></label>
+    <name>PMTar_FXRetailRemainingAtClosure__c</name>
+</CustomFieldTranslation>

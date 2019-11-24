@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_Lost_Reason_already_having_the_val</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISPICKVAL(PRIORVALUE(Customer_Status__c) , &quot;Lost&quot;)|| 
+ISPICKVAL(PRIORVALUE(Customer_Status__c) , &quot;Dormant&quot;)) 
+&amp;&amp; NOT( ISBLANK(PRIORVALUE(Lost_Reason__c ))) &amp;&amp; (ISPICKVAL(Customer_Status__c,&quot;Lost&quot;)|| ISPICKVAL(Customer_Status__c,&quot;Dormant&quot;))&amp;&amp; ISCHANGED(Lost_Reason__c)</errorConditionFormula>
+    <errorDisplayField>Lost_Reason__c</errorDisplayField>
+    <errorMessage>Customer Lost/Dormant reason already updated</errorMessage>
+</ValidationRule>

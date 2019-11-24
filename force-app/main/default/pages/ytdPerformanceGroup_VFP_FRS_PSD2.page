@@ -1,0 +1,42 @@
+<apex:page controller="ytdPerformanceControllerGroup_FRS_PSD2">
+    <script>    
+    Visualforce.remoting.Manager.invokeAction(
+        '{!$RemoteAction.ytdPerformanceControllerGroup_FRS_PSD2.fetchData}', 
+        function(result, event){                     
+            func(JSON.stringify(result));
+        }, 
+        {escape: true}
+    );   
+    </script>
+    <apex:form id="f">
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="Top">           
+                <apex:commandbutton value="Download" action="{!downloadReport_FRS}" />            
+            </apex:pageBlockButtons>
+            <apex:actionFunction name="func" action="{!deserializeWrapperList}" reRender="f">
+                <apex:param id="wr" name="wrapResult" value="" assignTo="{!jsonresult}"/>
+            </apex:actionFunction>        
+            <apex:pageBlockSection >
+                <apex:pageblocktable value="{!wrapperResult}" var="wrap">
+                    
+                    <apex:column >
+                        <apex:facet name="header">Division</apex:facet>
+                        <apex:outputLabel style="{! IF(wrap.grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.frsm}</apex:outputLabel>
+                    </apex:column>
+                    
+                    <apex:column >
+                        <apex:facet name="header">YTD</apex:facet>
+                        <apex:outputLabel >{!IF(wrap.actYtdTot == null,'0.00',wrap.actYtdTot)}</apex:outputLabel><br/>
+                    </apex:column>
+                    
+                    <apex:column >
+                        <apex:facet name="header">Plan %</apex:facet>
+                        <apex:outputLabel >{!wrap.varPer}%</apex:outputLabel><br/>
+                    </apex:column>
+                    
+                </apex:pageblocktable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

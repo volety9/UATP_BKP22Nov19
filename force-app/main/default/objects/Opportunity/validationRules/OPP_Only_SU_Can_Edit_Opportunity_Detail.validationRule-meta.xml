@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_Only_SU_Can_Edit_Opportunity_Detail</fullName>
+    <active>false</active>
+    <description>Only Super users can able to edit the fields which are in opportunity detail section</description>
+    <errorConditionFormula>AND(NOT( $Permission.UpdateOpportunityDetails), RecordType.DeveloperName =&#39;FX_Cash&#39;,OR(ISCHANGED(Name), ISCHANGED(AccountId),ISCHANGED(StageName), ISCHANGED(CloseDate)))</errorConditionFormula>
+    <errorMessage>Only Super user can edit this field.</errorMessage>
+</ValidationRule>

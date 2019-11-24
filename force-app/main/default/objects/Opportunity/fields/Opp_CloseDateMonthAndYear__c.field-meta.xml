@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_CloseDateMonthAndYear__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(MONTH(CloseDate),
+1, &quot;(&quot;&amp;TEXT(YEAR(CloseDate))&amp;&quot;/1)January&quot;,
+2, &quot;(&quot;&amp;TEXT(YEAR(CloseDate))&amp;&quot;/2)February&quot;,
+3, &quot;(&quot;&amp;TEXT(YEAR(CloseDate))&amp;&quot;/3)March&quot;, 
+4, &quot;(&quot;&amp;TEXT(YEAR(CloseDate))&amp;&quot;/4)April&quot;, 
+5, &quot;(&quot;&amp;TEXT(YEAR(CloseDate))&amp;&quot;/5)May&quot;, 
+6, &quot;(&quot;&amp;TEXT(YEAR(CloseDate))&amp;&quot;/6)June&quot;,
+7, &quot;(&quot;&amp;TEXT(YEAR(CloseDate))&amp;&quot;/7)July&quot;,
+8, &quot;(&quot;&amp;TEXT(YEAR(CloseDate))&amp;&quot;/8)August&quot;,
+9, &quot;(&quot;&amp;TEXT(YEAR(CloseDate))&amp;&quot;/9)September&quot;,
+10, &quot;(&quot;&amp;TEXT(YEAR(CloseDate))&amp;&quot;/10)October&quot;,
+11, &quot;(&quot;&amp;TEXT(YEAR(CloseDate))&amp;&quot;/11)November&quot;,
+12, &quot;(&quot;&amp;TEXT(YEAR(CloseDate))&amp;&quot;/12)December&quot;,
+&quot;None&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Close Date Month and Year</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

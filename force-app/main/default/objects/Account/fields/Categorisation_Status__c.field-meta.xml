@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categorisation_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Categorisation Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Request for Categorisation</fullName>
+                <default>false</default>
+                <label>Request for Categorisation</label>
+            </value>
+            <value>
+                <fullName>Categorised</fullName>
+                <default>false</default>
+                <label>Categorised</label>
+            </value>
+            <value>
+                <fullName>Request for Re-categorisation</fullName>
+                <default>false</default>
+                <label>Request for Re-categorisation</label>
+            </value>
+            <value>
+                <fullName>Categorisation Expired</fullName>
+                <default>false</default>
+                <label>Categorisation Expired</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

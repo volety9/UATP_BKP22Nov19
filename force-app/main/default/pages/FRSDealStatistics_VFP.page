@@ -1,0 +1,126 @@
+<apex:page controller="FRSDealStatistics">
+    <apex:pageBlock >
+        <apex:pageBlockButtons location="top">
+        	<apex:form >
+                <apex:commandbutton value="Download" action="{!downloadReport}"/>
+            </apex:form>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection >
+            <apex:pageBlockTable title="FRSDealStatistics" value="{!wrappyList}" var="wrap">
+                <apex:column style="background-color:#d7d7d7">
+                    <apex:facet name="header">Product</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.groupIt == true && wrap.Center == false,'color:#1c89db; font-weight:bold;',IF(wrap.groupIt == true && wrap.Center == true, 'color:#E35967; font-weight:bold; text-align:center;',''))  }">{!wrap.product}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Oct Deal Count</apex:facet>
+                <apex:outputLabel >{!wrap.cntList[10]}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Oct VA</apex:facet>
+                <apex:outputLabel >{!wrap.mnthList[10]}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Nov Deal Count</apex:facet>
+                <apex:outputLabel >{!wrap.cntList[11]}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Nov VA</apex:facet>
+                <apex:outputLabel >{!wrap.mnthList[11]}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Dec Deal Count</apex:facet>
+                <apex:outputLabel >{!wrap.cntList[12]}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Dec VA</apex:facet>
+                <apex:outputLabel >{!wrap.mnthList[12]}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Jan Deal Count</apex:facet>
+                <apex:outputLabel >{!wrap.cntList[1]}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Jan VA</apex:facet>
+                <apex:outputLabel >{!wrap.mnthList[1]}</apex:outputLabel>
+                </apex:column>
+                
+				<apex:column >
+                <apex:facet name="header">Feb Deal Count</apex:facet>
+                <apex:outputLabel >{!wrap.cntList[2]}</apex:outputLabel>
+                </apex:column>                
+                <apex:column >
+                <apex:facet name="header">Feb VA</apex:facet>
+                <apex:outputLabel >{!wrap.mnthList[2]}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Mar Deal Count</apex:facet>
+                <apex:outputLabel >{!wrap.cntList[3]}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Mar VA</apex:facet>
+                <apex:outputLabel >{!wrap.mnthList[3]}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Apr Deal Count</apex:facet>
+                <apex:outputLabel >{!wrap.cntList[4]}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Apr VA</apex:facet>
+                <apex:outputLabel >{!wrap.mnthList[4]}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">May Deal Count</apex:facet>
+                <apex:outputLabel >{!wrap.cntList[5]}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">May VA</apex:facet>
+                <apex:outputLabel >{!wrap.mnthList[5]}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Jun Deal Count</apex:facet>
+                <apex:outputLabel >{!wrap.cntList[6]}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Jun VA</apex:facet>
+                <apex:outputLabel >{!wrap.mnthList[6]}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Jul Deal Count</apex:facet>
+                <apex:outputLabel >{!wrap.cntList[7]}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Jul VA</apex:facet>
+                <apex:outputLabel >{!wrap.mnthList[7]}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Aug Deal Count</apex:facet>
+                <apex:outputLabel >{!wrap.cntList[8]}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Aug VA</apex:facet>
+                <apex:outputLabel >{!wrap.mnthList[8]}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Sep Deal Count</apex:facet>
+                <apex:outputLabel >{!wrap.cntList[9]}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Sep VA</apex:facet>
+                <apex:outputLabel >{!wrap.mnthList[9]}</apex:outputLabel>
+                </apex:column>
+                
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

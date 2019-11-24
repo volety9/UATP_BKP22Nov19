@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSMTar_End_Date_Should_be_in_Current_FY</fullName>
+    <active>true</active>
+    <errorConditionFormula>TSMTar_EndDate__c  &lt;  TSMTar_FYStartDate__c  ||   TSMTar_EndDate__c  &gt; TSMTar_FYEndDate__c</errorConditionFormula>
+    <errorDisplayField>TSMTar_EndDate__c</errorDisplayField>
+    <errorMessage>End Date is not in the current FY.</errorMessage>
+</ValidationRule>

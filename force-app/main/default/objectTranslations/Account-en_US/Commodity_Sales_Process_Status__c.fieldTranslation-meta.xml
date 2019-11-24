@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Grey - Checklist is not attached, 
+Amber - Checklist is attached and status is not green,
+Green - Checklist status is green,
+Red - Annual Review expired --></help>
+    <label><!-- Commodity Sales Process Status --></label>
+    <name>Commodity_Sales_Process_Status__c</name>
+</CustomFieldTranslation>

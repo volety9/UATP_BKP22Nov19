@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FRSM Target</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>FRSM Targets</value>
+    </caseValues>
+    <layouts>
+        <layout>TSM Target Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Targets and Actuals --></label>
+            <section>Targets and Actuals</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Plan Start and Stop date should not be same . --></errorMessage>
+        <name>Plan_Start_and_Stop_Date_should_not_Same</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Location is mandatory on FRSM User&apos;s Record --></errorMessage>
+        <name>TSMTAr_Location_is_Mandatory_on_TSM</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the Status as Active/Terminated. Plan will be deactivated at the end of current FY. --></errorMessage>
+        <name>TSMTar_Cannot_select_status_as_inactive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please update the end date of the plan. --></errorMessage>
+        <name>TSMTar_END_Date_must_chang_on_closure</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End Date cannot be before Start Date --></errorMessage>
+        <name>TSMTar_EndDate_Before_StartDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End Date is not in the current FY. --></errorMessage>
+        <name>TSMTar_End_Date_Should_be_in_Current_FY</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Business Centre needs to be changed, plan should be closed and re-opened for new Business Centre. --></errorMessage>
+        <name>TSMTar_Lockdown_BusinessCentre_On_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If FRSM needs to be changed, plan should be closed and re-opened for new FRSM. --></errorMessage>
+        <name>TSMTar_Lockdown_TSM_On_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Manager is mandatory on FRSM User&apos;s Record --></errorMessage>
+        <name>TSMTar_Manager_is_Mandatory_on_TSM</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start Date is not in the current FY. --></errorMessage>
+        <name>TSMTar_Start_Date_Shoul_be_in_Current_FY</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the Termination Date --></errorMessage>
+        <name>TSMTar_TerDate_Mandatory_for_Termination</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Termination Date should be in between the Plan Start Date and the Plan End Date. --></errorMessage>
+        <name>TSMTar_TerDate_must_within_plan_dates</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Select the Status as Terminated for Termination Date is provided --></errorMessage>
+        <name>TSMTar_TerminatedStatus_For_TerDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the Termination Date --></errorMessage>
+        <name>TSMTar_TerminationDate_Mndtry_TerStatus</name>
+    </validationRules>
+</CustomObjectTranslation>

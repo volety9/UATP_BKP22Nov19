@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_Categorisation_Status_as_Categorised</fullName>
+    <active>true</active>
+    <description>FCG can update the categorisation status as Categorised</description>
+    <errorConditionFormula>NOT($Permission.CategorisationStatusFCG ) &amp;&amp;  ISPICKVAL( Categorisation_Status__c , &quot;Categorised&quot;) &amp;&amp;  ISCHANGED(Categorisation_Status__c)</errorConditionFormula>
+    <errorDisplayField>Categorisation_Status__c</errorDisplayField>
+    <errorMessage>Only File Check Group Can update the Categorisation Status as Categorised.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,7 @@
+<apex:page Controller="CalypsoDataProcess_VFP_Controller" action="{!updateCalypso}">
+    <center>
+        <h2>
+            <p>Validated. Redirecting to the Detail Page.</p>
+        </h2>
+    </center>
+</apex:page>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Is the registered office of the Company domiciled within the European Economic Area (EEA)? --></help>
+    <label><!-- EEA --></label>
+    <name>EEA__c</name>
+</CustomFieldTranslation>

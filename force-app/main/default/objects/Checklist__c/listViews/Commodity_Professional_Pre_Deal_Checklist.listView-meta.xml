@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commodity_Professional_Pre_Deal_Checklist</fullName>
+    <columns>NAME</columns>
+    <columns>Customer_Name__c</columns>
+    <columns>File_Checklist_Rate__c</columns>
+    <columns>Product_Authorised__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Checklist__c.Professional_Pre_Deal_Checklist</value>
+    </filters>
+    <filters>
+        <field>Product__c</field>
+        <operation>equals</operation>
+        <value>Commodity</value>
+    </filters>
+    <label>Commodity Professional Pre-Deal Checklst</label>
+</ListView>

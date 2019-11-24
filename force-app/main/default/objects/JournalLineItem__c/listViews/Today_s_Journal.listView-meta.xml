@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Today_s_Journal</fullName>
+    <columns>NAME</columns>
+    <columns>Journal_Amount__c</columns>
+    <columns>Journal_TSM__c</columns>
+    <columns>Journal_PMContact__c</columns>
+    <columns>Journal_Opportunity__c</columns>
+    <columns>Journal_TSMTarget__c</columns>
+    <columns>Journal_PMTarget__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Journal_CorpCode__c</columns>
+    <columns>Journal_GLAccount__c</columns>
+    <columns>Journal_ProductFamily__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Today&#39;s Journal</label>
+</ListView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_File_checker_req_when_Rating_is_Green</fullName>
+    <active>true</active>
+    <description>File Checker is required for pre deal when the risk rating is Green</description>
+    <errorConditionFormula>(RecordType.DeveloperName = &quot;Professional_Optout_Pre_Deal_Checklist&quot; || RecordType.DeveloperName = &quot;Professional_Pre_Deal_Checklist&quot; || RecordType.DeveloperName = &quot;Retail_Pre_Deal_Checklist&quot;) &amp;&amp;  ISBLANK( File_Checker__c ) &amp;&amp;  ISPICKVAL(  Risk_Rating__c  , &quot;Green&quot;)</errorConditionFormula>
+    <errorDisplayField>File_Checker__c</errorDisplayField>
+    <errorMessage>File Checker Required when the rating is green</errorMessage>
+</ValidationRule>

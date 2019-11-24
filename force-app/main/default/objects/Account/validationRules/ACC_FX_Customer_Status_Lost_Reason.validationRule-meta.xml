@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_FX_Customer_Status_Lost_Reason</fullName>
+    <active>true</active>
+    <description>Lost Reason is required when FX Customer Status is selected as &quot;Lost&quot;.</description>
+    <errorConditionFormula>( ISPICKVAL(Customer_Status__c , &quot;Lost&quot; ) &amp;&amp;  ISBLANK( Lost_Reason__c ) &amp;&amp; NOT(CONTAINS( $User.Username, &quot;cybg.crm.integration&quot;)))</errorConditionFormula>
+    <errorDisplayField>Lost_Reason__c</errorDisplayField>
+    <errorMessage>Please provide the Lost Reason</errorMessage>
+</ValidationRule>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FX_Pre_Deal_Checklist__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>FX Pre Deal Checklist</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
+        <errorMessage>Related FX Pre Deal Checklist does not match with the filter criteria.</errorMessage>
+        <filterItems>
+            <field>Checklist__c.Product__c</field>
+            <operation>equals</operation>
+            <value>FX</value>
+        </filterItems>
+        <filterItems>
+            <field>Checklist__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Retail_Pre_Deal_Checklist</value>
+        </filterItems>
+        <filterItems>
+            <field>Checklist__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Professional_Pre_Deal_Checklist</value>
+        </filterItems>
+        <filterItems>
+            <field>Checklist__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Professional_Optout_Pre_Deal_Checklist</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Checklist__c</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

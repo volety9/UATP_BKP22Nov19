@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quick_Call</fullName>
+    <active>true</active>
+    <label>Quick Call</label>
+    <picklistValues>
+        <picklist>CYB_Relationship_Team__c</picklist>
+        <values>
+            <fullName>Asset Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business on Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CYB Domiciled Banking Relationship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment %28Merchant%29 Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standalone Banking Relationship</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Event_Type__c</picklist>
+        <values>
+            <fullName>Face to Face</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teleconference</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>BTLP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commodity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Int Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liabilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing Provided%2FUpdated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RM Discussion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

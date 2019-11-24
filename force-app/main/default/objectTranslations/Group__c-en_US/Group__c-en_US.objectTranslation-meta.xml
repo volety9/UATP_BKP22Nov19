@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bank</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Banks</value>
+    </caseValues>
+    <layouts>
+        <layout>Bank Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Targets and Actuals --></label>
+            <section>Targets and Actuals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Group Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Targets and Actuals --></label>
+            <section>Targets and Actuals</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Bank cannot be updated to Inactive ,as it contains the Active Group. --></errorMessage>
+        <name>Bank_Cannot_be_update_to_inactive</name>
+    </validationRules>
+</CustomObjectTranslation>

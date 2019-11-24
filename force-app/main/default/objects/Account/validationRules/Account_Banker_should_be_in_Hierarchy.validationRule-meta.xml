@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Banker_should_be_in_Hierarchy</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISBLANK(PRIORVALUE(RM_Name__c))&amp;&amp;ISBLANK(RM_Name__r.Con_Team__c)&amp;&amp; ISCHANGED(RM_Name__c) &amp;&amp; !ISBLANK(RM_Name__c)</errorConditionFormula>
+    <errorMessage>Banker Change Failed: The banker is not present in the hierarchy. Please contact the Financial Risk Solutions Team to add the Banker to the hierarchy and then proceed with the change</errorMessage>
+</ValidationRule>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Banking Centre --></label>
+    <name>Customer_Banking_Centre__c</name>
+    <picklistValues>
+        <masterLabel>Aberdeen</masterLabel>
+        <translation><!-- Aberdeen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Birmingham</masterLabel>
+        <translation><!-- Birmingham --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Direct</masterLabel>
+        <translation><!-- Business Direct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRE - North</masterLabel>
+        <translation><!-- CRE - North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carlisle</masterLabel>
+        <translation><!-- Carlisle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed Codes</masterLabel>
+        <translation><!-- Closed Codes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dundee</masterLabel>
+        <translation><!-- Dundee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East Midlands</masterLabel>
+        <translation><!-- East Midlands --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edinburgh</masterLabel>
+        <translation><!-- Edinburgh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gatwick</masterLabel>
+        <translation><!-- Gatwick --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glasgow</masterLabel>
+        <translation><!-- Glasgow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gloucester</masterLabel>
+        <translation><!-- Gloucester --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Growth Finance</masterLabel>
+        <translation><!-- Growth Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hull &amp; Humber</masterLabel>
+        <translation><!-- Hull &amp; Humber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inverness</masterLabel>
+        <translation><!-- Inverness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lanarkshire</masterLabel>
+        <translation><!-- Lanarkshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leeds</masterLabel>
+        <translation><!-- Leeds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lincoln</masterLabel>
+        <translation><!-- Lincoln --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>London West End</masterLabel>
+        <translation><!-- London West End --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manchester</masterLabel>
+        <translation><!-- Manchester --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merseyside</masterLabel>
+        <translation><!-- Merseyside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North East</masterLabel>
+        <translation><!-- North East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Yorkshire</masterLabel>
+        <translation><!-- North Yorkshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northampton &amp; Peterborough</masterLabel>
+        <translation><!-- Northampton &amp; Peterborough --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preston</masterLabel>
+        <translation><!-- Preston --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reading &amp; Oxford</masterLabel>
+        <translation><!-- Reading &amp; Oxford --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAF - Aberdeen Office</masterLabel>
+        <translation><!-- SAF - Aberdeen Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAF - Birmingham Office</masterLabel>
+        <translation><!-- SAF - Birmingham Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAF - Central Scotland Office</masterLabel>
+        <translation><!-- SAF - Central Scotland Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAF - Leeds Office</masterLabel>
+        <translation><!-- SAF - Leeds Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAF - London Office</masterLabel>
+        <translation><!-- SAF - London Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAF - Manchester Office</masterLabel>
+        <translation><!-- SAF - Manchester Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Yorkshire</masterLabel>
+        <translation><!-- South Yorkshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>St Albans</masterLabel>
+        <translation><!-- St Albans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stirling</masterLabel>
+        <translation><!-- Stirling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thainstone</masterLabel>
+        <translation><!-- Thainstone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West Yorkshire</masterLabel>
+        <translation><!-- West Yorkshire --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

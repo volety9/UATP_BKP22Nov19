@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_Cannot_be_closed_if_Us_Person_is_Yes</fullName>
+    <active>true</active>
+    <description>Opportunity cannot be closed if the related Account&#39;s US Person is set to &quot;Yes&quot;</description>
+    <errorConditionFormula>ISCHANGED(StageName)  &amp;&amp; ISPICKVAL(StageName , &quot;Closed Won&quot;)    &amp;&amp;  ISPICKVAL(Account.US_Persons__c, &quot;Yes&quot;)</errorConditionFormula>
+    <errorMessage>Opportunity cannot be closed as the Related Customer&#39;s Us Person is set as &quot;Yes&quot;</errorMessage>
+</ValidationRule>

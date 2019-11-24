@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Treasury Solutions Area --></label>
+    <name>Treasury_Solutions_Area__c</name>
+    <picklistValues>
+        <masterLabel>Central</masterLabel>
+        <translation><!-- Central --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North</masterLabel>
+        <translation><!-- North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South</masterLabel>
+        <translation><!-- South --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Question_49__c</fullName>
+    <defaultValue>&quot;If ‘Exceptional Approval’ for the transaction has been granted, has this been evidenced within Salesforce?&quot;</defaultValue>
+    <description>If ‘Exceptional Approval’ for the transaction has been granted, has this been evidenced within Salesforce?</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Question</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commodity_Pre_Deal_Checklist_Rating__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF((Commodity_Annual_Review_Date__c  &lt;  TODAY() ||  Commodity_3_Month_Review_Date__c &lt; TODAY()), &quot;Commodity Annual Review Red&quot;, 
+TEXT(Commodity_Pre_Deal_Checklist__r.Risk_Rating__c))</formula>
+    <label>Commodity Pre Deal Checklist Rating</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

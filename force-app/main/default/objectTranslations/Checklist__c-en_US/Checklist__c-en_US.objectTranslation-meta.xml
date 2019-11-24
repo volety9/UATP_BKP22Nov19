@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Checklist</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Checklists</value>
+    </caseValues>
+    <layouts>
+        <layout>Post Deal Checklist</layout>
+        <sections>
+            <label><!-- Bank Confirmations --></label>
+            <section>Bank Confirmations</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Process Fundamentals: EXISTING Customer/Repeat Product Sale --></label>
+            <section>Sales Process Fundamentals: EXISTING Customer/Repeat Product Sale</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Process Fundamentals: NEW Customer/Initial Product Sale --></label>
+            <section>Sales Process Fundamentals: NEW Customer/Initial Product Sale</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Transaction Confirmations --></label>
+            <section>Transaction Confirmations</section>
+        </sections>
+        <sections>
+            <label><!-- Transaction Execution --></label>
+            <section>Transaction Execution</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Professional (Optout) Pre-Deal Checklist</layout>
+        <sections>
+            <label><!-- Categorisation: --></label>
+            <section>Categorisation:</section>
+        </sections>
+        <sections>
+            <label><!-- Confirmations: --></label>
+            <section>Confirmations:</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Meeting: --></label>
+            <section>Customer Meeting:</section>
+        </sections>
+        <sections>
+            <label><!-- Documentation: --></label>
+            <section>Documentation:</section>
+        </sections>
+        <sections>
+            <label><!-- EMIR: --></label>
+            <section>EMIR:</section>
+        </sections>
+        <sections>
+            <label><!-- Initial Referral: --></label>
+            <section>Initial Referral:</section>
+        </sections>
+        <sections>
+            <label><!-- Professional Opt Out: --></label>
+            <section>Professional Opt Out:</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label><!-- To be completed for Interest Rate Transactions ONLY: --></label>
+            <section>To be completed for Interest Rate Transactions ONLY:</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Professional Pre-Deal Checklist</layout>
+        <sections>
+            <label><!-- Categorisation: --></label>
+            <section>Categorisation:</section>
+        </sections>
+        <sections>
+            <label><!-- Confirmations: --></label>
+            <section>Confirmations:</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Meeting: --></label>
+            <section>Customer Meeting:</section>
+        </sections>
+        <sections>
+            <label><!-- Documentation: --></label>
+            <section>Documentation:</section>
+        </sections>
+        <sections>
+            <label><!-- EMIR: --></label>
+            <section>EMIR:</section>
+        </sections>
+        <sections>
+            <label><!-- Initial Referral: --></label>
+            <section>Initial Referral:</section>
+        </sections>
+        <sections>
+            <label><!-- Strategy Paper: Content --></label>
+            <section>Strategy Paper: Content</section>
+        </sections>
+        <sections>
+            <label><!-- Strategy Paper: Issuance --></label>
+            <section>Strategy Paper: Issuance</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label><!-- To be completed for Interest Rate Transactions ONLY: --></label>
+            <section>To be completed for Interest Rate Transactions ONLY:</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Retail Pre-Deal Checklist</layout>
+        <sections>
+            <label><!-- Categorisation: --></label>
+            <section>Categorisation:</section>
+        </sections>
+        <sections>
+            <label><!-- Confirmations: --></label>
+            <section>Confirmations:</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Meeting: --></label>
+            <section>Customer Meeting:</section>
+        </sections>
+        <sections>
+            <label><!-- Documentation: --></label>
+            <section>Documentation:</section>
+        </sections>
+        <sections>
+            <label><!-- EMIR: --></label>
+            <section>EMIR:</section>
+        </sections>
+        <sections>
+            <label><!-- Initial Referral: --></label>
+            <section>Initial Referral:</section>
+        </sections>
+        <sections>
+            <label><!-- Pre Deal Call: --></label>
+            <section>Pre Deal Call:</section>
+        </sections>
+        <sections>
+            <label><!-- Strategy Paper: Content --></label>
+            <section>Strategy Paper: Content</section>
+        </sections>
+        <sections>
+            <label><!-- Strategy Paper: Issuance --></label>
+            <section>Strategy Paper: Issuance</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label><!-- To be completed for Interest Rate Transactions ONLY: --></label>
+            <section>To be completed for Interest Rate Transactions ONLY:</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Post Deal Checklist --></label>
+        <name>Post_Deal_Checklist</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Professional (Optout) Pre-Deal Checklist --></label>
+        <name>Professional_Optout_Pre_Deal_Checklist</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Professional Pre-Deal Checklist --></label>
+        <name>Professional_Pre_Deal_Checklist</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Retail Pre-Deal Checklist --></label>
+        <name>Retail_Pre_Deal_Checklist</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Authorisation Valid Until Date is Required when the rating is green --></errorMessage>
+        <name>CL_Auth_req_when_Rating_is_Green</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only File Check Group can select Completed/Remedial Action Required as Checklist Status --></errorMessage>
+        <name>CL_Checklist_Status_as_Completed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- File Rating is required if the status is Remedial Action Required/Completed --></errorMessage>
+        <name>CL_File_Rate_req_if_Status_is_Completed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- File Checker Required when the rating is green --></errorMessage>
+        <name>CL_File_checker_req_when_Rating_is_Green</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only File Check Group are authorised to create the checklist or update the Information section. --></errorMessage>
+        <name>CL_Post_Deal_Info_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product Authorised Required when the rating is green --></errorMessage>
+        <name>CL_Product_Auth_req_when_Rating_is_Green</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There are related Customer fields that require completing before this record can be saved. Please revert to the Customer, press Edit and then Save. This will display the mandatory fields that require completing. Then come back to this record to Save --></errorMessage>
+        <name>CL_Related_Account_Fields_Missing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There are related Opportunity fields that require completing before this record can be saved. Please revert to the Opportunity, press Edit and then Save.This will display the mandatory fields that require completing.Then come back to this record to Save --></errorMessage>
+        <name>CL_Related_Opp_Mandatory_Fields_Missing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Remedial Action Required must be &quot;No&quot; when the file rating is Green --></errorMessage>
+        <name>CL_Remedial_Action_Not_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Remedial Action Required must be selected when the file rating is Amber/Red --></errorMessage>
+        <name>CL_Remedial_Action_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only FRSM can use the status as &quot;Remedial Action Complete&quot; --></errorMessage>
+        <name>CL_Status_as_Rem_Action_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When the File Rating is Green, either the Strategy Paper Issued or Exception Date should be completed. --></errorMessage>
+        <name>CL_Strategy_Paper_req_when_Rate_is_Green</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Update the Checklist status as In Progress --></errorMessage>
+        <name>CL_Update_CL_status_as_In_Progress</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Update the Checklist status as Ready for Review (for Pre Deal)/Remedial Action Complete(for Post Deal) --></errorMessage>
+        <name>CL_Update_CL_status_as_Ready_for_Rev</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Update the Checklist status as Completed --></errorMessage>
+        <name>CL_Update_Checklist_status_as_Completed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only FCG and Super User can update the Checklist after it is Completed. --></errorMessage>
+        <name>CL_Update_Status_After_Completed</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_CRM_Opp --></label>
+        <name>New_CRM_Opp</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Commodity_Opp --></label>
+        <name>New_Commodity_Opp</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_IRRM_Opp --></label>
+        <name>New_IRRM_Opp</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Vanilla_FX_Opp --></label>
+        <name>New_Vanilla_FX_Opp</name>
+    </webLinks>
+</CustomObjectTranslation>

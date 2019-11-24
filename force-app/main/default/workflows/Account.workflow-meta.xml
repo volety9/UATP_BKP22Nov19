@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Account_Notify_Account_Owner_1_Months_before_Expiry_Date</fullName>
+        <description>Account - Notify Account Owner 1 Months before Expiry Date</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_Account_Owner_1_Month_before_Expiry_Date</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_Account_Owner_2_Days_before_Expiry_Date</fullName>
+        <description>Account - Notify Account Owner 2 Days before Expiry Date</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_Account_Owner_2_days_before_Expiry_Date</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_Account_Owner_2_Weeks_before_3_Months_Review_Expiry_Date</fullName>
+        <description>Account - Notify Account Owner 2 Weeks before 3 Months Review Expiry Date</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_3_Month_Review_Reminder_Template_For_Account_Owner</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_Account_Owner_2_Weeks_before_Expiry_Date</fullName>
+        <description>Account - Notify Account Owner 2 Weeks before Expiry Date</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_Account_Owner_2_Weeks_before_Expiry_Date</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_Account_Owner_for_No_Closed_Won_opportunity_after_12_months</fullName>
+        <description>Account - Notify Account Owner for No Closed Won opportunity after 12 months</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_Account_Owner_for_No_Closed_Won_opportunity_after_12_months</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_Account_Owner_if_Categorisation_Status_is_Expired</fullName>
+        <description>Account - Notify Account Owner if Categorisation Status is Expired</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_Account_Owner_if_Categorisation_Status_is_Expired</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_Account_Owner_of_their_Categorisation</fullName>
+        <description>Account - Notify Account Owner of their Categorisation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_Account_Owner_of_their_Categorisation</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_Account_Owner_that_Date_Customer_notified_is_not_populated</fullName>
+        <description>Account - Notify Account Owner that Date Customer notified is not populated</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_Account_Owner_that_Date_Customer_notified_is_not_populated</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_FCG_30_Days_After_Expiry_Date</fullName>
+        <ccEmails>treasury.solutions@cybg.co.uk</ccEmails>
+        <description>Account - Notify FCG 30 Days After Expiry Date</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_FCG_30_days_after_annual_review</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_FCG_7_Days_After_Expiry_Date</fullName>
+        <ccEmails>treasury.solutions@cybg.co.uk</ccEmails>
+        <description>Account - Notify FCG 7 Days After Expiry Date</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_FCG_7_days_after_annual_review</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_FCG_User_when_Ready_For_Annual_Review_is_Checked</fullName>
+        <ccEmails>treasury.solutions@cybg.co.uk</ccEmails>
+        <description>Account - Notify FCG User when Ready For Annual Review is Checked</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_FCG_User_when_Ready_For_Annual_Review_is_Checked</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_FCG_for_Customer_Re_Categorisation</fullName>
+        <ccEmails>treasury.solutions@cybg.co.uk</ccEmails>
+        <description>Account - Notify FCG for Customer Re-Categorisation</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Customer_request_for_Re_Categorisation</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_FCG_for_Customer_Request_for_Categorisation</fullName>
+        <ccEmails>treasury.solutions@cybg.co.uk</ccEmails>
+        <description>Account - Notify FCG for Customer Request for Categorisation</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_FCG_for_Customer_Request_for_Categorisation</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_FCG_to_Review_the_FCTMA_Document</fullName>
+        <ccEmails>treasury.solutions@cybg.co.uk</ccEmails>
+        <description>Account - Notify FCG to Review the FCTMA Document</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_FCG_to_Review_the_FCTMA_Document</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_FCG_to_Review_the_ISDA_Document</fullName>
+        <ccEmails>treasury.solutions@cybg.co.uk</ccEmails>
+        <description>Account - Notify FCG to Review the ISDA Document</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_FCG_to_Review_the_ISDA_Document</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_Static_Data_Team_When_The_Account_is_Ready_to_Convert</fullName>
+        <ccEmails>static.data.bls@cybg.co.uk</ccEmails>
+        <description>Account - Notify Static Data Team When The Account is Ready to Convert</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_Static_Data_Team_When_The_Account_is_Ready_to_Convert</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Notify_Super_User_when_Ready_For_Annual_Review_is_Checked</fullName>
+        <description>Account - Notify Super User when Ready For Annual Review is Checked</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Super_User_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Account_Notify_Super_User_when_Ready_For_Annual_Review_is_Checked</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_Cat_Status_as_Categorised</fullName>
+        <field>Categorisation_Status__c</field>
+        <literalValue>Categorised</literalValue>
+        <name>Update Cat Status as Categorised</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Categorisation_Date</fullName>
+        <field>Categorisation_Date__c</field>
+        <formula>Today()</formula>
+        <name>Update Categorisation Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Categorisation_Status_as_Expired</fullName>
+        <field>Categorisation_Status__c</field>
+        <literalValue>Categorisation Expired</literalValue>
+        <name>Update Categorisation Status as Expired</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Lost_Reason_field</fullName>
+        <field>Lost_Reason__c</field>
+        <formula>&#39;Lost by TDM&#39;</formula>
+        <name>Update Lost Reason field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Old_Commodity_Manager_Id</fullName>
+        <field>OldCommManagerId__c</field>
+        <formula>PRIORVALUE( Commodity_Manager__c )</formula>
+        <name>Update Old Commodity Manager Id</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Old_FX_Manager_Id</fullName>
+        <field>OldFXManagerId__c</field>
+        <formula>PRIORVALUE( FX_Manager__c )</formula>
+        <name>Update Old FX Manager Id</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Old_IRRM_Manager_Id</fullName>
+        <field>OldIRRMManagerId__c</field>
+        <formula>PRIORVALUE( IRRM_Manager__c )</formula>
+        <name>Update Old IRRM Manager Id</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Old_TSM_Id</fullName>
+        <field>OldTSMId__c</field>
+        <formula>PRIORVALUE(OwnerId)</formula>
+        <name>Update Old TSM Id</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Ready_For_Annual_Review_to_False</fullName>
+        <field>Ready_For_Annual_Review__c</field>
+        <literalValue>0</literalValue>
+        <name>Update Ready For Annual Review to False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Account - Email Alert When The Account Is Ready To Convert</fullName>
+        <actions>
+            <name>Account_Notify_Static_Data_Team_When_The_Account_is_Ready_to_Convert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Ready_to_Convert__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Email Alert to Static Data Team When The Account Is Ready To Convert</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert When There Is No Closed Opportunity After 12 Months Of The Categorisation Date</fullName>
+        <active>true</active>
+        <description>Email alert to Account Owner if there is no closed won opportunity after 12 months of categorisation date</description>
+        <formula>NOT( ISBLANK( Categorisation_Date__c ) )  &amp;&amp; ( ISBLANK(Last_Opportunity_Closed_Date__c)  ||  Categorisation_Date__c  &gt;  Last_Opportunity_Closed_Date__c )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_for_No_Closed_Won_opportunity_after_12_months</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.Categorisation_Date__c</offsetFromField>
+            <timeLength>365</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert for Commodity 3 Month Review</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Commodity_3_Month_Review_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Commodity_3_Month_Review_Date__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>Email alert to notify the TSM 2 weeks before 3 Month Review</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_2_Weeks_before_3_Months_Review_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.Commodity_3_Month_Review_Date__c</offsetFromField>
+            <timeLength>-14</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert for Commodity Annual Review</fullName>
+        <active>true</active>
+        <description>Email alert to notify the TSM before Annual Review Date and FCG after Annual Review Date</description>
+        <formula>NOT(ISBLANK(  Commodity_Annual_Review_Date__c ) ) &amp;&amp;   Commodity_Annual_Review_Date__c  &gt;=  (TODAY() - 31)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_FCG_7_Days_After_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.Commodity_Annual_Review_Date__c</offsetFromField>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_2_Days_before_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.Commodity_Annual_Review_Date__c</offsetFromField>
+            <timeLength>-2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_FCG_30_Days_After_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.Commodity_Annual_Review_Date__c</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_1_Months_before_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.Commodity_Annual_Review_Date__c</offsetFromField>
+            <timeLength>-30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_2_Weeks_before_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.Commodity_Annual_Review_Date__c</offsetFromField>
+            <timeLength>-14</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert for FX 3 Month Review</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.FX_3_Month_Review_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.FX_3_Month_Review_Date__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>Email alert to notify the TSM 2 weeks before 3 Month Review</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_2_Weeks_before_3_Months_Review_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.FX_3_Month_Review_Date__c</offsetFromField>
+            <timeLength>-14</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert for FX Annual Review</fullName>
+        <active>true</active>
+        <description>Email alert to notify the TSM before Annual Review Date and FCG after Annual Review Date</description>
+        <formula>NOT(ISBLANK( FX_Annual_Review_Date__c) ) &amp;&amp;  FX_Annual_Review_Date__c  &gt;=  (TODAY() - 31)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_1_Months_before_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.FX_Annual_Review_Date__c</offsetFromField>
+            <timeLength>-30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_2_Weeks_before_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.FX_Annual_Review_Date__c</offsetFromField>
+            <timeLength>-14</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_2_Days_before_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.FX_Annual_Review_Date__c</offsetFromField>
+            <timeLength>-2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_FCG_7_Days_After_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.FX_Annual_Review_Date__c</offsetFromField>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_FCG_30_Days_After_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.FX_Annual_Review_Date__c</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert for IRRM 3 Month Review</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.IRRM_3_Month_Review_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.IRRM_3_Month_Review_Date__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>Email alert to notify the TSM 2 weeks before 3 Month Review</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_2_Weeks_before_3_Months_Review_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.IRRM_3_Month_Review_Date__c</offsetFromField>
+            <timeLength>-14</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert for IRRM Annual Review</fullName>
+        <active>true</active>
+        <description>Email alert to notify the TSM before Annual Review Date and FCG after Annual Review Date</description>
+        <formula>NOT(ISBLANK(  IRRM_Annual_Review_Date__c  ) ) &amp;&amp;    IRRM_Annual_Review_Date__c   &gt;=  (TODAY() - 31)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_FCG_7_Days_After_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.IRRM_Annual_Review_Date__c</offsetFromField>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_2_Weeks_before_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.IRRM_Annual_Review_Date__c</offsetFromField>
+            <timeLength>-14</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_2_Days_before_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.IRRM_Annual_Review_Date__c</offsetFromField>
+            <timeLength>-2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_1_Months_before_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.IRRM_Annual_Review_Date__c</offsetFromField>
+            <timeLength>-30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_FCG_30_Days_After_Expiry_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.IRRM_Annual_Review_Date__c</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert if Categorisation Status is Expired</fullName>
+        <actions>
+            <name>Account_Notify_Account_Owner_if_Categorisation_Status_is_Expired</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Categorisation_Status__c</field>
+            <operation>equals</operation>
+            <value>Categorisation Expired</value>
+        </criteriaItems>
+        <description>Email alert to account owner if the categorisation status is Expired.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert if Date Customer Of Category Is Blank</fullName>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Account.Date_Customer_Notified_Of_Category__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Categorisation_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Notify Account Owner 5 Months after the Categorisation date if customer is not notified. 
+Update Categorisation status as expired after 6 months.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Notify_Account_Owner_that_Date_Customer_notified_is_not_populated</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.Categorisation_Date__c</offsetFromField>
+            <timeLength>150</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Update_Categorisation_Status_as_Expired</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Account.Categorisation_Date__c</offsetFromField>
+            <timeLength>180</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert to FCG when the Ready For Annual Review is Checked</fullName>
+        <actions>
+            <name>Account_Notify_FCG_User_when_Ready_For_Annual_Review_is_Checked</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Ready_For_Annual_Review__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Email Notification to File Check Group When Ready For Annual Review is Checked</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert when Categorisation Status as Request for Categorisation</fullName>
+        <actions>
+            <name>Account_Notify_FCG_for_Customer_Request_for_Categorisation</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Categorisation_Status__c</field>
+            <operation>equals</operation>
+            <value>Request for Categorisation</value>
+        </criteriaItems>
+        <description>Email alert to FCG when the Categorisation Status as Request for Categorisation</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert when Categorisation Status as Request for Re-Categorisation</fullName>
+        <actions>
+            <name>Account_Notify_FCG_for_Customer_Re_Categorisation</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Categorisation_Status__c</field>
+            <operation>equals</operation>
+            <value>Request for Re-categorisation</value>
+        </criteriaItems>
+        <description>Notify the FCG for customer request for Re-Categorisation</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert when the FCTMA is checked</fullName>
+        <actions>
+            <name>Account_Notify_FCG_to_Review_the_FCTMA_Document</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.FCTMA__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Notify FCG if the FCTMA is checked.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert when the ISDA is checked</fullName>
+        <actions>
+            <name>Account_Notify_FCG_to_Review_the_ISDA_Document</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.ISDA__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Notify FCG if the ISDA is checked.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Email Alert when the Ready For Annual Review is Checked</fullName>
+        <actions>
+            <name>Account_Notify_Super_User_when_Ready_For_Annual_Review_is_Checked</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Ready_For_Annual_Review__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Email Notification to Super User Group When Ready For Annual Review is Checked</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Update Ready for Annual Review when IRRM Annual Review changed</fullName>
+        <actions>
+            <name>Update_Ready_For_Annual_Review_to_False</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update the Ready for annual review as false if the IRRM Annual Review Date is changed.</description>
+        <formula>ISCHANGED( IRRM_Annual_Review_Date__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account - Update The Categorisation Date and Notify Owner</fullName>
+        <actions>
+            <name>Account_Notify_Account_Owner_of_their_Categorisation</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Update_Cat_Status_as_Categorised</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Categorisation_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update &quot;Categorisation Date&quot; with today when the Category is populated.
+Notify Account Owner of the categorisation.</description>
+        <formula>ISCHANGED( Categorisation__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Lost Reason cannot be blank for Lost Status</fullName>
+        <actions>
+            <name>Update_Lost_Reason_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISPICKVAL(Customer_Status__c , &quot;Lost&quot;)&amp;&amp; ISBLANK(Lost_Reason__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Old Commodity Manager Id Update</fullName>
+        <actions>
+            <name>Update_Old_Commodity_Manager_Id</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED( Commodity_Manager__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Old FX Manager Id Update</fullName>
+        <actions>
+            <name>Update_Old_FX_Manager_Id</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED( FX_Manager__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Old IRRM Manager Id Update</fullName>
+        <actions>
+            <name>Update_Old_IRRM_Manager_Id</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED( IRRM_Manager__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Old TSM Id Update</fullName>
+        <actions>
+            <name>Update_Old_TSM_Id</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED(OwnerId)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

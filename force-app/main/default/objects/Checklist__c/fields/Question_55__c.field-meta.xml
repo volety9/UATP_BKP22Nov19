@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Question_55__c</fullName>
+    <defaultValue>&quot;When has the Customer informed you that they wish to ‘opt out’ of the Sales Process?&quot;</defaultValue>
+    <description>When has the Customer informed you that they wish to ‘opt out’ of the Sales Process?</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Question</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

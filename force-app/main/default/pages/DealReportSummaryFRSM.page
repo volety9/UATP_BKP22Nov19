@@ -1,0 +1,57 @@
+<apex:page controller="DealReportSummaryFRSM">
+    <apex:pageBlock >
+        <apex:pageBlockButtons location="Top">
+            <apex:form >
+                <apex:commandbutton value="Download" action="{!downloadReport}" />
+            </apex:form>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection >
+            <apex:pageblocktable value="{!wrappedDataList}" var="wrap">
+               <apex:column >
+                    <apex:facet name="header">Most Recent Deal Date</apex:facet>
+                    <apex:outputLabel >{!wrap.tradeDate}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">FRSM</apex:facet>
+                    <apex:outputLabel >{!wrap.OwnerNames}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Customer Name</apex:facet>
+                    <apex:outputLabel >{!wrap.customerName}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Product</apex:facet>
+                    <apex:outputLabel >{!wrap.product}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">ET Branch Number</apex:facet>
+                    <apex:outputLabel >{!wrap.etbranchNumber}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Calypso ID</apex:facet>
+                    <apex:outputLabel >{!wrap.cid}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Revenue</apex:facet>
+                    <apex:outputLabel >{!wrap.revenue}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">RM</apex:facet>
+                    <apex:outputLabel >{!wrap.rm}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Q6 Code</apex:facet>
+                    <apex:outputLabel >{!wrap.q6}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Business Centre</apex:facet>
+                    <apex:outputLabel >{!wrap.team}</apex:outputLabel>
+                </apex:column>
+                
+                
+            </apex:pageblocktable>
+            
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    <!--</apex:form> -->
+</apex:page>

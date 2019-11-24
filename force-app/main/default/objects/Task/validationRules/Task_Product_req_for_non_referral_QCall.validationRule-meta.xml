@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task_Product_req_for_non_referral_QCall</fullName>
+    <active>true</active>
+    <description>Product is required for non referral Quick Call</description>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;Quick_Call&quot; &amp;&amp;  NOT(ISPICKVAL( Type__c , &quot;Referral&quot;)) &amp;&amp;  ISBLANK( TEXT(Product__c ))</errorConditionFormula>
+    <errorDisplayField>Product__c</errorDisplayField>
+    <errorMessage>Product is mandatory</errorMessage>
+</ValidationRule>

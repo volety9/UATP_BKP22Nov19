@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Banker Layout</layout>
+        <sections>
+            <label><!-- Hierarchy --></label>
+            <section>Hierarchy</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- Dealing Authorisation --></label>
+            <section>Dealing Authorisation</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Banker --></label>
+        <name>Banker</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contact --></label>
+        <name>Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for Treasury Solutions employees --></description>
+        <label><!-- Internal --></label>
+        <name>Internal</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Only FCG can update a banker contact. --></errorMessage>
+        <name>CON_Banker_Contact_Update_Access</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Do not have permission to create or edit Banker --></errorMessage>
+        <name>CON_Contact_creation_restriction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the inactive reason --></errorMessage>
+        <name>CON_Inactive_Reason_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Super User can update the Internal contact details --></errorMessage>
+        <name>CON_Internal_Contact_Update_Access</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

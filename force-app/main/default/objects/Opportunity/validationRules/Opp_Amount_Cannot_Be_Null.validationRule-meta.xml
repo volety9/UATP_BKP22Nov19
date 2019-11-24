@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Amount_Cannot_Be_Null</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNULL( Amount)</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>Opportunity Amount cannot be Null</errorMessage>
+</ValidationRule>

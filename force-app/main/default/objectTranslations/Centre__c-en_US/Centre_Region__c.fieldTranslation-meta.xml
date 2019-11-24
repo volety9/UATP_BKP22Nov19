@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Division --></label>
+    <lookupFilter>
+        <errorMessage><!-- Region is not active. --></errorMessage>
+    </lookupFilter>
+    <name>Centre_Region__c</name>
+    <relationshipLabel><!-- Regions --></relationshipLabel>
+</CustomFieldTranslation>

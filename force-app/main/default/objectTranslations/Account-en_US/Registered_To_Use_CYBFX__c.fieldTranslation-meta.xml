@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If box checked,customer is registered to use CYBFX --></help>
+    <label><!-- Registered To Use CYBFX --></label>
+    <name>Registered_To_Use_CYBFX__c</name>
+</CustomFieldTranslation>

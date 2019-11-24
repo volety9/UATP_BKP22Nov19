@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Centre_Status__c</columns>
+    <columns>Centre_FXDirectTarget__c</columns>
+    <columns>Centre_FXDirectActual__c</columns>
+    <columns>Centre_FXIndirectTarget__c</columns>
+    <columns>Centre_FXIndirectActual__c</columns>
+    <columns>Centre_CRMTarget__c</columns>
+    <columns>Centre_CRMActual__c</columns>
+    <columns>Centre_CommTarget__c</columns>
+    <columns>Centre_CommActual__c</columns>
+    <columns>Centre_IRRMTarget__c</columns>
+    <columns>Centre_IRRMActual__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

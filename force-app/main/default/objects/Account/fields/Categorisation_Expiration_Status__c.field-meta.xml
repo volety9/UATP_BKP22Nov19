@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categorisation_Expiration_Status__c</fullName>
+    <description>Used in report</description>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( Date_Customer_Notified_Of_Category__c ) &amp;&amp; NOT(ISBLANK(  Categorisation_Date__c )) , 
+ IF( (TODAY() - Categorisation_Date__c  &gt; 150 &amp;&amp; TODAY() - Categorisation_Date__c &lt; 180), 
+&quot;Will Expire in a Month &quot;, 
+ IF(TODAY() - Categorisation_Date__c &gt; 180, 
+&quot;Expired&quot;, 
+&quot;Green&quot;) ) , 
+&quot;Green&quot;)</formula>
+    <label>Categorisation Expiration Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

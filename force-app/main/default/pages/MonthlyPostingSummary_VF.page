@@ -1,0 +1,46 @@
+<!--
+  @Author        : Suhas
+  @Name          : Monthly Posting Summary
+  @Created Date  : 26 March 2018
+  @Description   : Monthly Posting Summary details 
+  @version       : 1.0
+-->
+
+<apex:page readOnly="true" standardController="MonthlyPostingSummary__c" extensions="MonthlyPostingSummaryController">
+<apex:form id="mainFormId">
+        
+	
+    <apex:repeat value="{!mpsDetails}" var="mps"> 
+        
+        <apex:pageBlock title="{!mps.Name}" id="pb1">
+             <apex:pageMessages id="mpsMessageId" ></apex:pageMessages>
+            <apex:pageBlockSection >
+                <apex:outputField value="{!mps.Name}"/>
+                <apex:outputField value="{!mps.MPS_Status__c}"/>
+                <apex:outputField value="{!mps.MPS_Total_CB_Posting_Amount__c}"/>
+                <apex:outputField value="{!mps.MPS_Total_YB_Posting_Amount__c}"/> 
+            </apex:pageBlockSection>
+            <div align="center" style="padding-right: 100px;padding-top: 10px;" draggable="false" >
+            <apex:commandButton value="Confirm" title="Confirmation to Publish"  disabled="{! !(mpsDetails.MPS_Current_Posting_Month__c==true && mpsDetails.MPS_Status__c=='Not Published')}" action="{!FileExport}" reRender="mainFormId,mpsMessageId" immediate="true"/>
+			&nbsp;&nbsp;
+               
+            <apex:commandButton value="Cancel" title="Cancel Publish"  action="{!cancelPublish}"/>
+            </div>
+            <div style="padding-top: 10px;"></div>
+            <apex:pageBlockTable value="{!mps.PostingLineItems__r}" var="pli">
+                <apex:facet name="header">Posting Line Items </apex:facet>
+                <apex:column value="{!pli.Name}"/>
+                <apex:column value="{!pli.PLI_Description__c}"/>
+                <apex:column value="{!pli.PLI_Corporate_Code__c}"/>
+                <apex:column value="{!pli.PLI_Cost_Centre__c}"/>
+                <apex:column value="{!pli.PLI_GL_Account__c}"/>
+                <apex:column value="{!pli.PLI_Cr_Dr__c}"/>
+                <apex:column value="{!pli.PLI_Amount__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+    </apex:repeat>
+    
+   
+ </apex:form>   
+</apex:page>

@@ -1,0 +1,42 @@
+<apex:page standardController="Account" extensions="TargetTransferController" sidebar="false">
+<apex:form >
+    <apex:pageBlock rendered="{!pbMsg}">
+        <h style ="padding-right: 300px; font-size :20px;"> You are Trying to transfer Targets from {!oldTSMName} to {!newTSMName} </h>
+        <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Yes" action="{!processSelectedforTSM}"/>
+                <apex:commandButton value="No" action="{!processSelectedforTSM}"/>
+            </apex:pageBlockButtons>
+    </apex:pageBlock>
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="Top" >
+                <apex:commandButton value="Transfer FRSM Target" action="{!processSelectedforTSM}" rerender="table"/>
+                <apex:commandButton value="Transfer PM Target" action="{!processSelectedforPM}" rerender="table"/>
+            </apex:pageBlockButtons>
+            <!-- In our table we are displaying the cContact records -->
+            <apex:pageBlockTable value="{!OpportunityWrapperList}" var="opp" id="table">
+               
+                <apex:column >
+                <apex:facet name="header">Selection </apex:facet>
+                    <!-- This is our selected Boolean property in our wrapper class -->
+                    <apex:inputCheckbox value="{!opp.selected}"/>
+                </apex:column>
+                <!-- This is how we access the contact values within our cContact container/wrapper -->
+                <apex:column >
+                <apex:facet name="header">Opportunity Name </apex:facet>
+                   {!opp.opportunityRecord.Name}
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Maturity Date</apex:facet>
+                   {!opp.opportunityRecord.Maturity_Date__c}
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Amount</apex:facet>
+                   {!opp.opportunityRecord.Amount}
+                </apex:column>
+                <!--<apex:column> value="{!opp.opportunityRecord.Name}" />
+                <apex:column value="{!opp.opportunityRecord.Maturity_Date__c}" />
+                <apex:column value="{!opp.opportunityRecord.Amount}" />-->
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>    
+</apex:page>

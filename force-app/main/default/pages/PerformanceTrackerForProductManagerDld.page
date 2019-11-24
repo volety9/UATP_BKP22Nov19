@@ -1,0 +1,108 @@
+<apex:page controller="PerformanceTrackerProductManagers"  contentType="application/vnd.ms-excel#Performance_Tracker_for_Product_Managers_{!TODAY()}.xls">
+    <apex:pageBlock >
+       
+        <apex:pageBlockSection >
+            <apex:pageblocktable value="{!wrappedDataList}" var="wrap">
+                <apex:column style="background-color:#d7d7d7">
+                    <apex:facet name="header">ProductManager</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.PM}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">FX Direct Actual</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.fxDirectActual}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">FX Direct Target</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.fxDirectTarget}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">FX Direct %</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.fxDirectPercentage}%</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">FX Indirect Actual</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.fxIndirectActual}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">FX Indirect Target</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.fxIndirectTarget}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">FX Indirect %</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.fxIndirectPercentage}%</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Retail Actual</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.retailActual}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Retail Target</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.retailTarget}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Retail %</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.retailPercentage}%</apex:outputLabel>
+                </apex:column>
+                <!-- <apex:column >
+                   <apex:facet name="header">CRM Actual</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.crmActual}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">CRM Target</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.crmTarget}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">CRM %</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.crmPercentage}%</apex:outputLabel>
+                </apex:column>-->
+                <apex:column >
+                    <apex:facet name="header">Commodity Actual</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.commActual}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Commodity Target</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.commTarget}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Commodity %</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.commPercentage}%</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">IRRM Actual</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.irrmActual}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">IRRM Target</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.irrmTarget}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">IRRM %</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.irrmPercentage}%</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column style="background-color:#d7d7d7;">
+                    <apex:facet name="header">YTD Revenue</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.ytdRevenue}</apex:outputLabel>
+                </apex:column>
+                <apex:column style="background-color:#d7d7d7;">
+                    <apex:facet name="header">YTD Plan</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.ytdPlan}</apex:outputLabel>
+                </apex:column>
+                <apex:column style="background-color:#d7d7d7;">
+                    <apex:facet name="header">Variance</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.variance }</apex:outputLabel>
+                </apex:column>
+                <apex:column style="background-color:#d7d7d7;">
+                    <apex:facet name="header">Plan %</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.Grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.planPercentage}%</apex:outputLabel>
+                </apex:column>
+                
+            </apex:pageblocktable>
+            
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    <!--</apex:form> -->
+</apex:page>

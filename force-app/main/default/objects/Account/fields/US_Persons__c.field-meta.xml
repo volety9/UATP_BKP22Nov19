@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>US_Persons__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>For the definition please refer to the US Person document on the Homepage under the CYB Quick Links section.</inlineHelpText>
+    <label>US Persons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>N</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>N</label>
+            </value>
+            <value>
+                <fullName>Y</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Y</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

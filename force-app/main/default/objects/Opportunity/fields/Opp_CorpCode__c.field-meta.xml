@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_CorpCode__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( NOT( ISBLANK( TEXT(Opp_BankName__c) ) ) , TEXT(Opp_BankName__c) , 
+IF( NOT( ISBLANK( TEXT(Account.Branch__c ) ) ), 
+IF(TEXT(Account.Branch__c) = &#39;Clydesdale Bank&#39; , &#39;CB&#39;, 
+IF(TEXT(Account.Branch__c) = &#39;Yorkshire Bank&#39; , &#39;YB&#39;, &#39;&#39;)), &#39;&#39;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Corp Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

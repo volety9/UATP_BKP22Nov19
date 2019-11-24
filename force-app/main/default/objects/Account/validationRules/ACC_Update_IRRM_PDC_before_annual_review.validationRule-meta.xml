@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_Update_IRRM_PDC_before_annual_review</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(  IRRM_Pre_Deal_Checklist__c )  &amp;&amp;  NOT(ISBLANK( IRRM_Annual_Review_Date__c ) ) &amp;&amp;  IRRM_Annual_Review_Date__c  &gt;  (TODAY()+2)</errorConditionFormula>
+    <errorDisplayField>IRRM_Pre_Deal_Checklist__c</errorDisplayField>
+    <errorMessage>You cannot update the checklist before annual review date</errorMessage>
+</ValidationRule>

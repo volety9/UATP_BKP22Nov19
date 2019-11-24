@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- How Provided --></label>
+    <name>How_Provided__c</name>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Handover</masterLabel>
+        <translation><!-- Handover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mail</masterLabel>
+        <translation><!-- Mail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone Call</masterLabel>
+        <translation><!-- Phone Call --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

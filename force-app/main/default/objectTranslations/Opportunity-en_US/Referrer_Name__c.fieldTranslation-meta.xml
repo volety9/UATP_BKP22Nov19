@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Referrer Name --></label>
+    <lookupFilter>
+        <errorMessage><!-- Please select the referral account. --></errorMessage>
+    </lookupFilter>
+    <name>Referrer_Name__c</name>
+    <relationshipLabel><!-- Referrals --></relationshipLabel>
+</CustomFieldTranslation>

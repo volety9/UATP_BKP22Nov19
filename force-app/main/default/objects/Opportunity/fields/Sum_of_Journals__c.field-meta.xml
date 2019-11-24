@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sum_of_Journals__c</fullName>
+    <externalId>false</externalId>
+    <label>Sum_of_Journals</label>
+    <summarizedField>JournalLineItem__c.Journal_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>JournalLineItem__c.Journal_ProductFamily__c</field>
+        <operation>notEqual</operation>
+        <value>Business Loan</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>JournalLineItem__c.Journal_ProductFamily__c</field>
+        <operation>notEqual</operation>
+        <value>Vanilla FX</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>JournalLineItem__c.Journal_ProductFamily__c</field>
+        <operation>notEqual</operation>
+        <value>CRM</value>
+    </summaryFilterItems>
+    <summaryForeignKey>JournalLineItem__c.Journal_Opportunity__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_Change_Categ_status_once_categorised</fullName>
+    <active>true</active>
+    <description>User cannot change the status once it is categorised</description>
+    <errorConditionFormula>NOT($Permission.CategorisationStatusFCG ) &amp;&amp;    ISPICKVAL(PRIORVALUE( Categorisation_Status__c ), &quot;Categorised&quot;) &amp;&amp;  ISCHANGED(Categorisation_Status__c)</errorConditionFormula>
+    <errorDisplayField>Categorisation_Status__c</errorDisplayField>
+    <errorMessage>Categorised Status cannot be changed to any other status.</errorMessage>
+</ValidationRule>

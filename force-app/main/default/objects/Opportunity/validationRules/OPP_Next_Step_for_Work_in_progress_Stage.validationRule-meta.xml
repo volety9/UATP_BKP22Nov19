@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_Next_Step_for_Work_in_progress_Stage</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(StageName,&quot;Work In Progress&quot;)
+&amp;&amp; 
+ISBLANK(NextStep)</errorConditionFormula>
+    <errorDisplayField>NextStep</errorDisplayField>
+    <errorMessage>Please enter a Next Step for all deals that are Work In Progress</errorMessage>
+</ValidationRule>

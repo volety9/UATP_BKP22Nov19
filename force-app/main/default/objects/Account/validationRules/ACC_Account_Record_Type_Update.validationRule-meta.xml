@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_Account_Record_Type_Update</fullName>
+    <active>true</active>
+    <description>Static Data Team can convert the Target Records, Super User can convert all records.</description>
+    <errorConditionFormula>IF((
+NOT( $Permission.CustomerRecordTypeChangeForSU ) &amp;&amp; 
+NOT( $Permission.CustomerRecordTypeUpdate ) &amp;&amp; 
+ISCHANGED( RecordTypeId )),
+True, 
+IF(
+(NOT( $Permission.CustomerRecordTypeChangeForSU ) &amp;&amp;  
+ISCHANGED(RecordTypeId ) &amp;&amp;   
+PRIORVALUE(  RecordTypeId )  &lt;&gt; &quot;0120Y000000Wa8S&quot;) , 
+True, 
+False) 
+)</errorConditionFormula>
+    <errorMessage>Static Data Team can convert the Target Records only, Super User can convert all records.</errorMessage>
+</ValidationRule>

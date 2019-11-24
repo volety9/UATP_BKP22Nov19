@@ -1,0 +1,19 @@
+<!--
+  @Author        : Sushant
+  @Name          : fxChecklistLinks
+  @Created Date  : 23 June 2017
+  @Description   :Pre-Deal Customlinks for FX Checklists  
+  @version       : 1.0
+-->
+<apex:page id="fxlinkpage" standardController="Account">
+    <apex:form id="fxlinkform">  
+        <apex:commandButton id="fxretailpredeal" title="{!$Label.FXRetailPreDealChecklist}" value="{!$Label.FXRetailPreDealChecklist}" 
+                            onclick="window.open('/{!$Label.FXRetailPreDealChecklistLink}{!URLENCODE(Account.Name)}{!$Label.ChecklistFileOwnerFieldId}{!Account.Owner.Name}');"/>
+        <apex:commandButton id="fxprofessionalpredeal" title="{!$Label.FXProfessionalPreDealChecklist}" value="{!$Label.FXProfessionalPreDealChecklist}" 
+                            onclick="window.open('/{!$Label.FXProfessionalPreDealChecklistLink}{!URLENCODE(Account.Name)}{!$Label.ChecklistFileOwnerFieldId}{!Account.Owner.Name}');"/>  
+        <apex:commandButton id="fxprofessionaloptoutpredeal" title="{!$Label.FXProfessionalOptOutPreDealChecklist}" value="{!$Label.FXProfessionalOptOutPreDealChecklist}" 
+                            onclick="window.open('/{!$Label.FXProfessionalOutOutPreDealChecklistLink}{!URLENCODE(Account.Name)}{!$Label.ChecklistFileOwnerFieldId}{!Account.Owner.Name}');"/>                     
+        <apex:commandButton id="newvanillafxopp" title="{!$Label.NewVanillaFXOpp}" value="{!$Label.NewVanillaFXOpp}" 
+                            onclick="window.open('/{!$Label.NewVanillaFXOppLink}{!URLENCODE(Account.Name)}');"/>                     
+    </apex:form>
+</apex:page>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_Product_Auth_req_when_Rating_is_Green</fullName>
+    <active>true</active>
+    <description>Product Authorised is required for pre deal when the risk rating is Green</description>
+    <errorConditionFormula>(RecordType.DeveloperName = &quot;Professional_Optout_Pre_Deal_Checklist&quot; || RecordType.DeveloperName = &quot;Professional_Pre_Deal_Checklist&quot; || RecordType.DeveloperName = &quot;Retail_Pre_Deal_Checklist&quot;) &amp;&amp;  ISBLANK(  Product_Authorised__c  ) &amp;&amp;  ISPICKVAL( Risk_Rating__c  , &quot;Green&quot;)</errorConditionFormula>
+    <errorDisplayField>Product_Authorised__c</errorDisplayField>
+    <errorMessage>Product Authorised Required when the rating is green</errorMessage>
+</ValidationRule>

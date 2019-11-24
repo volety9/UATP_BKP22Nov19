@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_Strategy_Paper_req_when_Rate_is_Green</fullName>
+    <active>true</active>
+    <description>Strategy paper Date is required for pre deal when the risk rating is Green</description>
+    <errorConditionFormula>(RecordType.DeveloperName = &quot;Professional_Optout_Pre_Deal_Checklist&quot; || RecordType.DeveloperName = &quot;Professional_Pre_Deal_Checklist&quot; || RecordType.DeveloperName = &quot;Retail_Pre_Deal_Checklist&quot;) &amp;&amp;
+(
+(
+ISPICKVAL( Risk_Rating__c  , &quot;Green&quot;) &amp;&amp;  
+ISBLANK( Strategy_Paper_Issued__c ) &amp;&amp;  
+ISBLANK( Exception_Date__c ) 
+) ||
+( 
+NOT( ISBLANK( Strategy_Paper_Issued__c  )) &amp;&amp; 
+NOT(ISBLANK( Exception_Date__c ))
+) 
+)</errorConditionFormula>
+    <errorDisplayField>Strategy_Paper_Issued__c</errorDisplayField>
+    <errorMessage>When the File Rating is Green, either the Strategy Paper Issued or Exception Date should be completed.</errorMessage>
+</ValidationRule>

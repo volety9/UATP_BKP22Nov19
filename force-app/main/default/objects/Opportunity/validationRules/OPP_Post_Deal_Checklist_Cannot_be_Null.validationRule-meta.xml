@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_Post_Deal_Checklist_Cannot_be_Null</fullName>
+    <active>true</active>
+    <description>Post Deal Checklist cannot be Null If the Deal review Status is Post Deal Check Complete</description>
+    <errorConditionFormula>AND(NOT( RecordType.DeveloperName = &#39;Business_Loan&#39;),
+ ISPICKVAL( Deal_Review_Status__c , &quot;Post Deal Check Complete&quot;) ,
+ ISBLANK( Post_Deal_Checklist__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Post_Deal_Checklist__c</errorDisplayField>
+    <errorMessage>Post Deal Checklist cannot be blank if the deal review status is Post Deal Check Complete</errorMessage>
+</ValidationRule>

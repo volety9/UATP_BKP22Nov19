@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acc_status_changes_for_TSM_user</fullName>
+    <active>true</active>
+    <errorConditionFormula>($Profile.Name&lt;&gt;&#39;CYB&#39; &amp;&amp;  NOT(CONTAINS($User.Username, &quot;cybg.crm.integration&quot;)))&amp;&amp;( OR(
+ISPICKVAL(Customer_Status__c, &quot;Dormant&quot;),
+ISPICKVAL(Customer_Status__c, &quot;Prospect&quot;)
+))</errorConditionFormula>
+    <errorMessage>Customer status to Dormant or Prospect can only changed by FRSM/TDM .</errorMessage>
+</ValidationRule>

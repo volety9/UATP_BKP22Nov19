@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_Category_must_be_selected</fullName>
+    <active>true</active>
+    <description>Category must be selected if the Categorisation Status is selected as Categorised.</description>
+    <errorConditionFormula>AND(
+ ISPICKVAL( Categorisation_Status__c , &quot;Categorised&quot;),
+ ISBLANK( TEXT( Categorisation__c ) )
+ )</errorConditionFormula>
+    <errorDisplayField>Categorisation__c</errorDisplayField>
+    <errorMessage>You do not have permission to undertake Categorisation - please amend the categorisation status to &quot;none&quot; in order to proceed.</errorMessage>
+</ValidationRule>

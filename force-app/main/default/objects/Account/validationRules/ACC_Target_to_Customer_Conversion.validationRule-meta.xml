@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_Target_to_Customer_Conversion</fullName>
+    <active>true</active>
+    <description>Target should not be converted to Customer if US person is selected as YES</description>
+    <errorConditionFormula>ISCHANGED( RecordTypeId )   &amp;&amp; RecordType.DeveloperName = &quot;Customer&quot;  &amp;&amp;   ISPICKVAL(US_Persons__c, &quot;Yes&quot;)</errorConditionFormula>
+    <errorMessage>Target should not be converted to Customer if the US Person is selected as Yes.</errorMessage>
+</ValidationRule>

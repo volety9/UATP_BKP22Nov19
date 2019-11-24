@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>Pre_Deal_Script</links>
+    <links>US_Persons</links>
+    <links>CYB_LFC_Checklist</links>
+    <links>Broken_Down_By_Product_YOY</links>
+    <links>Deal_Report_Summary_For_FRSM</links>
+    <links>Direct_FX_YOY_Performance</links>
+    <links>Forecast_Quarterly_Report</links>
+    <links>Forecast_Yearly_Report</links>
+    <links>ForecastReport_For_LostAccounts</links>
+    <links>Indirect_FX_YOY</links>
+    <links>Performance_Tracker_For_FRSM</links>
+    <links>Performance_Tracker_For_PM</links>
+    <links>RM_Performance_YTD</links>
+    <links>Year_To_Date_Performance</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

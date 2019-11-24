@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BusinessCentre_cannot_be_Update_Inactive</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Team_NumberofChilds__c&gt;0,Text(Team_Status__c)=&#39;Inactive&#39; )</errorConditionFormula>
+    <errorMessage>Business Centre cannot be updated to Inactive ,as it contains the Active FRSM Target.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Com_Manager_is_Mandatory_on_Customer</fullName>
+    <active>true</active>
+    <description>Commodity Manager on Customer is mandatory before closing a commodity opp.</description>
+    <errorConditionFormula>(ISNEW()  ||  ISCHANGED( StageName ) )  &amp;&amp;  ISPICKVAL(StageName, &quot;Closed Won&quot;) &amp;&amp;  (RecordType.DeveloperName = &quot;Commodities_Deal_UK_Treasury_Solutions&quot; ) &amp;&amp;   ISBLANK( Account.Commodity_Manager__c )</errorConditionFormula>
+    <errorMessage>Opportunity cannot be closed as the Related Customer&#39;s Commodity Manager is not populated.</errorMessage>
+</ValidationRule>

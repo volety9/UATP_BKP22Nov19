@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_FX_Manager_is_Mandatory_on_Customer</fullName>
+    <active>true</active>
+    <description>FX Manager on Customer is mandatory before closing a CRM/FX Cash opp.</description>
+    <errorConditionFormula>(ISNEW()  ||  ISCHANGED( StageName ) )  &amp;&amp;  ISPICKVAL(StageName, &quot;Closed Won&quot;) &amp;&amp;  ( RecordType.DeveloperName = &quot;FX_Deal_UK_Treasury_Solutions&quot;  ||
+RecordType.DeveloperName = &quot;FX_Cash&quot;) &amp;&amp;   ISBLANK(Account.FX_Manager__c)</errorConditionFormula>
+    <errorMessage>Opportunity cannot be closed as the Related Customer&#39;s FX Manager is not populated.</errorMessage>
+</ValidationRule>

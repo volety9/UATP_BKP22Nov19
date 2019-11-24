@@ -1,0 +1,105 @@
+<apex:page controller="CommodityReportYOY" >
+    <apex:pageBlock >
+        <apex:pageBlockButtons location="top">
+            <apex:form >
+                 <apex:commandbutton value="Download" action="{!downloadReport}" />
+            </apex:form>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection >
+            <apex:pageBlockTable title="Commodity YOY" value="{!Wrapper}" var="wrap">
+                
+                <apex:column >
+                <apex:facet name="header">Customer Name</apex:facet>
+                <apex:outputLabel >{!IF(wrap.customerName == null,'',wrap.customerName)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">FRSM</apex:facet>
+               <apex:outputLabel >{!IF(wrap.frsm == null,'',wrap.frsm)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">VA Last Yr</apex:facet>
+               <apex:outputLabel >{!IF(wrap.vaLastYear == null,'0.00',wrap.vaLastYear)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">VA This Yr</apex:facet>
+                <apex:outputLabel >{!IF(wrap.vaThisYear == null,'0.00',wrap.vaThisYear)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">YOY VA</apex:facet>
+               <apex:outputLabel >{!IF(wrap.vaYOY == null,'0.00',wrap.vaYOY)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">T/O Last Yr</apex:facet>
+               <apex:outputLabel >{!IF(wrap.toLastYear == null,'0.00',wrap.toLastYear)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">T/O This Yr</apex:facet>
+                <apex:outputLabel >{!IF(wrap.toThisYear == null,'0.00',wrap.toThisYear)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">YOY T/O</apex:facet>
+               <apex:outputLabel >{!IF(wrap.toYOY == null,'0.00',wrap.toYOY)}</apex:outputLabel>
+                </apex:column>
+                
+                 <apex:column >
+                <apex:facet name="header">No of Deals Last Yr</apex:facet>
+               <apex:outputLabel >{!IF(wrap.dealsLastYear == null,'0.00',wrap.dealsLastYear)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">No of Deals This Yr</apex:facet>
+               <apex:outputLabel >{!IF(wrap.dealsThisYear == null,'0.00',wrap.dealsThisYear)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">YOY Deals</apex:facet>
+                <apex:outputLabel >{!IF(wrap.dealsYOY == null,'0.00',wrap.dealsYOY)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header"> Margin Last Year % </apex:facet>
+                <apex:outputLabel >{!IF(wrap.marginLastYear == null,'0.00',wrap.marginLastYear)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Margin This Year %</apex:facet>
+                 <apex:outputLabel >{!IF(wrap.marginThisYear == null,'0.00',wrap.marginThisYear)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">YOY Margin</apex:facet>
+                <apex:outputLabel >{!IF(wrap.marginYOY == null,'0.00',wrap.marginYOY)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Date Last Dealt Commodity Product</apex:facet>
+                <apex:outputLabel >{!IF(wrap.dateLastDealt == null,'',wrap.dateLastDealt)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Relationship Manager</apex:facet>
+                <apex:outputLabel >{!IF(wrap.relationshipManager == null,'',wrap.relationshipManager)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">Centre</apex:facet>
+                <apex:outputLabel >{!IF(wrap.centre == null,'',wrap.centre)}</apex:outputLabel>
+                </apex:column>
+                
+                <apex:column >
+                <apex:facet name="header">WID</apex:facet>
+                 <apex:outputLabel >{!IF(wrap.wid == null,'',wrap.wid)}</apex:outputLabel>
+                </apex:column>
+                
+          </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+</apex:page>

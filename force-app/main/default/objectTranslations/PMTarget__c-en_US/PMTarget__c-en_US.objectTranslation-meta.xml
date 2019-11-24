@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PM Target</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PM Targets</value>
+    </caseValues>
+    <layouts>
+        <layout>PM Target Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Targets and Actuals --></label>
+            <section>Targets and Actuals</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select the Status as Active/Terminated. Plan will be deactivated at the end of current FY. --></errorMessage>
+        <name>PMTar_Cannot_select_status_as_inactive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please update the end date of the plan. --></errorMessage>
+        <name>PMTar_END_Date_must_chang_on_closure</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End Date cannot be before Start Date --></errorMessage>
+        <name>PMTar_EndDate_Before_StartDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End Date is not in the current FY. --></errorMessage>
+        <name>PMTar_End_Date_Should_be_in_Current_FY</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Location is mandatory on PM User&apos;s Record --></errorMessage>
+        <name>PMTar_Location_is_Mandatory_on_PM_Target</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If PM Contact needs to be changed, plan should be closed and re-opened for new PM Contact --></errorMessage>
+        <name>PMTar_Lockdown_PMContact_On_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If PM User needs to be changed, plan should be closed and re-opened for new PM User --></errorMessage>
+        <name>PMTar_Lockdown_PMUser_On_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start Date is not in the current FY. --></errorMessage>
+        <name>PMTar_Start_Date_Should_be_in_Current_FY</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Termination Date should be in between the Plan Start Date and the Plan End Date. --></errorMessage>
+        <name>PMTar_TerDate_must_within_plan_dates</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Select the Status as Terminated for Termination Date is provided --></errorMessage>
+        <name>PMTar_TerminatedStatus_For_TerDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the Termination Date --></errorMessage>
+        <name>PMTar_TerminationDate_Mndtry_TerStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Plan Start and Stop date should not be same . --></errorMessage>
+        <name>Plan_Start_and_Stop_Date_should_not_Same</name>
+    </validationRules>
+</CustomObjectTranslation>

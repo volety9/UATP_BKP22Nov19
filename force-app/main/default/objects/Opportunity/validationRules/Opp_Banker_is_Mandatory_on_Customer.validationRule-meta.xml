@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Banker_is_Mandatory_on_Customer</fullName>
+    <active>true</active>
+    <description>RM Name is mandatory on related customer before closing the Opp.</description>
+    <errorConditionFormula>IF( Opp_RunValidation__c == true, (ISBLANK(Account.RM_Name__c) &amp;&amp;  (ISNEW()  ||  ISCHANGED( StageName ) )  &amp;&amp;  ISPICKVAL(StageName, &quot;Closed Won&quot;)), false)</errorConditionFormula>
+    <errorMessage>Opportunity cannot be closed as the Related Customer&#39;s RM Name is not populated.</errorMessage>
+</ValidationRule>

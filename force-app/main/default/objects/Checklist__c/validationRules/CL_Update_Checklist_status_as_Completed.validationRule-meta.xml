@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_Update_Checklist_status_as_Completed</fullName>
+    <active>true</active>
+    <errorConditionFormula>$Permission.ChecklistStatusAdmin &amp;&amp; ISPICKVAL( Risk_Rating__c , &quot;Green&quot;) &amp;&amp;  NOT(ISPICKVAL( Checklist_Status__c , &quot;Completed&quot;))</errorConditionFormula>
+    <errorDisplayField>Checklist_Status__c</errorDisplayField>
+    <errorMessage>Update the Checklist status as Completed</errorMessage>
+</ValidationRule>

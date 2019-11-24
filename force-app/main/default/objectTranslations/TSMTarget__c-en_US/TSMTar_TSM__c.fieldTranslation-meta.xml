@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Financial Risk Solutions Manager --></label>
+    <name>TSMTar_TSM__c</name>
+    <relationshipLabel><!-- FRSM Targets (Financial Risk Solutions Manager) --></relationshipLabel>
+</CustomFieldTranslation>

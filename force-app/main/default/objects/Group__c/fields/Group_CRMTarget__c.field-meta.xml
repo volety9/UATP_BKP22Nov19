@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group_CRMTarget__c</fullName>
+    <externalId>false</externalId>
+    <label>CRM Target</label>
+    <summarizedField>Division__c.Div_CRMTarget__c</summarizedField>
+    <summaryForeignKey>Division__c.Div_Group__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

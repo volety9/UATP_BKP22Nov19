@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Journal_Line_Items</fullName>
+    <columns>NAME</columns>
+    <columns>Journal_JournalLineItem__c</columns>
+    <columns>Journal_Opportunity__c</columns>
+    <columns>Journal_Amount__c</columns>
+    <columns>Journal_BankerName__c</columns>
+    <columns>Journal_WID__c</columns>
+    <columns>Journal_TeamName__c</columns>
+    <columns>Journal_CorpCode__c</columns>
+    <columns>Journal_GLAccount__c</columns>
+    <columns>Journal_TSMTarget__c</columns>
+    <columns>Journal_PMTarget__c</columns>
+    <columns>Journal_BankerOfficerCode__c</columns>
+    <columns>Journal_Trade_date__c</columns>
+    <columns>Journal_CIF__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Journal_Opportunity__c</field>
+        <operation>startsWith</operation>
+    </filters>
+    <label>All Journal Line Items</label>
+</ListView>

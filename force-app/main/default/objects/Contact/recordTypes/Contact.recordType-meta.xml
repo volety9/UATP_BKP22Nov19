@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Contact_Compact_Layout</compactLayoutAssignment>
+    <label>Contact</label>
+    <picklistValues>
+        <picklist>Contact_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Banking_Centre__c</picklist>
+        <values>
+            <fullName>Aberdeen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Birmingham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRE - North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carlisle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Codes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dundee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Midlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edinburgh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gatwick</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glasgow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gloucester</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Growth Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hull %26 Humber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inverness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lanarkshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leeds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lincoln</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>London West End</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manchester</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merseyside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Yorkshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northampton %26 Peterborough</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reading %26 Oxford</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAF - Aberdeen Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAF - Birmingham Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAF - Central Scotland Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAF - Leeds Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAF - London Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAF - Manchester Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Yorkshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>St Albans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stirling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thainstone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Yorkshire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google AdWords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

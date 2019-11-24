@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- User Action --></label>
+    <name>CD_UserAction__c</name>
+    <picklistValues>
+        <masterLabel>Discard</masterLabel>
+        <translation><!-- Discard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Save</masterLabel>
+        <translation><!-- Save --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

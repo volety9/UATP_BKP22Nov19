@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FX_Sales_Process_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( FX_Pre_Deal_Checklist_Rating__c  = &quot;FX Annual Review Red&quot;, 
+IMAGE(&quot;/img/samples/light_red.gif&quot;, &quot;Red&quot;, 20, 40), 
+IF( ISBLANK( FX_Pre_Deal_Checklist__c ),
+IMAGE(&quot;/resource/Traffic_Light_None&quot;, &quot;None&quot;, 20, 40),
+IF( FX_Pre_Deal_Checklist_Rating__c  = &quot;Green&quot;,
+IMAGE(&quot;/img/samples/light_green.gif&quot;, &quot;Green&quot;, 20, 40), 
+IMAGE(&quot;/img/samples/light_yellow.gif&quot;, &quot;Yellow&quot;, 20, 40)
+)))</formula>
+    <inlineHelpText>Grey - Checklist is not attached, 
+Amber - Checklist is attached and status is not green,
+Green - Checklist status is green,
+Red - Annual Review expired</inlineHelpText>
+    <label>FX Sales Process Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

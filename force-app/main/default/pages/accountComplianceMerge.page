@@ -1,0 +1,43 @@
+<!--
+  @Author          : Sushant
+  @Name            : accountComplianceMerge
+  @Created Date    : 10th July 2017
+  @Description     : UI to merge the Compliance records of a selected account  
+  @version         : 1.0
+-->
+
+<apex:page id="mergecomppage" standardController="Account" extensions="AccountComplianceMergeController">   
+    <apex:form id="mergeform">
+        <apex:pageBlock id="showcomprecords" title="{!$Label.SelectCompRecord}" rendered="{!showAllRecords}">
+            <apex:pageBlockButtons id="pgbuttonallmerge" location="top">
+                <apex:commandButton action="{!mergeAllComp}" value="{!$Label.MergeAllButton}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockButtons id="pgbuttonnext" location="bottom">
+                <apex:commandButton action="{!next}" value="Next"/>
+            </apex:pageBlockButtons>
+            <apex:pageMessages />    
+            <apex:pageBlockTable id="allcomptable" value="{!complianceWrapperList}" var="c">
+                 <apex:column width="25px">
+                    <apex:inputCheckbox value="{!c.checked}"/>
+                </apex:column>
+                <apex:column value="{!c.comp.Name}"/>
+                <apex:column value="{!c.comp.Customer__r.Name}"/>
+            </apex:pageBlockTable>        
+        </apex:pageBlock>
+        <apex:pageBlock id="selectedlist" title="{!$Label.MergeFieldValues}" rendered="{!showMerge}"> 
+            <apex:pageBlockButtons id="mergebutton" location="top">
+                <apex:commandButton action="{!mergeComp}" value="Merge"/>
+            </apex:pageBlockButtons>          
+            <apex:pageMessages />    
+            <apex:pageBlockTable id="selectedcomp" value="{!selectedCompWrapList}" var="comp">                 
+                <apex:column width="25px" value="{!comp.label}"/>                
+                <apex:column width="25px">
+                    <apex:inputCheckbox value="{!comp.parentSelected}" id="parentvalue"/> {!comp.parentValue}                                                    
+                </apex:column>               
+                <apex:column width="25px">
+                    <apex:inputCheckbox value="{!comp.childSelected}" id="childvalue"/>{!comp.childValue}                     
+                </apex:column>
+            </apex:pageBlockTable>        
+        </apex:pageBlock>
+    </apex:form>  
+</apex:page>

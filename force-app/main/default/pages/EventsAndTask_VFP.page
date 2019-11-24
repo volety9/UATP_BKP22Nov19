@@ -1,0 +1,25 @@
+<apex:page controller="EventsAndTask_Controller">
+     <apex:pageBlock >
+         <apex:pageBlockButtons location="top">
+             <apex:form >
+                 <apex:commandbutton value="Download" action="{!downloadReport}"/>
+             </apex:form>
+         </apex:pageBlockButtons>
+         <apex:pageBlockSection >
+            <apex:pageBlockTable value="{!wrapper}" var="wrap">
+                <apex:column >
+                    <apex:facet name="header">FRSM</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.ownerName}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Default Event</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.defaultEvent}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Quick Calls</apex:facet>
+                    <apex:outputLabel style="{! IF(wrap.grouper == true,'color:#1c89db; font-weight:bold','')}">{!wrap.quickCalls}</apex:outputLabel>
+                </apex:column>
+            </apex:pageBlockTable>
+         </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Commodity Pre Deal Checklist --></label>
+    <lookupFilter>
+        <errorMessage><!-- Related Commodity Pre Deal Checklist does not match with the filter criteria. --></errorMessage>
+    </lookupFilter>
+    <name>Commodity_Pre_Deal_Checklist__c</name>
+    <relationshipLabel><!-- Accounts --></relationshipLabel>
+</CustomFieldTranslation>

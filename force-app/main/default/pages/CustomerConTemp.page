@@ -1,0 +1,34 @@
+<apex:page controller="CustomerConTemp" action="{!exec}"  contentType="application/vnd.ms-excel#Customer_Report_{!TODAY()}.xls">
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <apex:pageBlockTable title="Customer Report" value="{!wrapList}" var="wrap">
+                
+                <apex:column >
+                <apex:facet name="header">Customer Name</apex:facet>
+                <apex:outputLabel >{!wrap.accName}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">No. of Deals</apex:facet>
+                <apex:outputLabel >{!wrap.count}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Total Amount</apex:facet>
+                <apex:outputLabel >{!wrap.amount}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">RM Name</apex:facet>
+                <apex:outputLabel >{!wrap.rmName}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Current Owner Name</apex:facet>
+                <apex:outputLabel >{!wrap.tsmName}</apex:outputLabel>
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header">Old Owner Name</apex:facet>
+                <apex:outputLabel >{!wrap.oldName}</apex:outputLabel>
+                </apex:column>
+                
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

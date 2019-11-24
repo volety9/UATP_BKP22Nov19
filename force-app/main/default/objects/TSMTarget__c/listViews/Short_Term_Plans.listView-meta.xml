@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Short_Term_Plans</fullName>
+    <columns>TSMTar_TSM__c</columns>
+    <columns>TSMTar_Team__c</columns>
+    <columns>TSMTar_IsCurrentFY__c</columns>
+    <columns>TSMTar_FXDirectTarget__c</columns>
+    <columns>TSMTar_FXDirectActual__c</columns>
+    <columns>TSMTar_FXIndirectTarget__c</columns>
+    <columns>TSMTar_FXIndirectActual__c</columns>
+    <columns>TSMTar_CommTarget__c</columns>
+    <columns>TSMTar_CommActual__c</columns>
+    <columns>TSMTar_IRRMTarget__c</columns>
+    <columns>TSMTar_IRRMActual__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TSMTar_IsCurrentFY__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>TSMTar_IsFullTermPlan__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Short Term Plans</label>
+</ListView>

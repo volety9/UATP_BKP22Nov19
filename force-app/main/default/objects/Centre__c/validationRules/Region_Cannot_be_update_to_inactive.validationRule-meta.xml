@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Region_Cannot_be_update_to_inactive</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Centre_NumberofChilds__c&gt;0,Text(Centre_Status__c)=&#39;Inactive&#39; )</errorConditionFormula>
+    <errorMessage>Region cannot be updated to Inactive ,as it contains the Active Business Centre.</errorMessage>
+</ValidationRule>

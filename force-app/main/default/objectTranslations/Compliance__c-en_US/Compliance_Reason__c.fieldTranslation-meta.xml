@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Compliance Reason --></label>
+    <name>Compliance_Reason__c</name>
+    <picklistValues>
+        <masterLabel>BTLP</masterLabel>
+        <translation><!-- BTLP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance - Comm</masterLabel>
+        <translation><!-- Compliance - Comm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance - FX</masterLabel>
+        <translation><!-- Compliance - FX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance - IRRM</masterLabel>
+        <translation><!-- Compliance - IRRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Comment</masterLabel>
+        <translation><!-- General Comment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail or Wholesale</masterLabel>
+        <translation><!-- Retail or Wholesale --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

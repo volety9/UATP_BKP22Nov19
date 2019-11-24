@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Stage_Amendment</fullName>
+    <active>false</active>
+    <description>If opportunity is closed won we can not amend the stage.</description>
+    <errorConditionFormula>IF(AND(ISCHANGED( StageName ), ISPICKVAL(StageName , &quot;Work In Progress&quot;) ,ISPICKVAL(PRIORVALUE(StageName ),&quot;Closed Won&quot;), OR(RecordType.DeveloperName =&#39;Business_Loan&#39;,RecordType.DeveloperName =&#39;Commodities_Deal_UK_Treasury_Solutions&#39;,RecordType.DeveloperName =&#39;IRRM_Deal_UK_Treasury_Solutions&#39;,RecordType.DeveloperName=&#39;FX_Deal_UK_Treasury_Solutions&#39;,RecordType.DeveloperName = &#39;Vanilla_FX_Deal_UK_Treasury_Solutions&#39;)) , true,false)</errorConditionFormula>
+    <errorMessage>If opportunity is &quot; Closed Won &quot; user cannot amend the opportunity stage.</errorMessage>
+</ValidationRule>

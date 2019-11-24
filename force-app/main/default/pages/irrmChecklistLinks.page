@@ -1,0 +1,19 @@
+<!--
+  @Author        : Sushant
+  @Name          : irrmChecklistLinks
+  @Created Date  : 23 June 2017
+  @Description   :Pre-Deal Customlinks for IRRM Checklists 
+  @version       : 1.0
+-->
+<apex:page id="irrmlinkpage" standardController="Account">
+<apex:form id="irrmlinkform">
+  <apex:commandButton id="irrmretailpredeal" title="{!$Label.IRRMRetailPreDealChecklist}" value="{!$Label.IRRMRetailPreDealChecklist}" 
+                      onclick="window.open('/{!$Label.IRRMRetailPreDealChecklistLink}{!URLENCODE(Account.Name)}{!$Label.ChecklistFileOwnerFieldId}{!Account.Owner.Name}');"/>                      
+  <apex:commandButton id="irrmprofessionalpredeal" title="{!$Label.IRRMProfessionalPreDealChecklist}" 
+                      value="{!$Label.IRRMProfessionalPreDealChecklist}" 
+                      onclick="window.open('/{!$Label.IRRMProfessionalPreDealChecklistLink}{!URLENCODE(Account.Name)}{!$Label.ChecklistFileOwnerFieldId}{!Account.Owner.Name}');"/>
+  <apex:commandButton id="irrmprofessionaloptoutpredeal" title="{!$Label.IRRMProfessionalOptOutPreDealChecklist}" 
+                      value="{!$Label.IRRMProfessionalOptOutPreDealChecklist}" 
+                      onclick="window.open('/{!$Label.IRRMProfessionalOutOutPreDealChecklistLink}{!URLENCODE(Account.Name)}{!$Label.ChecklistFileOwnerFieldId}{!Account.Owner.Name}');"/>                        
+</apex:form>
+</apex:page>

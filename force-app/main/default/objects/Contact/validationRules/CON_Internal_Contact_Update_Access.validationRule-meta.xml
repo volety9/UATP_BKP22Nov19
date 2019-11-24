@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CON_Internal_Contact_Update_Access</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(AND(RecordType.DeveloperName = &#39;Internal&#39;, $Profile.Name = &#39;CYB&#39;, NOT( $Permission.UpdateInternalContact ) ,OR( ISCHANGED( Salutation ),ISCHANGED( FirstName ),ISCHANGED( MiddleName ),ISCHANGED( LastName ),ISCHANGED( Suffix ),ISCHANGED( Contact_Status__c ),ISCHANGED( Date_Stamp__c ),ISCHANGED( Inactive_Reason__c ), ISCHANGED( AccountId ))),true, false)</errorConditionFormula>
+    <errorMessage>Only Super User can update the Internal contact details</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<!--
+  @Author        : Sushant
+  @Name          : commodityChecklistLinks
+  @Created Date  : 23 June 2017
+  @Description   :Pre-Deal Customlinks for Commodity Checklists 
+  @version       : 1.0
+-->
+<apex:page id="commoditylinkpage" standardController="Account">
+<apex:form id="commoditylinkform" >
+  <apex:commandButton id="commodityretailpredeal" title="{!$Label.CommodityRetailPreDealChecklist}" value="{!$Label.CommodityRetailPreDealChecklist}" 
+                      onclick="window.open('/{!$Label.CommodityRetailPreDealChecklistLink}{!URLENCODE(Account.Name)}{!$Label.ChecklistFileOwnerFieldId}{!Account.Owner.Name}');"/>                      
+  <apex:commandButton id="commodityprofessionalpredeal" title="{!$Label.CommodityProfessionalPreDealChecklist}" 
+                      value="{!$Label.CommodityProfessionalPreDealChecklist}"  
+                      onclick="window.open('/{!$Label.CommodityProfessionalPreDealChecklistLink}{!URLENCODE(Account.Name)}{!$Label.ChecklistFileOwnerFieldId}{!Account.Owner.Name}');"/>                      
+  <apex:commandButton id="commodityprofessionaloptoutpredeal" title="{!$Label.CommodityProfessionalOptOutPreDealChecklist}" 
+                      value="{!$Label.CommodityProfessionalOptOutPreDealChecklist}" 
+                      onclick="window.open('/{!$Label.CommodityProfessionalOutOutPreDealChecklistLink}{!URLENCODE(Account.Name)}{!$Label.ChecklistFileOwnerFieldId}{!Account.Owner.Name}');"/>  
+</apex:form>
+</apex:page>

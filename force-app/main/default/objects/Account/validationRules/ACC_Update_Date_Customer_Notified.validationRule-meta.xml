@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACC_Update_Date_Customer_Notified</fullName>
+    <active>true</active>
+    <description>Date customer notified of categorisation cannot be updated before categorisation has been completed</description>
+    <errorConditionFormula>ISCHANGED( Date_Customer_Notified_Of_Category__c )  &amp;&amp; NOT(ISPICKVAL( Categorisation_Status__c , &quot;Categorised&quot;))</errorConditionFormula>
+    <errorDisplayField>Date_Customer_Notified_Of_Category__c</errorDisplayField>
+    <errorMessage>Date customer notified of categorisation cannot be updated before categorisation has been completed</errorMessage>
+</ValidationRule>

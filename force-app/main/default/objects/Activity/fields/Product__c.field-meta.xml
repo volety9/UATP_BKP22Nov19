@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FX</fullName>
+                <default>false</default>
+                <label>FX</label>
+            </value>
+            <value>
+                <fullName>Commodity</fullName>
+                <default>false</default>
+                <label>Commodity</label>
+            </value>
+            <value>
+                <fullName>IRRM</fullName>
+                <default>false</default>
+                <label>IRRM</label>
+            </value>
+            <value>
+                <fullName>BTLP</fullName>
+                <default>false</default>
+                <label>BTLP</label>
+            </value>
+            <value>
+                <fullName>Int Trade</fullName>
+                <default>false</default>
+                <label>Int Trade</label>
+            </value>
+            <value>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+                <label>Merchant</label>
+            </value>
+            <value>
+                <fullName>Liabilities</fullName>
+                <default>false</default>
+                <label>Liabilities</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
